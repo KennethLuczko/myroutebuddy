@@ -119,7 +119,7 @@
     <div class="lg:pl-[36rem] flex-1">
       <div class="p-6">
         <h1 class="text-4xl font-bold mb-8 text-gray-800">My Route Buddy - Leagues 5: Raging Echoes Task Route Planner</h1>
-        <h2 class="text-md mb-8 text-gray-800">
+        <h2 class="text-md mb-2 text-gray-800">
           If you have any issues, want to report a bug, have a suggestion, or want to help develop this web app yourself, please visit
           <a href="https://github.com/KennethLuczko/myroutebuddy" 
             class="text-blue-500 underline hover:text-blue-700" 
@@ -128,6 +128,7 @@
             this GitHub and contribute.
           </a>
         </h2>
+        <h3 class="text-md mb-8 text-gray-800"><span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Available Tasks -->
           <TaskList :tasks="filteredTasks" @add-task="addTask" />
