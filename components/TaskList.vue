@@ -10,48 +10,51 @@
         class="w-full border rounded-lg p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none"
       />
   
-      <ul class="space-y-2">
-        <li
-          v-for="task in filteredTasks"
+      <!-- Draggable Task List -->
+      <Container
+        :get-child-payload="getTaskPayload"
+        group-name="tasks"
+        behaviour="copy"
+      >
+        <Draggable
+          v-for="(task, index) in filteredTasks"
           :key="task.id"
-          class="flex justify-between items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg shadow border cursor-pointer"
-          @click="selectTask(task)"
+          :data-id="task.id"
+          class="flex justify-between items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg shadow border cursor-pointer mb-2"
         >
-          <span class="font-medium text-gray-700">{{ task.task }}</span>
-          <span class="text-sm text-gray-500">{{ task.points }} pts</span>
-        </li>
-      </ul>
+          <div class="font-medium text-gray-700">{{ task.task }}</div>
+          <div class="text-sm text-gray-500">{{ task.points }} pts</div>
+        </Draggable>
+      </Container>
     </div>
   </template>
   
   <script>
   import { Container, Draggable } from 'vue-smooth-dnd';
+  
   export default {
-    components: {
-        Container,
-        Draggable,
-    },
     props: {
       tasks: Array,
     },
     data() {
       return {
-        searchQuery: '', // Bind to the search bar
+        searchQuery: '',
       };
     },
     computed: {
       filteredTasks() {
-        // Filter tasks based on the search query (case insensitive)
         const query = this.searchQuery.toLowerCase();
-        return this.tasks.filter(
-          (task) => task.task.toLowerCase().includes(query)
-        );
+        return this.tasks.filter((task) => task.task.toLowerCase().includes(query));
       },
     },
     methods: {
-      selectTask(task) {
-        this.$emit('add-task', task);
+      getTaskPayload(index) {
+        return this.filteredTasks[index];
       },
+    },
+    components: {
+      Container,
+      Draggable,
     },
   };
   </script>
