@@ -29,6 +29,17 @@
         <!-- Manage Routes Section -->
         <nav class="flex flex-1 flex-col mt-8">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-100">Manage Your Routes</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-200 mb-4">
+              Have an awesome route and want to share it with everyone? See how you can add it to the pre-loaded default routes.
+              <a
+                href="https://github.com/KennethLuczko/myroutebuddy#adding-your-route"
+                class="text-blue-500 underline hover:text-blue-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more.
+              </a>
+            </p>
           <div class="space-y-3">
             <!-- Save Route -->
             <button
