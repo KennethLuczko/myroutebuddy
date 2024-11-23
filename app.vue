@@ -329,38 +329,54 @@ export default {
     },
   },
   mounted() {
-    const savedTheme = localStorage.getItem('theme');
-    if (
-      savedTheme === 'dark' ||
-      (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    }
+  const savedTheme = localStorage.getItem('theme');
+  if (
+    savedTheme === 'dark' ||
+    (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  }
 
-    const savedRegions = localStorage.getItem('selectedRegions');
-    if (savedRegions) {
-      this.selectedRegions = JSON.parse(savedRegions);
-    }
+  const savedRegions = localStorage.getItem('selectedRegions');
+  if (savedRegions) {
+    this.selectedRegions = JSON.parse(savedRegions);
+  }
 
-    const savedRoute = localStorage.getItem('route');
-    if (savedRoute) {
-      this.route = JSON.parse(savedRoute);
-    }
+  const savedRoute = localStorage.getItem('route');
+  if (savedRoute) {
+    this.route = JSON.parse(savedRoute);
+  }
 
-    const savedRoutes = localStorage.getItem('savedRoutes');
-    if (savedRoutes) {
-      this.savedRoutes = JSON.parse(savedRoutes);
-    }
+  const savedRoutes = localStorage.getItem('savedRoutes');
+  if (savedRoutes) {
+    this.savedRoutes = JSON.parse(savedRoutes);
+  } else {
+    this.savedRoutes = {};
+  }
 
-    const savedTasks = localStorage.getItem('tasks');
-    if (savedTasks) {
-      this.tasks = JSON.parse(savedTasks);
-    } else {
-      this.loadTasks();
-    }
+  // Load the default route if it's not already in savedRoutes
+  const defaultRouteName = 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)';
+  if (!this.savedRoutes[defaultRouteName]) {
+    axios.get('./wizzy.json')
+      .then((response) => {
+        this.savedRoutes[defaultRouteName] = JSON.stringify(response.data);
+        localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+      })
+      .catch((error) => {
+        console.error('Error loading default route:', error);
+      });
+  }
 
-    // Load the tasks from the JSON file when the component is mounted
+  const savedTasks = localStorage.getItem('tasks');
+  if (savedTasks) {
+    this.tasks = JSON.parse(savedTasks);
+  } else {
     this.loadTasks();
-  },
+  }
+
+  // Load the tasks from the JSON file when the component is mounted
+  this.loadTasks();
+},
+
 };
 </script>
