@@ -17,6 +17,12 @@
           </p>
         </div>
 
+        <!-- Time Until Launch -->
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200">Time Until Launch</h3>
+          <p class="text-md text-gray-500 dark:text-gray-400">{{ timeUntilLaunch }}</p>
+        </div>
+
         <!-- Region Selection -->
         <div class="mt-8">
           <RegionFilter
@@ -228,13 +234,16 @@ export default {
         { id: 10, name: 'Varlamore' },
       ],
       selectedRegions: [],
-      tasks: [], // Initially empty, will be loaded from tasks.json
+      tasks: [],
       route: [],
       savedRoutes: {},
       selectedRoute: '',
       importedRoute: '',
       isFinalView: false,
       changeLog: [],
+      launchDate: new Date('2024-11-27T07:00:00-05:00'), // Launch date in EST
+      intervalId: null,
+      timeUntilLaunch: '', // Countdown string
     };
   },
   computed: {
@@ -243,7 +252,7 @@ export default {
       return this.tasks.filter(
         (task) =>
           allowedRegions.includes(task.region) &&
-          !this.route.some((r) => r.id === task.id) // Exclude already added tasks
+          !this.route.some((r) => r.id === task.id)
       );
     },
     totalPoints() {
@@ -256,10 +265,27 @@ export default {
       return this.totalPoints ? (this.completedPoints / this.totalPoints) * 100 : 0;
     },
     recentChangeLog() {
-    return this.changeLog.slice(-3);
+      return this.changeLog.slice(-3);
     },
   },
   methods: {
+    updateTimeUntilLaunch() {
+      const now = new Date();
+      const timeDifference = this.launchDate - now;
+
+      if (timeDifference <= 0) {
+        clearInterval(this.intervalId);
+        this.timeUntilLaunch = 'Launch time has arrived!';
+        return;
+      }
+
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      this.timeUntilLaunch = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    },
     updateTasks(updatedTasks) {
       this.tasks = updatedTasks;
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
@@ -308,7 +334,7 @@ export default {
           this.savedRoutes[routeName] = JSON.stringify(imported);
           localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
           alert(`Route "${routeName}" has been imported and saved.`);
-          this.importedRoute = ''; // Clear the textarea
+          this.importedRoute = '';
         }
       } catch (error) {
         alert('Invalid route JSON. Please try again.');
@@ -318,7 +344,6 @@ export default {
       if (confirm('Are you sure you want to reset? This will clear your route and selected regions.')) {
         this.route = [];
         this.selectedRegions = [];
-        this.customTaskName = ''; // Clear any custom task input
         localStorage.removeItem('route');
         localStorage.removeItem('selectedRegions');
         alert('App has been reset.');
@@ -328,10 +353,10 @@ export default {
       const html = document.documentElement;
       if (html.classList.contains('dark')) {
         html.classList.remove('dark');
-        localStorage.setItem('theme', 'light'); // Save theme to local storage
+        localStorage.setItem('theme', 'light');
       } else {
         html.classList.add('dark');
-        localStorage.setItem('theme', 'dark'); // Save theme to local storage
+        localStorage.setItem('theme', 'dark');
       }
     },
     toggleFinalView() {
@@ -341,7 +366,6 @@ export default {
       axios
         .get('./tasks.json')
         .then((response) => {
-          // Add task ID to the beginning of the task name
           this.tasks = response.data.map((task) => ({
             ...task,
             task: `${task.task}`,
@@ -353,95 +377,89 @@ export default {
         });
     },
     fetchLatestCommits() {
-    const cachedData = localStorage.getItem('changeLog');
-    const cachedTime = localStorage.getItem('changeLogTime');
-    const now = Date.now();
+      const cachedData = localStorage.getItem('changeLog');
+      const cachedTime = localStorage.getItem('changeLogTime');
+      const now = Date.now();
 
-    // Check if cached data is available and less than 15 minutes old
-    if (cachedData && cachedTime && now - cachedTime < 15 * 60 * 1000) {
-      this.changeLog = JSON.parse(cachedData);
-      return;
+      if (cachedData && cachedTime && now - cachedTime < 15 * 60 * 1000) {
+        this.changeLog = JSON.parse(cachedData);
+        return;
+      }
+
+      const repoOwner = 'KennethLuczko';
+      const repoName = 'myroutebuddy';
+
+      axios
+        .get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`, {
+          params: { per_page: 3 },
+        })
+        .then((response) => {
+          this.changeLog = response.data.map((commit) => ({
+            date: new Date(commit.commit.author.date).toLocaleDateString(),
+            time: new Date(commit.commit.author.date).toLocaleTimeString(),
+            change: commit.commit.message,
+            contributor: commit.author ? commit.author.login : commit.commit.author.name,
+            url: commit.html_url,
+          }));
+
+          localStorage.setItem('changeLog', JSON.stringify(this.changeLog));
+          localStorage.setItem('changeLogTime', now);
+        })
+        .catch((error) => {
+          console.error('Error fetching commits:', error);
+        });
+    },
+  },
+  mounted() {
+    this.updateTimeUntilLaunch();
+    this.intervalId = setInterval(this.updateTimeUntilLaunch, 1000);
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
     }
 
-    const repoOwner = 'KennethLuczko';
-    const repoName = 'myroutebuddy';
+    const savedRegions = localStorage.getItem('selectedRegions');
+    if (savedRegions) {
+      this.selectedRegions = JSON.parse(savedRegions);
+    }
 
-    axios
-      .get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`, {
-        params: {
-          per_page: 3, // Get the latest 3 commits
-        },
-      })
-      .then((response) => {
-        this.changeLog = response.data.map((commit) => ({
-          date: new Date(commit.commit.author.date).toLocaleDateString(),
-          time: new Date(commit.commit.author.date).toLocaleTimeString(),
-          change: commit.commit.message,
-          contributor: commit.author ? commit.author.login : commit.commit.author.name,
-          url: commit.html_url,
-        }));
+    const savedRoute = localStorage.getItem('route');
+    if (savedRoute) {
+      this.route = JSON.parse(savedRoute);
+    }
 
-        // Cache the data and timestamp
-        localStorage.setItem('changeLog', JSON.stringify(this.changeLog));
-        localStorage.setItem('changeLogTime', now);
-      })
-      .catch((error) => {
-        console.error('Error fetching commits:', error);
-      });
+    const savedRoutes = localStorage.getItem('savedRoutes');
+    if (savedRoutes) {
+      this.savedRoutes = JSON.parse(savedRoutes);
+    } else {
+      this.savedRoutes = {};
+    }
+
+    const defaultRouteName = 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)';
+    if (!this.savedRoutes[defaultRouteName]) {
+      axios
+        .get('./wizzy.json')
+        .then((response) => {
+          this.savedRoutes[defaultRouteName] = JSON.stringify(response.data);
+          localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+        })
+        .catch((error) => {
+          console.error('Error loading default route:', error);
+        });
+    }
+
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+      this.tasks = JSON.parse(savedTasks);
+    } else {
+      this.loadTasks();
+    }
+
+    this.fetchLatestCommits();
   },
-},
-  mounted() {
-  const savedTheme = localStorage.getItem('theme');
-  if (
-    savedTheme === 'dark' ||
-    (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    document.documentElement.classList.add('dark');
-  }
-
-  const savedRegions = localStorage.getItem('selectedRegions');
-  if (savedRegions) {
-    this.selectedRegions = JSON.parse(savedRegions);
-  }
-
-  const savedRoute = localStorage.getItem('route');
-  if (savedRoute) {
-    this.route = JSON.parse(savedRoute);
-  }
-
-  const savedRoutes = localStorage.getItem('savedRoutes');
-  if (savedRoutes) {
-    this.savedRoutes = JSON.parse(savedRoutes);
-  } else {
-    this.savedRoutes = {};
-  }
-
-  // Load the default route if it's not already in savedRoutes
-  const defaultRouteName = 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)';
-  if (!this.savedRoutes[defaultRouteName]) {
-    axios.get('./wizzy.json')
-      .then((response) => {
-        this.savedRoutes[defaultRouteName] = JSON.stringify(response.data);
-        localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-      })
-      .catch((error) => {
-        console.error('Error loading default route:', error);
-      });
-  }
-
-  const savedTasks = localStorage.getItem('tasks');
-  if (savedTasks) {
-    this.tasks = JSON.parse(savedTasks);
-  } else {
-    this.loadTasks();
-  }
-
-  // Load the tasks from the JSON file when the component is mounted
-  this.loadTasks();
-
-  // Fetch the latest commits from GitHub
-  this.fetchLatestCommits();
-},
-
+  beforeDestroy() {
+    clearInterval(this.intervalId);
+  },
 };
 </script>
