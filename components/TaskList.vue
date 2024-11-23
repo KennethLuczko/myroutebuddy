@@ -25,7 +25,12 @@
   </template>
   
   <script>
+  import { Container, Draggable } from 'vue-smooth-dnd';
   export default {
+    components: {
+        Container,
+        Draggable,
+    },
     props: {
       tasks: Array,
     },
