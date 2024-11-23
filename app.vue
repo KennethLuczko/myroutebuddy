@@ -153,11 +153,11 @@ export default {
     return {
       regions: [
         { id: 2, name: 'Asgarnia' },
-        { id: 3, name: 'Fremenik' },
+        { id: 3, name: 'Fremennik' },
         { id: 4, name: 'Kandarin' },
         { id: 5, name: 'Desert' },
         { id: 6, name: 'Morytania' },
-        { id: 7, name: 'Tirannywn' },
+        { id: 7, name: 'Tirannwn' },
         { id: 8, name: 'Wilderness' },
         { id: 9, name: 'Zeah' },
         { id: 10, name: 'Varlamore' },
