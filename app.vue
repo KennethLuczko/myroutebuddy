@@ -6,13 +6,13 @@
         <!-- Progress Section -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Progress</h3>
-          <div class="w-full bg-gray-200 rounded-full h-4">
+          <div class="w-full bg-gray-200 rounded-full h-6">
             <div
-              class="bg-blue-500 h-4 rounded-full transition-all"
+              class="bg-blue-500 h-6 rounded-full transition-all"
               :style="{ width: progressPercentage + '%' }"
             ></div>
           </div>
-          <p class="text-sm text-gray-500 mt-2 dark:text-gray-400">
+          <p class="text-md text-gray-500 mt-2 dark:text-gray-400">
             {{ completedPoints }} of {{ totalPoints }} points completed
           </p>
         </div>
