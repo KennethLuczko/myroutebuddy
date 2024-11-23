@@ -24,11 +24,12 @@
           @click="selectTask(task)"
         >
           <div class="font-medium text-gray-700">{{ task.task }}</div>
-          <div class="text-sm text-gray-500">{{ task.points }} pts</div>
+          <div class="text-sm text-gray-500">{{ task.points }} points</div>
         </Draggable>
       </Container>
     </div>
   </template>
+  
   
   <script>
   import { Container, Draggable } from 'vue3-smooth-dnd';
