@@ -6,14 +6,14 @@
         group-name="tasks"
         @drop="onDrop"
       >
-        <Draggable
-          v-for="(task, index) in route"
-          :key="task.id"
-          :class="[ 
+      <Draggable
+        v-for="(task, index) in route"
+        :key="task.id"
+        :class="[ 
             'p-4 rounded-lg shadow border hover:bg-gray-100 transition mb-2',
             task.completed ? 'bg-gray-200 line-through text-gray-500' : 'bg-gray-50 text-gray-800',
-            task.custom ? 'bg-blue-200' : ''
-          ]"
+            task.custom ? 'border-blue-600 dark:border-green-600' : ''
+        ]"
         >
           <div class="flex items-center justify-between">
             <div>

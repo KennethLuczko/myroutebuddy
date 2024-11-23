@@ -78,6 +78,7 @@
             points: 0, // Default points for a custom task
             custom: true, // Mark as a custom task
             region: 'Global', // Assign to "Global"
+            completed: false, // Ensure this property exists
           };
           this.$emit('add-task', customTask); // Emit to parent to add to the route
           this.customTaskName = ''; // Reset input
