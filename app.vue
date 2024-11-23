@@ -108,16 +108,18 @@
 
           <!-- Change Log Section -->
           <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Change Log (latest 3 changes)</h3> 
-            <a href="https://github.com/KennethLuczko/myroutebuddy" 
-            class="text-blue-500 underline hover:text-blue-700 text-sm" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Contribute to this project.
-          </a>
+            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Change Log (latest 3 changes)</h3>
+            <a
+              href="https://github.com/KennethLuczko/myroutebuddy"
+              class="text-blue-500 underline hover:text-blue-700 text-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contribute to this project.
+            </a>
             <ul>
               <li
-                v-for="(log, index) in recentChangeLog"
+                v-for="(log, index) in changeLog"
                 :key="index"
                 class="p-4 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700"
               >
@@ -128,7 +130,15 @@
                   <span class="font-semibold">Time:</span> {{ log.time }}
                 </p>
                 <p class="text-sm text-gray-800 dark:text-gray-200">
-                  <span class="font-semibold">Change:</span> {{ log.change }}
+                  <span class="font-semibold">Change: </span>
+                  <a
+                    :href="log.url"
+                    class="text-blue-500 underline hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {{ log.change }}
+                  </a>
                 </p>
                 <p class="text-sm text-gray-800 dark:text-gray-200">
                   <span class="font-semibold">Contributor:</span> {{ log.contributor }}
@@ -213,26 +223,7 @@ export default {
       selectedRoute: '',
       importedRoute: '',
       isFinalView: false,
-      changeLog: [
-      {
-        date: 'November 22, 2024',
-        time: '10:58 PM',
-        change: 'Enable drag & drop for available tasks and your route list',
-        contributor: 'KennethLuczko',
-      },
-      {
-        date: 'November 22, 2024',
-        time: '10:17 PM',
-        change: 'Add change log and encourage contributions',
-        contributor: 'KennethLuczko',
-      },
-      {
-        date: 'November 22, 2024',
-        time: '9:50 PM',
-        change: 'Add dark mode functionality and hide scrollbar',
-        contributor: 'KennethLuczko',
-      },
-    ],
+      changeLog: [],
     };
   },
   computed: {
@@ -350,7 +341,44 @@ export default {
           console.error('Error loading tasks:', error);
         });
     },
+    fetchLatestCommits() {
+    const cachedData = localStorage.getItem('changeLog');
+    const cachedTime = localStorage.getItem('changeLogTime');
+    const now = Date.now();
+
+    // Check if cached data is available and less than 15 minutes old
+    if (cachedData && cachedTime && now - cachedTime < 15 * 60 * 1000) {
+      this.changeLog = JSON.parse(cachedData);
+      return;
+    }
+
+    const repoOwner = 'KennethLuczko';
+    const repoName = 'myroutebuddy';
+
+    axios
+      .get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`, {
+        params: {
+          per_page: 3, // Get the latest 3 commits
+        },
+      })
+      .then((response) => {
+        this.changeLog = response.data.map((commit) => ({
+          date: new Date(commit.commit.author.date).toLocaleDateString(),
+          time: new Date(commit.commit.author.date).toLocaleTimeString(),
+          change: commit.commit.message,
+          contributor: commit.author ? commit.author.login : commit.commit.author.name,
+          url: commit.html_url,
+        }));
+
+        // Cache the data and timestamp
+        localStorage.setItem('changeLog', JSON.stringify(this.changeLog));
+        localStorage.setItem('changeLogTime', now);
+      })
+      .catch((error) => {
+        console.error('Error fetching commits:', error);
+      });
   },
+},
   mounted() {
   const savedTheme = localStorage.getItem('theme');
   if (
@@ -399,6 +427,9 @@ export default {
 
   // Load the tasks from the JSON file when the component is mounted
   this.loadTasks();
+
+  // Fetch the latest commits from GitHub
+  this.fetchLatestCommits();
 },
 
 };
