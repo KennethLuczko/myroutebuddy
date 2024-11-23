@@ -32,7 +32,7 @@
             <p class="text-sm text-gray-700 dark:text-gray-200 mb-4">
               Have an awesome route and want to share it with everyone? See how you can add it to the pre-loaded default routes.
               <a
-                href="https://github.com/KennethLuczko/myroutebuddy#adding-your-route"
+                href="https://github.com/KennethLuczko/myroutebuddy?tab=readme-ov-file#how-to-add-your-own-route-to-the-default-routes"
                 class="text-blue-500 underline hover:text-blue-700"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -175,7 +175,7 @@
           </a>
         </h2>
         <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
-  <span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.
+          <span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.
         </h3>
 
         <!-- Final View Toggle Button -->
