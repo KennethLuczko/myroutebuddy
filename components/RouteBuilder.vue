@@ -12,7 +12,7 @@
           :class="[ 
             'p-4 rounded-lg shadow border hover:bg-gray-100 transition mb-2',
             task.completed ? 'bg-gray-200 line-through text-gray-500' : 'bg-gray-50 text-gray-800',
-            task.custom ? 'bg-blue-100' : ''
+            task.custom ? 'bg-blue-200' : ''
           ]"
         >
           <div class="flex items-center justify-between">

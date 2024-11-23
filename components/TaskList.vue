@@ -1,5 +1,24 @@
 <template>
     <div class="p-4 bg-white rounded-lg shadow mb-4 dark:bg-gray-800">
+        <!-- Add Custom Task Section -->
+        <div class="mb-6">
+        <h2 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-1">Add Custom Task / Note</h2>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            Add a custom task or note into your route. For example, "Have 10K GP".
+        </p>
+        <input
+            type="text"
+            v-model="customTaskName"
+            placeholder="Custom Task or Note"
+            class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none mb-2"
+        />
+        <button
+            @click="addCustomTask"
+            class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 transition"
+        >
+            Add Custom Task
+        </button>
+        </div>
       <h2 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">Available Tasks</h2>
   
       <!-- Search Bar -->
@@ -40,6 +59,7 @@
     },
     data() {
       return {
+        customTaskName: '',
         searchQuery: '',
       };
     },
@@ -50,6 +70,21 @@
       },
     },
     methods: {
+      addCustomTask() {
+        if (this.customTaskName.trim()) {
+          const customTask = {
+            id: Date.now(),
+            task: this.customTaskName.trim(),
+            points: 0, // Default points for a custom task
+            custom: true, // Mark as a custom task
+            region: 'Global', // Assign to "Global"
+          };
+          this.$emit('add-task', customTask); // Emit to parent to add to the route
+          this.customTaskName = ''; // Reset input
+        } else {
+          alert('Please enter a task or note.');
+        }
+      },
       getTaskPayload(index) {
         return this.filteredTasks[index];
       },
@@ -65,19 +100,10 @@
           // Handle addition
           if (dropResult.addedIndex !== null) {
             const task = dropResult.payload;
-            // Prevent duplicates
-            if (!updatedTasks.some((t) => t.id === task.id)) {
-              updatedTasks.splice(dropResult.addedIndex, 0, task);
-            } else {
-              // If moving within the same list, allow reordering
-              if (dropResult.removedIndex !== null) {
-                updatedTasks.splice(dropResult.addedIndex, 0, task);
-              }
-            }
+            updatedTasks.splice(dropResult.addedIndex, 0, task);
           }
   
-          // Update the tasks list
-          this.$emit('update-tasks', updatedTasks);
+          this.$emit('update-tasks', updatedTasks); // Emit updated tasks to parent
         }
       },
       selectTask(task) {
@@ -90,4 +116,5 @@
     },
   };
   </script>
+  
   

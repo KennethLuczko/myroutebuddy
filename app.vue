@@ -26,23 +26,6 @@
           />
         </div>
 
-        <!-- Add Custom Task Section -->
-        <div class="mt-6">
-          <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Add Custom Task / Note</h3>
-          <input
-            type="text"
-            v-model="customTaskName"
-            placeholder="Custom Task Name"
-            class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-          />
-          <button
-            @click="addCustomTask"
-            class="w-full bg-blue-500 text-white px-4 py-2 mt-2 rounded-lg shadow-sm hover:bg-blue-600 transition"
-          >
-            Add Custom Task
-          </button>
-        </div>
-
         <!-- Manage Routes Section -->
         <nav class="flex flex-1 flex-col mt-8">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-100">Manage Your Routes</h3>
@@ -255,19 +238,6 @@ export default {
     },
   },
   methods: {
-    addCustomTask() {
-      if (this.customTaskName.trim()) {
-        const customTask = {
-          id: Date.now(),
-          task: `${this.customTaskName}`,
-          points: 0, // Default points
-          custom: true,
-          region: 'Global', // Assign "Global" or make region selectable
-        };
-        this.addTask(customTask);
-        this.customTaskName = ''; // Reset input
-      }
-    },
     updateTasks(updatedTasks) {
       this.tasks = updatedTasks;
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
