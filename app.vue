@@ -153,13 +153,32 @@
             this GitHub and contribute.
           </a>
         </h2>
-        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200"><span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Available Tasks -->
-          <TaskList :tasks="filteredTasks" @add-task="addTask" />
+        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+  <span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.
+        </h3>
 
-          <!-- Your Route -->
-          <RouteBuilder :route="route" @update-route="updateRoute" />
+        <!-- Final View Toggle Button -->
+        <button
+          @click="toggleFinalView"
+          class="mb-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-gray-700 transition dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-gray-200"
+        >
+          {{ isFinalView ? 'Exit Final View (removes available tasks)' : 'Enter Final View (removes available tasks)' }}
+        </button>
+
+        <!-- Adjusted Content Based on Final View State -->
+        <div>
+          <div v-if="!isFinalView" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Available Tasks -->
+            <TaskList :tasks="filteredTasks" @add-task="addTask" />
+
+            <!-- Your Route -->
+            <RouteBuilder :route="route" @update-route="updateRoute" />
+          </div>
+
+          <div v-else>
+            <!-- Your Route Spanning Full Width -->
+            <RouteBuilder :route="route" @update-route="updateRoute" :isFinalView="true" />
+          </div>
         </div>
       </div>
     </div>
@@ -193,6 +212,7 @@ export default {
       savedRoutes: {},
       selectedRoute: '',
       importedRoute: '',
+      isFinalView: false,
       changeLog: [
       {
         date: 'November 22, 2024',
@@ -311,6 +331,9 @@ export default {
         html.classList.add('dark');
         localStorage.setItem('theme', 'dark'); // Save theme to local storage
       }
+    },
+    toggleFinalView() {
+      this.isFinalView = !this.isFinalView;
     },
     loadTasks() {
       axios
