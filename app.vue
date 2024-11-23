@@ -2,7 +2,7 @@
   <div class="min-h-screen flex bg-gray-50 dark:bg-gray-900">
     <!-- Sidebar -->
     <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[36rem] lg:flex-col">
-      <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800">
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800">
         <!-- Progress Section -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Progress</h3>
