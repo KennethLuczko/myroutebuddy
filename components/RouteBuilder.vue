@@ -12,14 +12,14 @@
           :class="[ 
             'p-4 rounded-lg shadow border hover:bg-gray-100 transition mb-2',
             task.completed ? 'bg-gray-200 line-through text-gray-500' : 'bg-gray-50 text-gray-800',
-            task.custom ? 'bg-yellow-100' : ''
+            task.custom ? 'bg-blue-100' : ''
           ]"
         >
           <div class="flex items-center justify-between">
             <div>
               <h3 class="font-semibold">{{ task.task }}</h3>
               <p class="text-sm text-gray-500">
-                {{ task.custom ? 'Custom Task' : `${task.points} points` }}
+                {{ task.custom ? 'Custom Task / Note' : `${task.points} points` }}
               </p>
             </div>
             <div class="flex items-center space-x-2">
