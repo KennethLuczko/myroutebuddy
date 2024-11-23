@@ -122,6 +122,37 @@
               Toggle Dark Mode
             </button>
           </div>
+
+          <!-- Change Log Section -->
+          <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Change Log (latest 3 changes)</h3> 
+            <a href="https://github.com/KennethLuczko/myroutebuddy" 
+            class="text-blue-500 underline hover:text-blue-700 text-sm" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Contribute to this project.
+          </a>
+            <ul>
+              <li
+                v-for="(log, index) in recentChangeLog"
+                :key="index"
+                class="p-4 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700"
+              >
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <span class="font-semibold">Date:</span> {{ log.date }}
+                </p>
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <span class="font-semibold">Time:</span> {{ log.time }}
+                </p>
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <span class="font-semibold">Change:</span> {{ log.change }}
+                </p>
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <span class="font-semibold">Contributor:</span> {{ log.contributor }}
+                </p>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
@@ -179,6 +210,26 @@ export default {
       savedRoutes: {},
       selectedRoute: '',
       importedRoute: '',
+      changeLog: [
+      {
+        date: 'November 22, 2024',
+        time: '10:17 PM',
+        change: 'Add change log and encourage contributions',
+        contributor: 'KennethLuczko',
+      },
+      {
+        date: 'November 22, 2024',
+        time: '9:50 PM',
+        change: 'Add dark mode functionality and hide scrollbar',
+        contributor: 'KennethLuczko',
+      },
+      {
+        date: 'November 22, 2024',
+        time: '9:25 PM',
+        change: 'Corrected region spellings',
+        contributor: 'Skylord-Guthix',
+      },
+    ],
     };
   },
   computed: {
@@ -198,6 +249,9 @@ export default {
     },
     progressPercentage() {
       return this.totalPoints ? (this.completedPoints / this.totalPoints) * 100 : 0;
+    },
+    recentChangeLog() {
+    return this.changeLog.slice(-3);
     },
   },
   methods: {
