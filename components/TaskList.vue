@@ -1,6 +1,6 @@
 <template>
-    <div class="p-4 bg-white rounded-lg shadow mb-4">
-      <h2 class="text-xl font-bold mb-4 text-gray-800">Available Tasks</h2>
+    <div class="p-4 bg-white rounded-lg shadow mb-4 dark:bg-gray-800">
+      <h2 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">Available Tasks</h2>
       
       <!-- Search Bar -->
       <input
