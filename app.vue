@@ -268,13 +268,21 @@ export default {
         this.customTaskName = ''; // Reset input
       }
     },
+    updateTasks(updatedTasks) {
+      this.tasks = updatedTasks;
+      localStorage.setItem('tasks', JSON.stringify(this.tasks));
+    },
     updateRegions(regions) {
       this.selectedRegions = regions;
       localStorage.setItem('selectedRegions', JSON.stringify(regions));
     },
     addTask(task) {
-      this.route.push({ ...task, completed: false });
-      localStorage.setItem('route', JSON.stringify(this.route));
+      if (!this.route.some((r) => r.id === task.id)) {
+        this.route.push({ ...task, completed: false });
+        localStorage.setItem('route', JSON.stringify(this.route));
+      } else {
+        alert('Task is already in your route.');
+      }
     },
     updateRoute(newRoute) {
       this.route = newRoute;
@@ -372,6 +380,13 @@ export default {
     const savedRoutes = localStorage.getItem('savedRoutes');
     if (savedRoutes) {
       this.savedRoutes = JSON.parse(savedRoutes);
+    }
+    
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+      this.tasks = JSON.parse(savedTasks);
+    } else {
+      this.loadTasks();
     }
 
     // Load the tasks from the JSON file when the component is mounted

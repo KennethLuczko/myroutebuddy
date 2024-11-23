@@ -42,7 +42,7 @@
   </template>
   
   <script>
-  import { Container, Draggable } from 'vue-smooth-dnd';
+  import { Container, Draggable } from 'vue3-smooth-dnd';
   
   export default {
     props: {
@@ -55,27 +55,34 @@
       onDrop(dropResult) {
         if (dropResult.removedIndex !== null || dropResult.addedIndex !== null) {
           let newRoute = [...this.route];
-          let movedTask = dropResult.payload;
   
-          // Check if the task is already in the route
-          const taskExists = newRoute.some((task) => task.id === movedTask.id);
-          if (taskExists && dropResult.removedIndex === null) {
-            alert('Task is already in your route.');
-            return;
-          }
-  
-          // Remove from previous position if moving within the same container
+          // Remove the task from the previous position
           if (dropResult.removedIndex !== null) {
             newRoute.splice(dropResult.removedIndex, 1);
           }
   
-          // Add to new position
+          // Insert the task at the new position
           if (dropResult.addedIndex !== null) {
-            if (movedTask.completed === undefined) {
-              movedTask.completed = false;
+            const task = dropResult.payload;
+  
+            // If the task doesn't have 'completed' property, initialize it
+            if (task.completed === undefined) {
+              task.completed = false;
             }
-            newRoute.splice(dropResult.addedIndex, 0, movedTask);
+  
+            // Prevent duplicates
+            if (!newRoute.some((t) => t.id === task.id)) {
+              newRoute.splice(dropResult.addedIndex, 0, task);
+            } else {
+              // If moving within the same list, allow reordering
+              if (dropResult.removedIndex !== null) {
+                newRoute.splice(dropResult.addedIndex, 0, task);
+              } else {
+                alert('Task is already in your route.');
+              }
+            }
           }
+  
           this.$emit('update-route', newRoute);
         }
       },
