@@ -6,6 +6,12 @@
     ]"
   >
     <RouteStats :route="route" />
+    <PinnedTasks
+      :pinned-tasks="pinnedTasks"
+      :route="route"
+      @unpin="unpinTask"
+      @clear-all-pins="clearAllPins"
+    />
 
     <h2 class="text-xl font-bold m-4 text-gray-800 dark:text-gray-200">
       Your Route
@@ -26,6 +32,7 @@
       <Draggable
         v-for="(task, index) in filteredRoute"
         :key="task.id"
+        :id="`task-${task.id}`"
         :class="[
           'p-2 py-3 rounded-lg shadow border transition mb-2 relative cursor-pointer',
           task.completed
@@ -132,6 +139,20 @@
                   @update:task="updateTaskColor($event)"
                 />
                 <button
+                  v-if="!isPinned(task)"
+                  @click="pinTask(task)"
+                  class="w-7 h-7 bg-gray-500 text-white hover:bg-gray-600 rounded-full shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-gray-200 ring-2 ring-white ring-inset"
+                >
+                  📌
+                </button>
+                <button
+                  v-else
+                  @click="unpinTask(task)"
+                  class="w-7 h-7 bg-blue-500 text-white hover:bg-blue-600 rounded-full shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-gray-200 ring-2 ring-white ring-inset"
+                >
+                  <span class="transform rotate-45">📌</span>
+                </button>
+                <button
                   v-if="!task.isEditing"
                   @click="insertAfter(task)"
                   class="w-7 h-7 bg-blue-500 text-white hover:bg-blue-600 rounded-full shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-gray-200 ring-2 ring-white ring-inset"
@@ -159,6 +180,7 @@ import ColorSelect from "./ColorSelect.vue";
 import { colorMap } from "./ColorSelect.vue";
 import RegionIcon from "./RegionIcon.vue";
 import RouteStats from "./RouteStats";
+import PinnedTasks from "./PinnedTasks.vue";
 
 export default {
   props: {
@@ -174,6 +196,9 @@ export default {
     };
   },
   computed: {
+    pinnedTasks() {
+      return this.route.filter((task) => task.pinned);
+    },
     filteredRoute() {
       if (!this.searchQuery) return this.route;
       const query = this.searchQuery.toLowerCase();
@@ -239,6 +264,9 @@ export default {
     },
     toggleCompletion(task) {
       const updatedTask = { ...task, completed: !task.completed };
+      if (updatedTask.completed && updatedTask.pinned) {
+        updatedTask.pinned = false;
+      }
       this.updateTask(updatedTask);
     },
     editTask(task) {
@@ -287,6 +315,31 @@ export default {
     updateTaskColor(updatedTask) {
       this.updateTask(updatedTask);
     },
+    pinTask(task) {
+      const updatedTask = { ...task, pinned: true };
+      this.updateTask(updatedTask);
+    },
+
+    unpinTask(task) {
+      const updatedTask = { ...task, pinned: false };
+      this.updateTask(updatedTask);
+    },
+    clearAllPins(tasksToUnpin) {
+      const updatedRoute = this.route.map((task) => {
+        if (tasksToUnpin.some((pinnedTask) => pinnedTask.id === task.id)) {
+          return { ...task, pinned: false };
+        }
+        return task;
+      });
+      this.$emit("update-route", updatedRoute);
+    },
+
+    isPinned(task) {
+      return task.pinned === true;
+    },
+  },
+  created() {
+    this.pinnedTasks = this.route.filter((task) => task.pinned);
   },
   components: {
     Container,
@@ -294,6 +347,7 @@ export default {
     ColorSelect,
     RegionIcon,
     RouteStats,
+    PinnedTasks,
   },
 };
 </script>
