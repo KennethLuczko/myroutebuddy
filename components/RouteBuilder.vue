@@ -152,6 +152,12 @@
                 >
                   <span class="transform rotate-45">📌</span>
                 </button>
+                <!-- In the buttons section of your task -->
+                <MoveTaskButton
+                  :current-position="index + 1"
+                  :max-position="route.length"
+                  @move="moveTaskToPosition(task, $event)"
+                />
                 <button
                   v-if="!task.isEditing"
                   @click="insertAfter(task)"
@@ -171,6 +177,7 @@
         </div>
       </Draggable>
     </Container>
+    <RouteNav :route="route" />
   </div>
 </template>
 
@@ -181,6 +188,8 @@ import { colorMap } from "./ColorSelect.vue";
 import RegionIcon from "./RegionIcon.vue";
 import RouteStats from "./RouteStats";
 import PinnedTasks from "./PinnedTasks.vue";
+import MoveTaskButton from "./MoveTaskButton.vue";
+import RouteNav from "./RouteNav.vue";
 
 export default {
   props: {
@@ -337,6 +346,17 @@ export default {
     isPinned(task) {
       return task.pinned === true;
     },
+    moveTaskToPosition(task, newIndex) {
+      const oldIndex = this.route.findIndex((t) => t.id === task.id);
+      if (oldIndex !== -1) {
+        const newRoute = [...this.route];
+        // Remove from old position
+        newRoute.splice(oldIndex, 1);
+        // Insert at new position
+        newRoute.splice(newIndex, 0, task);
+        this.$emit("update-route", newRoute);
+      }
+    },
   },
   created() {
     this.pinnedTasks = this.route.filter((task) => task.pinned);
@@ -348,6 +368,8 @@ export default {
     RegionIcon,
     RouteStats,
     PinnedTasks,
+    MoveTaskButton,
+    RouteNav,
   },
 };
 </script>

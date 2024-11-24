@@ -2,7 +2,7 @@
   <div class="sticky top-24 z-10">
     <button
       @click="isCollapsed = !isCollapsed"
-      class="w-full h-12 px-4 flex items-center justify-between text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm backdrop-blur-sm bg-opacity-90"
+      class="w-full h-12 px-4 flex items-center justify-between text-gray-700 dark:text-gray-200 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm hover:bg-gray-100/90 dark:hover:bg-gray-800/90 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"
     >
       <div class="flex items-center gap-2">
         <span class="font-medium">Pinned Tasks ({{ pinnedTasks.length }})</span>
@@ -24,7 +24,7 @@
 
     <div
       v-show="!isCollapsed"
-      class="absolute top-[calc(100%+0.25rem)] left-0 right-0 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg"
+      class="absolute top-[calc(100%+0.25rem)] left-0 right-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg"
     >
       <div ref="pinnedList" class="max-h-64 overflow-y-auto">
         <div
