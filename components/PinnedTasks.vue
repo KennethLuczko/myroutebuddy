@@ -162,4 +162,39 @@ export default {
   pointer-events: none;
   animation: task-pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1);
 }
+
+.max-h-64 {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+
+.max-h-64::-webkit-scrollbar {
+  width: 6px;
+}
+
+.max-h-64::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.max-h-64::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 20px;
+}
+
+/* Dark mode scrollbar */
+:root.dark .max-h-64 {
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
+}
+
+:root.dark .max-h-64::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
+.max-h-64::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(156, 163, 175, 0.7);
+}
+
+:root.dark .max-h-64::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(75, 85, 99, 0.7);
+}
 </style>
