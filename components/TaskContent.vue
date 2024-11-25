@@ -54,7 +54,7 @@
             <div v-else>
               <h3
                 :class="[
-                  'font-semibold mt-2 break-words',
+                  'font-semibold mt-2 break-words whitespace-pre-wrap',
                   task.completed
                     ? 'text-gray-600 line-through'
                     : getTextClass(task.color) || 'text-gray-800',
