@@ -180,8 +180,17 @@
             this GitHub and contribute.
           </a>
         </h2>
-        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+        <h3 class="text-md mb-2 text-gray-800 dark:text-gray-200">
           <span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.
+        </h3>
+        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+          Not sure where to begin? Discover your regions, combat masteries, and more
+          <a href="https://docs.google.com/spreadsheets/d/1LJVEIIR9D56FF9PyUzb4nhofaCjpzSWTRGsUNsH7lNw/copy" 
+            class="text-blue-500 underline hover:text-blue-700" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            here.
+          </a>
         </h3>
 
         <!-- Final View Toggle Button -->
