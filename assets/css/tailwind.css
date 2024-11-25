@@ -12,3 +12,10 @@
   opacity: 0;
   transform: scale(0.95);
 }
+
+@media only screen and (orientation: landscape) and (max-width: 1023px) {
+  .lg\:flex {
+    display: flex;
+    max-width: 45%;
+  }
+}
