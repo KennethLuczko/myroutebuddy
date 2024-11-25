@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-=======
 
 .fade-enter-active,
 .fade-leave-active {
@@ -21,4 +19,3 @@
     max-width: 45%;
   }
 }
->>>>>>> upstream/main
