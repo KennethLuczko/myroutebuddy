@@ -6,14 +6,6 @@
     >
       <div class="flex items-center gap-2">
         <span class="font-medium">Pinned Tasks ({{ pinnedTasks.length }})</span>
-        <!-- Add clear button if there are pinned tasks -->
-        <button
-          v-if="pinnedTasks.length > 0"
-          @click.stop="clearPinnedTasks"
-          class="text-sm px-2 py-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-        >
-          Clear All
-        </button>
       </div>
       <span
         class="transform transition-transform"
