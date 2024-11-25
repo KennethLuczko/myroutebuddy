@@ -180,8 +180,17 @@
             this GitHub and contribute.
           </a>
         </h2>
-        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+        <h3 class="text-md mb-2 text-gray-800 dark:text-gray-200">
           <span class="text-red-600">This app will not work well on mobile.</span> This is easily fixed with Tailwind CSS if someone wants to contribute.
+        </h3>
+        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+          Not sure where to begin? Discover your regions, combat masteries, and more
+          <a href="https://docs.google.com/spreadsheets/d/1LJVEIIR9D56FF9PyUzb4nhofaCjpzSWTRGsUNsH7lNw/copy" 
+            class="text-blue-500 underline hover:text-blue-700" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            here.
+          </a>
         </h3>
 
         <!-- Final View Toggle Button -->
@@ -436,18 +445,26 @@ export default {
       this.savedRoutes = {};
     }
 
-    const defaultRouteName = 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)';
-    if (!this.savedRoutes[defaultRouteName]) {
-      axios
-        .get('./wizzy.json')
-        .then((response) => {
-          this.savedRoutes[defaultRouteName] = JSON.stringify(response.data);
-          localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-        })
-        .catch((error) => {
-          console.error('Error loading default route:', error);
-        });
-    }
+    // Define the default routes
+    const defaultRoutes = [
+      { name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)', file: './wizzy.json' },
+      { name: 'Mazhar (Z/M/F) (Updated 11/25 9:09 AM)', file: './mazhar.json' },
+    ];
+
+    // Load each default route if not already present
+    defaultRoutes.forEach((route) => {
+      if (!this.savedRoutes[route.name]) {
+        axios
+          .get(route.file)
+          .then((response) => {
+            this.savedRoutes[route.name] = JSON.stringify(response.data);
+            localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+          })
+          .catch((error) => {
+            console.error(`Error loading default route (${route.name}):`, error);
+          });
+      }
+    });
 
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {

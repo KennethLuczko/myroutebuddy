@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
+=======
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1023px) {
+  .lg\:flex {
+    display: flex;
+    max-width: 45%;
+  }
+}
+>>>>>>> upstream/main

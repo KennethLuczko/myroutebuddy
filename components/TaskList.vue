@@ -43,11 +43,11 @@
         v-for="task in filteredTasks"
         :key="task.id"
         :data-id="task.id"
-        class="flex justify-between items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg shadow border cursor-pointer mb-2"
+        class="flex justify-between items-center bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 p-4 rounded-lg shadow border dark:border-gray-700 cursor-pointer mb-2"
         @click="selectTask(task)"
       >
-        <div class="font-medium text-gray-700">{{ task.task }}</div>
-        <div class="text-sm text-gray-500 flex items-center gap-2">
+        <div class="font-medium text-gray-700 dark:text-gray-200">{{ task.task }}</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
           <RegionIcon :region="task.region" />
           <span>{{ task.points }} points</span>
         </div>
