@@ -436,18 +436,26 @@ export default {
       this.savedRoutes = {};
     }
 
-    const defaultRouteName = 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)';
-    if (!this.savedRoutes[defaultRouteName]) {
-      axios
-        .get('./wizzy.json')
-        .then((response) => {
-          this.savedRoutes[defaultRouteName] = JSON.stringify(response.data);
-          localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-        })
-        .catch((error) => {
-          console.error('Error loading default route:', error);
-        });
-    }
+    // Define the default routes
+    const defaultRoutes = [
+      { name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)', file: './wizzy.json' },
+      { name: 'Mazhar (Z/M/F) (Updated 11/25 9:09 AM)', file: './mazhar.json' },
+    ];
+
+    // Load each default route if not already present
+    defaultRoutes.forEach((route) => {
+      if (!this.savedRoutes[route.name]) {
+        axios
+          .get(route.file)
+          .then((response) => {
+            this.savedRoutes[route.name] = JSON.stringify(response.data);
+            localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+          })
+          .catch((error) => {
+            console.error(`Error loading default route (${route.name}):`, error);
+          });
+      }
+    });
 
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
