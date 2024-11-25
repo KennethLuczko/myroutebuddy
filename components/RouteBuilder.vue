@@ -42,14 +42,14 @@
           :class="[
             'p-2 py-3 rounded-lg shadow border transition mb-2 relative cursor-pointer',
             task.completed
-              ? 'bg-gray-100 hover:bg-gray-200'
+              ? 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600'
               : getColorClass(task.color),
             !task.completed &&
-              (getHoverClass(task.color) || 'hover:bg-gray-100'),
+              (getHoverClass(task.color) || 'hover:bg-gray-100 dark:hover:bg-gray-600'),
             task.completed
-              ? 'border-gray-200'
+              ? 'border-gray-200 dark:border-gray-700'
               : getBorderClass(task.color) ||
-                (task.custom ? 'border-blue-600' : 'border-gray-200'),
+                (task.custom ? 'border-blue-600 dark:border-blue-500' : 'border-gray-200 dark:border-gray-700'),
           ]"
           drag-handler="handle"
         >
@@ -68,7 +68,7 @@
           />
         </Draggable>
       </Container>
-  
+
       <!-- When in final view -->
       <div v-else>
         <div
@@ -77,12 +77,14 @@
           :class="[
             'p-2 py-3 rounded-lg shadow border transition mb-2 relative',
             task.completed
-              ? 'bg-gray-100'
+              ? 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600'
               : getColorClass(task.color),
+            !task.completed &&
+              (getHoverClass(task.color) || 'hover:bg-gray-100 dark:hover:bg-gray-600'),
             task.completed
-              ? 'border-gray-200'
+              ? 'border-gray-200 dark:border-gray-700'
               : getBorderClass(task.color) ||
-                (task.custom ? 'border-blue-600' : 'border-gray-200'),
+                (task.custom ? 'border-blue-600 dark:border-blue-500' : 'border-gray-200 dark:border-gray-700'),
             isFinalView ? 'cursor-pointer' : '',
           ]"
           @click="toggleCompletion(task)"
@@ -131,7 +133,7 @@
     },
     methods: {
       getColorClass(color) {
-        return color && colorMap[color] ? colorMap[color].bg : "bg-gray-50";
+        return color && colorMap[color] ? colorMap[color].bg : "bg-gray-50 dark:bg-gray-700";
       },
       getHoverClass(color) {
         return color && colorMap[color] ? colorMap[color].hover : null;
