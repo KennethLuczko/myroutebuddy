@@ -10,7 +10,7 @@
             <span v-else>&lt;</span> <!-- Left arrow when expanded -->
           </span>
       </div>
-      <div v-show="!isCollapsed" class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r sm:border-gray-900 lg:border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800 " >
+      <div v-show="!isCollapsed" class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide lg:border-r lg:border-r-gray-700 border-b-2 border-b-gray-700 lg:border-b-0  bg-white px-6 pb-4 dark:bg-gray-800 " >
         <!-- Progress Section -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Progress</h3>
