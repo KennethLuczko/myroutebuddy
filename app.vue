@@ -297,17 +297,23 @@ import TaskList from './components/TaskList.vue';
 import RegionFilter from './components/RegionFilter.vue';
 import RouteBuilder from './components/RouteBuilder.vue';
 import axios from 'axios';
-import { onMounted, onUnmounted, ref } from "vue"; 
+import { ref } from 'vue';
 import LZString from 'lz-string';
 import Notification from './components/Notification.vue';
 import ConfirmDialog from './components/ConfirmDialog.vue';
 
 export default {
-  components: { TaskList, RegionFilter, RouteBuilder },
+  components: {
+    TaskList,
+    RegionFilter,
+    RouteBuilder,
+    Notification,
+    ConfirmDialog,
+  },
   data() {
     return {
       regions: [
-      { id: 2, name: 'Asgarnia', api: 'Asgarnia' },
+        { id: 2, name: 'Asgarnia', api: 'Asgarnia' },
         { id: 3, name: 'Fremennik', api: 'Fremennik_Province' },
         { id: 4, name: 'Kandarin', api: 'Kandarin' },
         { id: 5, name: 'Desert', api: 'Kharidian_Desert' },
@@ -346,7 +352,7 @@ export default {
         drops: [],
       },
       loading: false,
-      error: null, 
+      error: null,
     };
   },
   computed: {
@@ -383,14 +389,22 @@ export default {
       }
 
       const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const hours = Math.floor(
+        (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+      );
       const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
       this.timeUntilLaunch = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     },
     updateTasks(updatedTasks) {
-      this.tasks = updatedTasks;
+      // Ensure the 'custom' property is set correctly
+      this.tasks = updatedTasks.map((task) => ({
+        ...task,
+        custom: task.custom || false,
+      }));
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     },
     updateRegions(regions) {
@@ -398,24 +412,24 @@ export default {
       localStorage.setItem('selectedRegions', JSON.stringify(regions));
     },
     addTask(task) {
-    if (!this.route.some((r) => r.id === task.id)) {
-      this.route.push({ ...task, completed: false });
-      localStorage.setItem('route', JSON.stringify(this.route));
-    } else {
-      this.addNotification('Task is already in your route.', 'error');
-    }
-  },
+      if (!this.route.some((r) => r.id === task.id)) {
+        this.route.push({ ...task, completed: false });
+        localStorage.setItem('route', JSON.stringify(this.route));
+      } else {
+        this.addNotification('Task is already in your route.', 'error');
+      }
+    },
     updateRoute(newRoute) {
       this.route = newRoute;
       localStorage.setItem('route', JSON.stringify(this.route));
     },
     saveRoute() {
-    const routeName = prompt('Enter a name for this route:');
-    if (routeName) {
-      this.savedRoutes[routeName] = JSON.stringify(this.route);
-      localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-      this.addNotification(`Route "${routeName}" has been saved.`, 'success');
-    }
+      const routeName = prompt('Enter a name for this route:');
+      if (routeName) {
+        this.savedRoutes[routeName] = JSON.stringify(this.route);
+        localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+        this.addNotification(`Route "${routeName}" has been saved.`, 'success');
+      }
     },
     loadRoute() {
       if (this.selectedRoute && this.savedRoutes[this.selectedRoute]) {
@@ -424,27 +438,63 @@ export default {
       }
     },
     shareRoute() {
-      const routeString = JSON.stringify(this.route);
-      const regionsString = JSON.stringify(this.selectedRegions);
+      const taskIds = [];
+      const customTasks = [];
+
+      this.route.forEach((task) => {
+        if (task.custom) {
+          customTasks.push({
+            id: task.id,
+            task: task.task,
+            points: task.points,
+            region: task.region,
+          });
+        } else {
+          taskIds.push(task.id);
+        }
+      });
+
+      const routeData = {
+        taskIds,
+        customTasks,
+        selectedRegions: this.selectedRegions,
+      };
+
+      const routeString = JSON.stringify(routeData);
       const compressedRoute = LZString.compressToEncodedURIComponent(routeString);
-      const compressedRegions = LZString.compressToEncodedURIComponent(regionsString);
-      const shareableURL = `${window.location.origin}${window.location.pathname}?route=${compressedRoute}&regions=${compressedRegions}`;
+      const shareableURL = `${window.location.origin}${window.location.pathname}?route=${compressedRoute}`;
       navigator.clipboard.writeText(shareableURL).then(() => {
-        this.addNotification('Shareable URL copied to clipboard! Share it with others.', 'success');
+        this.addNotification(
+          'Shareable URL copied to clipboard! Share it with others.',
+          'success'
+        );
       });
     },
     importRoute() {
       try {
-        const imported = JSON.parse(this.importedRoute);
+        const decompressed = LZString.decompressFromEncodedURIComponent(this.importedRoute);
+        const routeData = JSON.parse(decompressed);
+
+        // Load predefined tasks based on IDs
+        const predefinedTasks = this.tasks.filter((task) =>
+          routeData.taskIds.includes(task.id)
+        );
+
+        // Combine predefined tasks with custom tasks
+        const importedRoute = [...predefinedTasks, ...routeData.customTasks];
+
         const routeName = prompt('Enter a name for the imported route:');
         if (routeName) {
-          this.savedRoutes[routeName] = JSON.stringify(imported);
+          this.savedRoutes[routeName] = JSON.stringify(importedRoute);
           localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-          this.addNotification(`Route "${routeName}" has been imported and saved.`, 'success');
+          this.addNotification(
+            `Route "${routeName}" has been imported and saved.`,
+            'success'
+          );
           this.importedRoute = '';
         }
       } catch (error) {
-        this.addNotification('Invalid route JSON. Please try again.', 'error');
+        this.addNotification('Invalid route data. Please try again.', 'error');
       }
     },
     resetApp() {
@@ -474,12 +524,13 @@ export default {
       this.isFinalView = !this.isFinalView;
     },
     loadTasks() {
-      axios
+      // Return the promise to chain with .then()
+      return axios
         .get('./tasks.json')
         .then((response) => {
           this.tasks = response.data.map((task) => ({
             ...task,
-            task: `${task.task}`,
+            custom: false, // Mark predefined tasks as not custom
           }));
           console.log('Tasks loaded:', this.tasks);
         })
@@ -527,151 +578,28 @@ export default {
     scrollTopButton: ref(null),
     handleScroll() {
       if (window.scrollY > 0) {
-        this.scrollTopButton.value.classList.remove("invisible");
+        this.scrollTopButton.value.classList.remove('invisible');
       } else {
-        this.scrollTopButton.value.classList.add("invisible");
+        this.scrollTopButton.value.classList.add('invisible');
       }
     },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
-    async fetchRegionInfo(region) {
-      this.loading = true;
-      this.error = null;
-      try {
-        const selectedRegion = this.regions.find(r => r.name === region);
-        const apiRegion = selectedRegion ? selectedRegion.api : region;
-
-        console.log(`Fetching data for region: ${apiRegion}`);
-
-        const response = await axios.get(
-          `https://oldschool.runescape.wiki/api.php?action=query&titles=Raging_Echoes_League/Areas/${apiRegion}&prop=revisions&rvprop=content&format=json`
-        );
-
-        console.log('API Response:', response.data);
-
-        const regionData = this.parseRegionInfo(response.data);
-        
-        this.cleanRegionData(regionData);
-
-        this.combineRegionInfo(regionData);
-      } catch (err) {
-        console.error('Error fetching region information:', err);
-        this.error = 'Failed to load region information. Please try again.';
-      } finally {
-        this.loading = false;
-      }
-    },
-    parseRegionInfo(data) {
-      const page = Object.values(data.query.pages)[0];
-      const notableInfo = {
-        settlements: [],
-        restrictedTravel: [],
-        combatActivities: [],
-        nonCombatActivities: [],
-        shops: [],
-        unlocks: {
-          quests: [],
-          achievementDiaryTasks: [],
-        },
-        drops: [],
-      };
-
-      if (page && page.revisions && page.revisions.length > 0) {
-        const content = page.revisions[0]['*'];
-
-        // Extract notable settlements
-        notableInfo.settlements = this.extractSection(content, '===Notable settlements===', '===');
-
-        // Extract restricted travel
-        notableInfo.restrictedTravel = this.extractSection(content, '===Restricted travel===', '===');
-
-        // Extract combat-related activities
-        notableInfo.combatActivities = this.extractSection(
-          content,
-          '===Notable combat-related activities===',
-          '==='
-        );
-
-        // Extract non-combat activities
-        notableInfo.nonCombatActivities = this.extractSection(
-          content,
-          '===Notable non-combat activities===',
-          '==='
-        );
-
-        // Extract shops
-        notableInfo.shops = this.extractSection(content, '===Notable shops===', '===');
-
-        // Extract unlocks: quests
-        notableInfo.unlocks.quests = this.extractSection(content, '===Quests===', '===');
-
-        // Extract unlocks: achievement diary tasks
-        notableInfo.unlocks.achievementDiaryTasks = this.extractSection(
-          content,
-          '===Achievement diary tasks===',
-          '==='
-        );
-
-      }
-
-      return notableInfo;
-    },
-    // Utility function to extract a section from the content
-    extractSection(content, startMarker, endMarker) {
-      const startIndex = content.indexOf(startMarker);
-      if (startIndex === -1) return [];
-      const endIndex = content.indexOf(endMarker, startIndex + startMarker.length) || content.length;
-      const section = content.slice(startIndex + startMarker.length, endIndex).trim();
-
-      // Split by lines and clean up bullet points
-      return section
-        .split('\n')
-        .filter((line) => line.startsWith('*')) // Lines starting with '*'
-        .map((line) => line.replace(/^\*\s*/, '').trim()
-        ); // Remove '* ' and trim
-    },
-    combineRegionInfo(regionData) {
-      this.combinedRegionInfo.settlements = [...this.combinedRegionInfo.settlements, ...regionData.settlements];
-      this.combinedRegionInfo.restrictedTravel = [...this.combinedRegionInfo.restrictedTravel, ...regionData.restrictedTravel];
-      this.combinedRegionInfo.combatActivities = [...this.combinedRegionInfo.combatActivities, ...regionData.combatActivities];
-      this.combinedRegionInfo.nonCombatActivities = [...this.combinedRegionInfo.nonCombatActivities, ...regionData.nonCombatActivities];
-      this.combinedRegionInfo.shops = [...this.combinedRegionInfo.shops, ...regionData.shops];
-      this.combinedRegionInfo.unlocks.quests = [...this.combinedRegionInfo.unlocks.quests, ...regionData.unlocks.quests];
-      this.combinedRegionInfo.unlocks.achievementDiaryTasks = [...this.combinedRegionInfo.unlocks.achievementDiaryTasks, ...regionData.unlocks.achievementDiaryTasks];
-      this.combinedRegionInfo.drops = [...this.combinedRegionInfo.drops, ...regionData.drops];
-    },
-    cleanRegionData(regionData) {
-      const cleanText = (text) => {
-        return text
-          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
-          .replace(/\*\*|\*|{{REIcon\|[^\}]+}}/g, '') // Remove bold, italic, and REIcon formatting
-          .replace(/\s+/g, ' ') // Replace multiple spaces with a single space
-          .trim(); // Trim leading and trailing spaces
-      };
-
-      regionData.settlements = regionData.settlements.map(cleanText);
-      regionData.restrictedTravel = regionData.restrictedTravel.map(cleanText);
-      regionData.combatActivities = regionData.combatActivities.map(cleanText);
-      regionData.nonCombatActivities = regionData.nonCombatActivities.map(cleanText);
-      regionData.shops = regionData.shops.map(cleanText);
-      regionData.unlocks.quests = regionData.unlocks.quests.map(cleanText);
-      regionData.unlocks.achievementDiaryTasks = regionData.unlocks.achievementDiaryTasks.map(cleanText);
-    },
     addNotification(message, type = 'info') {
-    const id = Date.now();
-    this.notifications.push({ id, message, type });
-    setTimeout(() => {
-      this.notifications = this.notifications.filter(n => n.id !== id);
-    }, 2000); // Notification will disappear after 3 seconds
+      const id = Date.now();
+      this.notifications.push({ id, message, type });
+      setTimeout(() => {
+        this.notifications = this.notifications.filter((n) => n.id !== id);
+      }, 3000); // Notification will disappear after 3 seconds
     },
     removeNotification(id) {
-      this.notifications = this.notifications.filter(n => n.id !== id);
+      this.notifications = this.notifications.filter((n) => n.id !== id);
     },
     showConfirm(message, action) {
-    this.confirmMessage = message;
-    this.confirmAction = action;
-    this.showConfirmDialog = true;
+      this.confirmMessage = message;
+      this.confirmAction = action;
+      this.showConfirmDialog = true;
     },
     handleConfirm() {
       if (this.confirmAction) {
@@ -683,125 +611,159 @@ export default {
       this.showConfirmDialog = false;
     },
     confirmResetApp() {
-    this.showConfirm('Are you sure you want to reset? This will clear your route and selected regions.', this.resetApp);
+      this.showConfirm(
+        'Are you sure you want to reset? This will clear your route and selected regions.',
+        this.resetApp
+      );
+    },
+    afterTasksLoaded(routeParam) {
+      let routeLoadedFromURL = false;
+
+      if (routeParam) {
+        try {
+          const decompressed = LZString.decompressFromEncodedURIComponent(routeParam);
+          const routeData = JSON.parse(decompressed);
+
+          // Load predefined tasks based on IDs
+          const predefinedTasks = this.tasks.filter((task) =>
+            routeData.taskIds.includes(task.id)
+          );
+
+          // Combine predefined tasks with custom tasks
+          this.route = [...predefinedTasks, ...routeData.customTasks];
+
+          // Load selected regions if included
+          if (routeData.selectedRegions) {
+            this.selectedRegions = routeData.selectedRegions;
+          }
+
+          this.addNotification('Route imported from URL.', 'success');
+          routeLoadedFromURL = true;
+        } catch (error) {
+          console.error('Error importing route from URL:', error);
+          this.addNotification('Failed to import route from URL.', 'error');
+        }
+      }
+
+      if (!routeLoadedFromURL) {
+        const savedRegions = localStorage.getItem('selectedRegions');
+        if (savedRegions) {
+          this.selectedRegions = JSON.parse(savedRegions);
+        }
+
+        const savedRoute = localStorage.getItem('route');
+        if (savedRoute) {
+          this.route = JSON.parse(savedRoute);
+        }
+      }
+
+      // Continue with other initialization after route is loaded
+      const savedTheme = localStorage.getItem('theme');
+      if (
+        savedTheme === 'dark' ||
+        (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      }
+
+      const savedRoutes = localStorage.getItem('savedRoutes');
+      if (savedRoutes) {
+        this.savedRoutes = JSON.parse(savedRoutes);
+      } else {
+        this.savedRoutes = {};
+      }
+
+      window.addEventListener('scroll', this.handleScroll);
+
+      // Define the default routes
+      const defaultRoutes = [
+        {
+          name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)',
+          file: './wizzy.json',
+        },
+        { name: 'Mazhar (Z/M/F) (Updated 11/25 9:09 AM)', file: './mazhar.json' },
+        {
+          name: 'Doubleshine 76+ Tasks, 1000+ Points, Relic Neutral, No Competition, Minimal Skilling/Combat Tasks (Updated 11/25 10:04 PM)',
+          file: './doubleshine.json',
+        },
+        { name: 'Lilratbag (Updated 11/26 8:54 AM)', file: './lilratbag.json' },
+      ];
+
+      // Load each default route if not already present
+      defaultRoutes.forEach((route) => {
+        if (!this.savedRoutes[route.name]) {
+          axios
+            .get(route.file)
+            .then((response) => {
+              this.savedRoutes[route.name] = JSON.stringify(response.data);
+              localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+            })
+            .catch((error) => {
+              console.error(`Error loading default route (${route.name}):`, error);
+            });
+        }
+      });
+
+      this.fetchLatestCommits();
+
+      this.updateTimeUntilLaunch();
+      this.intervalId = setInterval(this.updateTimeUntilLaunch, 1000);
+    },
   },
-},
   mounted() {
     const urlParams = new URLSearchParams(window.location.search);
     const routeParam = urlParams.get('route');
-    let routeLoadedFromURL = false;
-
-    if (routeParam) {
-      try {
-        const decompressed = LZString.decompressFromEncodedURIComponent(routeParam);
-        const importedRoute = JSON.parse(decompressed);
-        this.route = importedRoute;
-        this.addNotification('Route imported from URL.', 'success');
-        routeLoadedFromURL = true;
-      } catch (error) {
-        console.error('Error importing route from URL:', error);
-      }
-    }
-
-    const regionsParam = urlParams.get('regions');
-    if (regionsParam) {
-      try {
-        const decompressedRegions = LZString.decompressFromEncodedURIComponent(regionsParam);
-        const importedRegions = JSON.parse(decompressedRegions);
-        this.selectedRegions = importedRegions;
-      } catch (error) {
-        console.error('Error importing regions from URL:', error);
-      }
-    }
-    
-    this.updateTimeUntilLaunch();
-    this.intervalId = setInterval(this.updateTimeUntilLaunch, 1000);
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-
-    const savedRegions = localStorage.getItem('selectedRegions');
-    if (savedRegions) {
-      this.selectedRegions = JSON.parse(savedRegions);
-    }
-
-    const savedRoute = localStorage.getItem('route');
-    if (!routeLoadedFromURL && savedRoute) {
-      this.route = JSON.parse(savedRoute);
-    }
-
-    const savedRoutes = localStorage.getItem('savedRoutes');
-    if (savedRoutes) {
-      this.savedRoutes = JSON.parse(savedRoutes);
-    } else {
-      this.savedRoutes = {};
-    }
-    window.addEventListener("scroll", this.handleScroll);
-    // Define the default routes
-    const defaultRoutes = [
-      { name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)', file: './wizzy.json' },
-      { name: 'Mazhar (Z/M/F) (Updated 11/25 9:09 AM)', file: './mazhar.json' },
-      { name: 'Doubleshine 76+ Tasks, 1000+ Points, Relic Neutral, No Competition, Minimal Skilling/Combat Tasks (Updated 11/25 10:04 PM)', file: './doubleshine.json' },
-      { name: 'Lilratbag (Updated 11/26 8:54 AM)', file: './lilratbag.json' },
-    ];
-
-    // Load each default route if not already present
-    defaultRoutes.forEach((route) => {
-      if (!this.savedRoutes[route.name]) {
-        axios
-          .get(route.file)
-          .then((response) => {
-            this.savedRoutes[route.name] = JSON.stringify(response.data);
-            localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-          })
-          .catch((error) => {
-            console.error(`Error loading default route (${route.name}):`, error);
-          });
-      }
-    });
 
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
       this.tasks = JSON.parse(savedTasks);
+      this.afterTasksLoaded(routeParam);
     } else {
-      this.loadTasks();
+      this.loadTasks().then(() => {
+        this.afterTasksLoaded(routeParam);
+      });
     }
-
-    this.fetchLatestCommits();
   },
-  beforeDestroy() {
+  beforeUnmount() {
     clearInterval(this.intervalId);
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   },
   watch: {
-    selectedRegions(newRegions) {
-      this.combinedRegionInfo = {
-        settlements: [],
-        restrictedTravel: [],
-        combatActivities: [],
-        nonCombatActivities: [],
-        shops: [],
-        unlocks: {
-          quests: [],
-          achievementDiaryTasks: [],
-        },
-        drops: [],
-      };
-      newRegions.forEach(region => {
-        this.fetchRegionInfo(region);
-      });
-    },
     route: {
       handler(newRoute) {
-        const routeString = JSON.stringify(newRoute);
+        // Separate predefined tasks and custom tasks
+        const taskIds = [];
+        const customTasks = [];
+
+        newRoute.forEach((task) => {
+          if (task.custom) {
+            customTasks.push({
+              id: task.id,
+              task: task.task,
+              points: task.points,
+              region: task.region,
+            });
+          } else {
+            taskIds.push(task.id);
+          }
+        });
+
+        const routeData = {
+          taskIds,
+          customTasks,
+          selectedRegions: this.selectedRegions,
+        };
+
+        const routeString = JSON.stringify(routeData);
         const compressed = LZString.compressToEncodedURIComponent(routeString);
         const url = new URL(window.location);
         url.searchParams.set('route', compressed);
         window.history.replaceState({}, document.title, url.toString());
       },
       deep: true,
+    },
+    selectedRegions(newRegions) {
+      localStorage.setItem('selectedRegions', JSON.stringify(newRegions));
     },
   },
 };
