@@ -176,15 +176,16 @@
     </div>
     <!-- Sticky Scroll to Top Button for Mobile UX -->
     <div
-    ref="scrollTopButton"
-    class="fixed bottom-0 right-0 pb-3 pr-5 transition z-20">
-    <div
-        class="flex justify-center items-center w-12 h-12 rounded-full bg-white text-black cursor-pointer transition ">
-        <button class="text-3xl" @click="scrollToTop" role="button" aria-label="Scroll to top of the page">
-            ↑
-        </button>
+      ref="scrollTopButton"
+      class="fixed bottom-0 right-0 pb-3 pr-5 transition z-20">
+      <button
+        class="flex justify-center items-center w-12 h-12 rounded-full bg-white text-black cursor-pointer text-3xl transition transform hover:scale-110 hover:bg-blue-500 hover:text-white hover:shadow-lg"
+        @click="scrollToTop"
+        role="button"
+        aria-label="Scroll to top of the page">
+        ↑
+      </button>
     </div>
-</div>
 
     <!-- Main Content Area -->
     <div :class="{'lg:pl-1/3vw': !isCollapsed, 'flex-1': true}">
