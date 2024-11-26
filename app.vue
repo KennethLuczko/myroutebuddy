@@ -1,8 +1,16 @@
 <template>
   <div class="min-h-screen flex bg-gray-50 dark:bg-gray-900">
     <!-- Sidebar -->
-    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[36rem] lg:flex-col">
-      <div class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800">
+    <div :class="{'lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:flex-col transition-all duration-300': true, 'lg:w-0': isCollapsed, 'lg:w-[36rem]': !isCollapsed}">
+      <div class="flex items-center justify-center p-2 bg-gray-200 rounded-lg">
+        <button @click="toggleSidebar" class="flex items-center">
+          <span class="text-lg text-black">
+            <span v-if="isCollapsed">&gt;</span> <!-- Right arrow when collapsed -->
+            <span v-else>&lt;</span> <!-- Left arrow when expanded -->
+          </span>
+        </button>
+      </div>
+      <div v-show="!isCollapsed" class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800">
         <!-- Progress Section -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Progress</h3>
@@ -168,7 +176,7 @@
     </div>
 
     <!-- Main Content Area -->
-    <div class="lg:pl-[36rem] flex-1">
+    <div :class="{'lg:pl-[36rem]': !isCollapsed, 'flex-1': true}">
       <div class="p-6">
         <h1 class="text-4xl font-bold mb-8 text-gray-800 dark:text-white">My Route Buddy - Leagues 5: Raging Echoes Task Route Planner</h1>
         <h2 class="text-md mb-2 text-gray-800 dark:text-gray-200">
@@ -253,6 +261,7 @@ export default {
       launchDate: new Date('2024-11-27T07:00:00-05:00'), // Launch date in EST
       intervalId: null,
       timeUntilLaunch: '', // Countdown string
+      isCollapsed: false,
     };
   },
   computed: {
@@ -418,6 +427,9 @@ export default {
           console.error('Error fetching commits:', error);
         });
     },
+    toggleSidebar() {
+      this.isCollapsed = !this.isCollapsed;
+    },
   },
   mounted() {
     this.updateTimeUntilLaunch();
@@ -481,3 +493,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.transition {
+  transition: width 0.3s ease;
+}
+</style>
