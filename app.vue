@@ -200,7 +200,10 @@
             this GitHub and contribute.
           </a>
         </h2>
-        <h3 class="text-md mb-8 text-gray-800 dark:text-gray-200">
+        <h3 class="text-md mb-2 text-gray-800 dark:text-gray-200">
+          <span class="text-red-600 font-bold">This app is developed for desktop. Mobile will work, but has bugs and limitations.</span>
+        </h3>
+        <h4 class="text-md mb-8 text-gray-800 dark:text-gray-200">
           Not sure where to begin? Discover your regions, combat masteries, and more
           <a href="https://docs.google.com/spreadsheets/d/1LJVEIIR9D56FF9PyUzb4nhofaCjpzSWTRGsUNsH7lNw/copy" 
             class="text-blue-500 underline hover:text-blue-700" 
@@ -208,7 +211,7 @@
             rel="noopener noreferrer">
             here.
           </a>
-        </h3>
+        </h4>
 
         <!-- Final View Toggle Button -->
         <button
