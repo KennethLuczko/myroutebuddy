@@ -25,11 +25,11 @@
     <h2 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">
       Available Tasks
     </h2>
-
+     
     <div class="flex flex-row">
       <h3 class="text-l font-bold mb-4 text-gray-800 dark:text-gray-200">Filter by points:</h3>
       <div class="mx-2">
-        <label for="10" class="mr-1">10</label>
+        <label for="10" class="mr-1 dark:text-gray-200">10</label>
         <input 
           type="checkbox" 
           :value="10" 
@@ -39,7 +39,7 @@
         >
       </div>
       <div class="mx-2">
-        <label for="10" class="mr-1">30</label>
+        <label for="10" class="mr-1 dark:text-gray-200">30</label>
         <input type="checkbox" 
           :value="30" 
           id="checkbox-for-30-points" 
@@ -48,6 +48,8 @@
         >
       </div>
     </div>
+   
+
     <!-- can just hardcode the rest when we know point values, maybe replace point labels with difficulty like "easy, medium" etc. -->
 
     <input
@@ -92,7 +94,7 @@ export default {
     return {
       customTaskName: "",
       searchQuery: "",
-      taskListPointsFilters: [],
+      taskListPointsFilters: [0],
     };
   },
   computed: {
