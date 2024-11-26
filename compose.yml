@@ -1,0 +1,6 @@
+services:
+  myroutebuddy:
+    container_name: myroutebuddy
+    image: tshea113/myroutebuddytest
+    ports:
+      - 3000:3000

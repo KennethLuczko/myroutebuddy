@@ -10,6 +10,7 @@ https://myroutebuddy.com
 Leagues 5: Raging Echoes Task Route Planner is a web application designed to help players plan and optimize their tasks efficiently. Whether you’re tackling hundreds of pre-made tasks or adding your own custom tasks, this app is built to streamline your experience.
 
 ### Features
+
 - **Customizable Task Routes**: Add, reorder, and mark tasks as complete.
 - **Region Filtering**: Focus on specific regions with task filtering.
 - **Progress Tracking**: Visualize your progress with a dynamic progress bar.
@@ -19,28 +20,19 @@ Leagues 5: Raging Echoes Task Route Planner is a web application designed to hel
 ## Getting Started
 
 ### Prerequisites
-To run the app locally, you’ll need:
-- **Node.js**: [Download here](https://nodejs.org)
+
+To deploy the app locally, you’ll need:
+
+- **Docker**: [Download here](https://www.docker.com/)
 - A web browser.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/KennethLuczko/myroutebuddy.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd myroutebuddy
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
-5. Open the app in your browser at `http://localhost:3000`.
+## Deploy
+
+You can deploy this app with Docker Compose:
+
+`docker compose up -d`
+
+The app is accessible at `http://localhost:3000`.
 
 ## Usage
 
@@ -54,14 +46,19 @@ To run the app locally, you’ll need:
 Here’s a preview of the app:
 
 ![My Route Buddy Screenshot](https://i.imgur.com/ijkxj8o.png)
+
 ## Contributing
 
 We welcome contributions from the community! Here’s how you can get involved:
+
 1. **Fork the repository**: Click the "Fork" button on GitHub.
-2. **Clone your fork**: 
+2. **Clone your fork**:
    ```bash
    git clone https://github.com/your-username/myroutebuddy.git
    ```
+
+````
+
 3. **Create a new branch**:
    ```bash
    git checkout -b feature-name
@@ -76,7 +73,25 @@ We welcome contributions from the community! Here’s how you can get involved:
    ```
 6. Submit a pull request to the main repository.
 
+## Running dev instance
+
+   ```
+1. Navigate to the project folder:
+   ```bash
+   cd myroutebuddy
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the app in your browser at `http://localhost:3000`.
+
 ## Reporting Issues
+
 If you encounter bugs or have suggestions, please create an issue on GitHub: [Issues Page](https://github.com/KennethLuczko/myroutebuddy/issues).
 
 ## License
@@ -97,18 +112,22 @@ If you've created an awesome route and want to share it with the community, you 
 If you're not comfortable with Git and the steps involved, you can still share your route:
 
 1. **Create Your Route in the App**
+
    - Build your custom route using the app's interface.
 
 2. **Export Your Route**
+
    - Click on the **"Share Route"** button.
    - This copies the JSON representation of your route to your clipboard.
 
 3. **Save the JSON to a Text File**
+
    - Open a text editor (e.g., Notepad, TextEdit).
    - Paste the JSON data into a new document.
    - Save the file with a descriptive name, such as `my-awesome-route.txt`.
 
 4. **Contact the Maintainer**
+
    - Send a message to **ke69eth** on Discord.
    - Include:
      - The name of your route.
@@ -122,17 +141,21 @@ If you're not comfortable with Git and the steps involved, you can still share y
 ### Option 2: I'm Comfortable with Git
 
 1. **Create Your Route in the App**
+
    - Use the app to build your custom route, arranging tasks as desired.
 
 2. **Export Your Route**
+
    - Click on the **"Share Route"** button in the app.
    - This action copies the JSON representation of your route to your clipboard.
 
 3. **Fork the Repository**
+
    - Visit the [MyRouteBuddy GitHub repository](https://github.com/KennethLuczko/myroutebuddy).
    - Click on the **"Fork"** button in the top-right corner to create a copy of the repository under your GitHub account.
 
 4. **Clone Your Forked Repository**
+
    - Open your terminal or command prompt.
    - Clone your forked repository to your local machine:
 
@@ -143,15 +166,18 @@ If you're not comfortable with Git and the steps involved, you can still share y
      Replace `YourUsername` with your GitHub username.
 
 5. **Add Your Route File**
+
    - Navigate to the directory where the routes are stored (e.g., `src/routes/`).
    - Create a new JSON file with a descriptive name for your route, such as `my-awesome-route.json`.
    - Paste the JSON data you copied from the app into this file and save it.
 
 6. **Update the App to Include Your Route**
+
    - If the app loads default routes from a specific file or configuration, add your route to that list.
    - For example, if there's a `routes.json` file or a configuration array, include an entry for your new route.
 
 7. **Commit and Push Your Changes**
+
    - Stage your changes:
 
      ```bash
@@ -173,6 +199,7 @@ If you're not comfortable with Git and the steps involved, you can still share y
      Replace `main` with the appropriate branch name if different.
 
 8. **Create a Pull Request**
+
    - Go to your forked repository on GitHub.
    - Click on the **"Compare & pull request"** button.
    - Provide a clear title and description for your pull request, explaining that you're adding a new default route.
@@ -195,3 +222,4 @@ If you're not comfortable with Git and the steps involved, you can still share y
 ---
 
 If you need further assistance or have any questions, feel free to reach out! Your contributions help make the app better for everyone.
+````
