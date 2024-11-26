@@ -449,6 +449,7 @@ export default {
     const defaultRoutes = [
       { name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)', file: './wizzy.json' },
       { name: 'Mazhar (Z/M/F) (Updated 11/25 9:09 AM)', file: './mazhar.json' },
+      { name: 'Doubleshine 76+ Tasks, 1000+ Points, Relic Neutral, No Competition, Minimal Skilling/Combat Tasks (Updated 11/25 10:04 PM)', file: './doubleshine.json' },
     ];
 
     // Load each default route if not already present
