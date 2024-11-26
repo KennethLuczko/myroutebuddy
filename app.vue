@@ -40,6 +40,47 @@
           />
         </div>
 
+        <!-- New Section for Displaying Combined Region Information -->
+        <div v-if="selectedRegions.length > 0" class="mt-4 text-white">
+          <h3 class="text-lg font-semibold">Combined Region Information</h3>
+          <div class="mt-2">
+            <p>
+              <strong>Notable Settlements:</strong>
+              {{ combinedRegionInfo.settlements.join(', ') }}
+            </p>
+            <br />
+            <p>
+              <strong>Restricted Travel:</strong>
+              {{ combinedRegionInfo.restrictedTravel.join(', ') }}
+            </p>
+            <br />
+            <p>
+              <strong>Combat Activities:</strong>
+              {{ combinedRegionInfo.combatActivities.join(', ') }}
+            </p>
+            <br />
+            <p>
+              <strong>Non-Combat Activities:</strong>
+              {{ combinedRegionInfo.nonCombatActivities.join(', ') }}
+            </p>
+            <br />
+            <p>
+              <strong>Shops:</strong>
+              {{ combinedRegionInfo.shops.join(', ') }}
+            </p>
+            <br />
+            <p>
+              <strong>Quests:</strong> {{ combinedRegionInfo.unlocks.quests.join(', ') }}
+              <br />
+              <br />
+              <strong>Achievement Diary Tasks:</strong>
+              {{ combinedRegionInfo.unlocks.achievementDiaryTasks.join(', ') }}
+            </p>
+          </div>
+          <div v-if="loading" class="mt-2">Loading...</div>
+          <div v-if="error" class="mt-2 text-red-500">{{ error }}</div>
+        </div>
+
         <!-- Manage Routes Section -->
         <nav class="flex flex-1 flex-col mt-8">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-100">Manage Your Routes</h3>
@@ -253,15 +294,15 @@ export default {
   data() {
     return {
       regions: [
-        { id: 2, name: 'Asgarnia' },
-        { id: 3, name: 'Fremennik' },
-        { id: 4, name: 'Kandarin' },
-        { id: 5, name: 'Desert' },
-        { id: 6, name: 'Morytania' },
-        { id: 7, name: 'Tirannwn' },
-        { id: 8, name: 'Wilderness' },
-        { id: 9, name: 'Zeah' },
-        { id: 10, name: 'Varlamore' },
+        { id: 2, name: 'Asgarnia', api: 'Asgarnia' },
+        { id: 3, name: 'Fremennik', api: 'Fremennik_Province' },
+        { id: 4, name: 'Kandarin', api: 'Kandarin' },
+        { id: 5, name: 'Desert', api: 'Kharidian_Desert' },
+        { id: 6, name: 'Morytania', api: 'Morytania' },
+        { id: 7, name: 'Tirannwn', api: 'Tirannwn' },
+        { id: 8, name: 'Wilderness', api: 'Wilderness' },
+        { id: 9, name: 'Zeah', api: 'Kebos_and_Kourend' },
+        { id: 10, name: 'Varlamore', api: 'Varlamore' },
       ],
       selectedRegions: [],
       tasks: [],
@@ -454,6 +495,129 @@ export default {
     },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 
+    async fetchRegionInfo(region) {
+      this.loading = true;
+      this.error = null;
+      try {
+        const selectedRegion = this.regions.find(r => r.name === region);
+        const apiRegion = selectedRegion ? selectedRegion.api : region;
+
+        console.log(`Fetching data for region: ${apiRegion}`);
+
+        const response = await axios.get(
+          `https://oldschool.runescape.wiki/api.php?action=query&titles=Raging_Echoes_League/Areas/${apiRegion}&prop=revisions&rvprop=content&format=json`
+        );
+
+        console.log('API Response:', response.data);
+
+        const regionData = this.parseRegionInfo(response.data);
+        
+        this.cleanRegionData(regionData);
+
+        this.combineRegionInfo(regionData);
+      } catch (err) {
+        console.error('Error fetching region information:', err);
+        this.error = 'Failed to load region information. Please try again.';
+      } finally {
+        this.loading = false;
+      }
+    },
+    parseRegionInfo(data) {
+      const page = Object.values(data.query.pages)[0];
+      const notableInfo = {
+        settlements: [],
+        restrictedTravel: [],
+        combatActivities: [],
+        nonCombatActivities: [],
+        shops: [],
+        unlocks: {
+          quests: [],
+          achievementDiaryTasks: [],
+        },
+        drops: [],
+      };
+
+      if (page && page.revisions && page.revisions.length > 0) {
+        const content = page.revisions[0]['*'];
+
+        // Extract notable settlements
+        notableInfo.settlements = this.extractSection(content, '===Notable settlements===', '===');
+
+        // Extract restricted travel
+        notableInfo.restrictedTravel = this.extractSection(content, '===Restricted travel===', '===');
+
+        // Extract combat-related activities
+        notableInfo.combatActivities = this.extractSection(
+          content,
+          '===Notable combat-related activities===',
+          '==='
+        );
+
+        // Extract non-combat activities
+        notableInfo.nonCombatActivities = this.extractSection(
+          content,
+          '===Notable non-combat activities===',
+          '==='
+        );
+
+        // Extract shops
+        notableInfo.shops = this.extractSection(content, '===Notable shops===', '===');
+
+        // Extract unlocks: quests
+        notableInfo.unlocks.quests = this.extractSection(content, '===Quests===', '===');
+
+        // Extract unlocks: achievement diary tasks
+        notableInfo.unlocks.achievementDiaryTasks = this.extractSection(
+          content,
+          '===Achievement diary tasks===',
+          '==='
+        );
+
+      }
+
+      return notableInfo;
+    },
+    // Utility function to extract a section from the content
+    extractSection(content, startMarker, endMarker) {
+      const startIndex = content.indexOf(startMarker);
+      if (startIndex === -1) return [];
+      const endIndex = content.indexOf(endMarker, startIndex + startMarker.length) || content.length;
+      const section = content.slice(startIndex + startMarker.length, endIndex).trim();
+
+      // Split by lines and clean up bullet points
+      return section
+        .split('\n')
+        .filter((line) => line.startsWith('*')) // Lines starting with '*'
+        .map((line) => line.replace(/^\*\s*/, '').trim()
+        ); // Remove '* ' and trim
+    },
+    combineRegionInfo(regionData) {
+      this.combinedRegionInfo.settlements = [...this.combinedRegionInfo.settlements, ...regionData.settlements];
+      this.combinedRegionInfo.restrictedTravel = [...this.combinedRegionInfo.restrictedTravel, ...regionData.restrictedTravel];
+      this.combinedRegionInfo.combatActivities = [...this.combinedRegionInfo.combatActivities, ...regionData.combatActivities];
+      this.combinedRegionInfo.nonCombatActivities = [...this.combinedRegionInfo.nonCombatActivities, ...regionData.nonCombatActivities];
+      this.combinedRegionInfo.shops = [...this.combinedRegionInfo.shops, ...regionData.shops];
+      this.combinedRegionInfo.unlocks.quests = [...this.combinedRegionInfo.unlocks.quests, ...regionData.unlocks.quests];
+      this.combinedRegionInfo.unlocks.achievementDiaryTasks = [...this.combinedRegionInfo.unlocks.achievementDiaryTasks, ...regionData.unlocks.achievementDiaryTasks];
+      this.combinedRegionInfo.drops = [...this.combinedRegionInfo.drops, ...regionData.drops];
+    },
+    cleanRegionData(regionData) {
+      const cleanText = (text) => {
+        return text
+          .replace(/\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g, '$1') // Remove wiki links
+          .replace(/\*\*|\*|{{REIcon\|[^\}]+}}/g, '') // Remove bold, italic, and REIcon formatting
+          .replace(/\s+/g, ' ') // Replace multiple spaces with a single space
+          .trim(); // Trim leading and trailing spaces
+      };
+
+      regionData.settlements = regionData.settlements.map(cleanText);
+      regionData.restrictedTravel = regionData.restrictedTravel.map(cleanText);
+      regionData.combatActivities = regionData.combatActivities.map(cleanText);
+      regionData.nonCombatActivities = regionData.nonCombatActivities.map(cleanText);
+      regionData.shops = regionData.shops.map(cleanText);
+      regionData.unlocks.quests = regionData.unlocks.quests.map(cleanText);
+      regionData.unlocks.achievementDiaryTasks = regionData.unlocks.achievementDiaryTasks.map(cleanText);
     }
   
   },
@@ -518,6 +682,25 @@ export default {
   beforeDestroy() {
     clearInterval(this.intervalId);
     window.removeEventListener("scroll", this.handleScroll);
+  },
+  watch: {
+    selectedRegions(newRegions) {
+      this.combinedRegionInfo = {
+        settlements: [],
+        restrictedTravel: [],
+        combatActivities: [],
+        nonCombatActivities: [],
+        shops: [],
+        unlocks: {
+          quests: [],
+          achievementDiaryTasks: [],
+        },
+        drops: [],
+      };
+      newRegions.forEach(region => {
+        this.fetchRegionInfo(region);
+      });
+    },
   },
 };
 </script>
