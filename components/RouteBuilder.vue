@@ -21,10 +21,6 @@
       You are in Final View. Click tasks to mark them as complete.
     </div>
 
-    <h2 class="text-xl font-bold m-4 text-gray-800 dark:text-gray-200">
-      Your Route
-    </h2>
-
     <!-- Hide search bar in final view -->
     <input
       v-if="!isFinalView"
@@ -34,6 +30,7 @@
       class="w-full border rounded-lg p-2 mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
     />
 
+    <!-- Task List -->
     <Container
       v-if="!isFinalView"
       :get-child-payload="getTaskPayload"
@@ -45,7 +42,8 @@
         :key="task.id"
         :id="`task-${task.id}`"
         :class="[
-          'p-2 py-3 rounded-lg shadow border transition mb-2 relative cursor-pointer',
+          task.completed ? 'p-1 py-1' : 'p-2 py-3',
+          'rounded-lg shadow border transition mb-2 relative cursor-pointer',
           task.completed
             ? 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600'
             : getColorClass(task.color),
@@ -88,7 +86,8 @@
         :key="task.id"
         :id="`task-${task.id}`"
         :class="[
-          'p-2 py-3 rounded-lg shadow border transition mb-2 relative',
+          task.completed ? 'p-1 py-1' : 'p-2 py-3',
+          'rounded-lg shadow border transition mb-2 relative',
           task.completed
             ? 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600'
             : getColorClass(task.color),

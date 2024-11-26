@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="[task.completed ? 'p-1 py-1' : 'p-2 py-3']">
     <span
       :class="[
         'absolute top-1 left-1.5 text-xs font-mono',
@@ -14,6 +14,7 @@
     </span>
 
     <div class="flex items-center space-x-2">
+      <!-- Checkbox for marking completion -->
       <input
         v-if="!isFinalView"
         type="checkbox"
@@ -52,25 +53,23 @@
           <div v-else>
             <h3
               :class="[
-                'font-semibold mt-2 break-words whitespace-pre-wrap',
+                'break-words whitespace-pre-wrap',
                 task.completed
-                  ? 'text-gray-600 dark:text-gray-400 line-through'
-                  : getTextClass(task.color) ||
-                    'text-gray-800 dark:text-gray-200',
+                  ? 'text-gray-600 dark:text-gray-400 text-sm ml-2' // Smaller font size when completed
+                  : 'font-semibold mt-2 ' +
+                    (getTextClass(task.color) || 'text-gray-800 dark:text-gray-200'),
               ]"
             >
               {{ task.task }}
             </h3>
           </div>
         </div>
-        <div class="flex items-center space-x-2 w-full pt-0.5">
+        <!-- Hide additional info when task is completed -->
+        <div v-if="!task.completed" class="flex items-center space-x-2 w-full pt-0.5">
           <p
             :class="[
               'text-sm mr-auto flex justify-center',
-              task.completed
-                ? 'text-gray-600 dark:text-gray-400'
-                : getMutedTextClass(task.color) ||
-                  'text-gray-600 dark:text-gray-400',
+              getMutedTextClass(task.color) || 'text-gray-600 dark:text-gray-400',
             ]"
           >
             <RegionIcon
