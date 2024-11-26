@@ -424,14 +424,43 @@ export default {
       }
     },
     shareRoute() {
-      const routeString = JSON.stringify(this.route);
-      const regionsString = JSON.stringify(this.selectedRegions);
+      // Serialize route and regions into JSON
+      const routeString = JSON.stringify(this.route, null, 2);
+      const regionsString = JSON.stringify(this.selectedRegions, null, 2);
+
+      // Compress data for URL sharing
       const compressedRoute = LZString.compressToEncodedURIComponent(routeString);
       const compressedRegions = LZString.compressToEncodedURIComponent(regionsString);
+
+      // Generate shareable URL
       const shareableURL = `${window.location.origin}${window.location.pathname}?route=${compressedRoute}&regions=${compressedRegions}`;
+
+      // Copy the URL to the clipboard
       navigator.clipboard.writeText(shareableURL).then(() => {
         this.addNotification('Shareable URL copied to clipboard! Share it with others.', 'success');
       });
+
+      // Create JSON object for download
+      const routeData = {
+        route: this.route,
+        regions: this.selectedRegions,
+      };
+
+      // Convert the data to a Blob
+      const blob = new Blob([JSON.stringify(routeData, null, 2)], { type: 'application/json' });
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'route.json'; // File name for the download
+      document.body.appendChild(link);
+      link.click();
+
+      // Clean up the temporary link element
+      document.body.removeChild(link);
+
+      console.log('Shareable Link:', shareableURL);
+      console.log('Route JSON:', routeData);
     },
     importRoute() {
       try {
