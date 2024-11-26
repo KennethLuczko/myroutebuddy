@@ -4,8 +4,8 @@
     <div :class="{'lg:fixed lg:inset-y-0 lg:z-50 flex flex-col transition-all duration-300 ': true, 'lg:w-0 md:w-0': isCollapsed, 'lg:w-2/6 md:w-full': !isCollapsed, 'absolute  top-0 left-0 z-40': true,
       }">
       <!-- Moved button toggle to parent div for UX, started untoggled  -->
-      <div class="flex items-center justify-center p-2 bg-gray-200 rounded-lg cursor-pointer " @click="toggleSidebar" type="button" aria-label="Toggle progress sidebar"> 
-          <span class="text-lg text-black">
+      <div class="flex items-center justify-center p-2 bg-blue-600 rounded-lg cursor-pointer " @click="toggleSidebar" type="button" aria-label="Toggle progress sidebar"> 
+          <span class="text-lg text-white">
             <span v-if="isCollapsed">&gt;</span> <!-- Right arrow when collapsed -->
             <span v-else>&lt;</span> <!-- Left arrow when expanded -->
           </span>
