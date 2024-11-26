@@ -28,24 +28,17 @@
      
     <div class="flex flex-row">
       <h3 class="text-l font-bold mb-4 text-gray-800 dark:text-gray-200">Filter by points:</h3>
-      <div class="mx-2">
-        <label for="10" class="mr-1 dark:text-gray-200">10</label>
+      <div v-for="points in uniqueTaskPointValues">
+        <div class="mx-2">
+        <label for="10" class="mr-1 dark:text-gray-200">{{ points }}</label>
         <input 
           type="checkbox" 
-          :value="10" 
-          id="checkbox-for-10-points" 
-          name="10" 
+          :value="points" 
+          :id="`${points}`"
+          :name="points"
           v-model="taskListPointsFilters"
         >
-      </div>
-      <div class="mx-2">
-        <label for="10" class="mr-1 dark:text-gray-200">30</label>
-        <input type="checkbox" 
-          :value="30" 
-          id="checkbox-for-30-points" 
-          name="30" 
-          v-model="taskListPointsFilters"
-        >
+        </div>
       </div>
     </div>
     <!-- can just hardcode the rest when we know point values, maybe replace point labels with difficulty like "easy, medium" etc. -->
@@ -105,6 +98,16 @@ export default {
         task.task.toLowerCase().includes(query)
       );
     },
+    uniqueTaskPointValues() {
+      let uniquePointValues = [];
+      this.tasks.forEach((task) => {
+        if (!uniquePointValues.includes(task.points)) {
+          uniquePointValues.push(task.points);
+        }
+      });
+
+      return uniquePointValues;
+    }
   },
   methods: {
     addCustomTask() {
