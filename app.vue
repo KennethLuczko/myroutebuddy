@@ -400,7 +400,7 @@ export default {
 
       axios
         .get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`, {
-          params: { per_page: 3 },
+          params: { per_page: 3, sort: 'date', direction: 'desc' },
         })
         .then((response) => {
           this.changeLog = response.data.map((commit) => ({
