@@ -48,8 +48,6 @@
         >
       </div>
     </div>
-   
-
     <!-- can just hardcode the rest when we know point values, maybe replace point labels with difficulty like "easy, medium" etc. -->
 
     <input
@@ -94,20 +92,19 @@ export default {
     return {
       customTaskName: "",
       searchQuery: "",
-      taskListPointsFilters: [0],
+      taskListPointsFilters: [],
     };
   },
   computed: {
     filteredTasks() {
       const query = this.searchQuery.toLowerCase();
 
-      let filteredTasksByPoints = this.tasks.filter((task) => this.taskListPointsFilters.includes(task.points));
+      const filteredTasksByPoints = this.tasks.filter((task) => this.taskListPointsFilters.includes(task.points));
 
       return filteredTasksByPoints.filter((task) =>
         task.task.toLowerCase().includes(query)
       );
     },
-
   },
   methods: {
     addCustomTask() {
