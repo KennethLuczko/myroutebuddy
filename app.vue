@@ -43,7 +43,7 @@
           <!-- New Section for Displaying Combined Region Information -->
           <div v-if="selectedRegions.length > 0" class="mt-4 text-white">
           <h3 class="text-lg font-semibold">Combined Region Information</h3>
-          <div class="mt-2">
+          <div class="mt-2 text-gray-700 dark:text-gray-200">
             <p>
               <strong>Notable Settlements:</strong>
               {{ combinedRegionInfo.settlements.join(', ') }}
