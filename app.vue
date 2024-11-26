@@ -1,16 +1,16 @@
 <template>
   <div class="min-h-screen flex bg-gray-50 dark:bg-gray-900">
     <!-- Sidebar -->
-    <div :class="{'lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:flex-col transition-all duration-300': true, 'lg:w-0': isCollapsed, 'lg:w-[36rem]': !isCollapsed}">
-      <div class="flex items-center justify-center p-2 bg-gray-200 rounded-lg">
-        <button @click="toggleSidebar" class="flex items-center">
+    <div :class="{'lg:fixed lg:inset-y-0 lg:z-50 flex flex-col transition-all duration-300 ': true, 'lg:w-0 md:w-0': isCollapsed, 'lg:w-2/6 md:w-full': !isCollapsed, 'absolute  top-0 left-0 z-40': true,
+      }">
+      <!-- Moved button toggle to parent div for UX, started untoggled  -->
+      <div class="flex items-center justify-center p-2 bg-gray-200 rounded-lg cursor-pointer " @click="toggleSidebar" type="button" aria-label="Toggle progress sidebar"> 
           <span class="text-lg text-black">
             <span v-if="isCollapsed">&gt;</span> <!-- Right arrow when collapsed -->
             <span v-else>&lt;</span> <!-- Left arrow when expanded -->
           </span>
-        </button>
       </div>
-      <div v-show="!isCollapsed" class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800">
+      <div v-show="!isCollapsed" class="flex grow flex-col gap-y-5 overflow-y-auto scrollbar-hide border-r sm:border-gray-900 lg:border-gray-200 bg-white px-6 pb-4 dark:bg-gray-800 " >
         <!-- Progress Section -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-gray-700 mb-4 dark:text-gray-200">Progress</h3>
@@ -174,9 +174,20 @@
         </nav>
       </div>
     </div>
+    <!-- Sticky Scroll to Top Button for Mobile UX -->
+    <div
+    ref="scrollTopButton"
+    class="fixed bottom-0 right-0 pb-3 pr-5 transition z-20">
+    <div
+        class="flex justify-center items-center w-12 h-12 rounded-full bg-white text-black cursor-pointer transition ">
+        <button class="text-3xl" @click="scrollToTop" role="button" aria-label="Scroll to top of the page">
+            ↑
+        </button>
+    </div>
+</div>
 
     <!-- Main Content Area -->
-    <div :class="{'lg:pl-[36rem]': !isCollapsed, 'flex-1': true}">
+    <div :class="{'lg:pl-1/3vw': !isCollapsed, 'flex-1': true}">
       <div class="p-6">
         <h1 class="text-4xl font-bold mb-8 text-gray-800 dark:text-white">My Route Buddy - Leagues 5: Raging Echoes Task Route Planner</h1>
         <h2 class="text-md mb-2 text-gray-800 dark:text-gray-200">
@@ -226,6 +237,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -234,7 +246,7 @@ import TaskList from './components/TaskList.vue';
 import RegionFilter from './components/RegionFilter.vue';
 import RouteBuilder from './components/RouteBuilder.vue';
 import axios from 'axios';
-
+import { onMounted, onUnmounted, ref } from "vue"; 
 export default {
   components: { TaskList, RegionFilter, RouteBuilder },
   data() {
@@ -261,7 +273,7 @@ export default {
       launchDate: new Date('2024-11-27T07:00:00-05:00'), // Launch date in EST
       intervalId: null,
       timeUntilLaunch: '', // Countdown string
-      isCollapsed: false,
+      isCollapsed: true,
     };
   },
   computed: {
@@ -430,6 +442,19 @@ export default {
     toggleSidebar() {
       this.isCollapsed = !this.isCollapsed;
     },
+    // Scroll to Top Button
+    scrollTopButton: ref(null),
+    handleScroll() {
+      if (window.scrollY > 0) {
+        this.scrollTopButton.value.classList.remove("invisible");
+      } else {
+        this.scrollTopButton.value.classList.add("invisible");
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  
   },
   mounted() {
     this.updateTimeUntilLaunch();
@@ -456,7 +481,7 @@ export default {
     } else {
       this.savedRoutes = {};
     }
-
+    window.addEventListener("scroll", this.handleScroll);
     // Define the default routes
     const defaultRoutes = [
       { name: 'Wizzy (V/W/T) (6/4/0) (Harpoon) (Clue Relic) (Updated 11/23 12:36 AM)', file: './wizzy.json' },
@@ -490,6 +515,7 @@ export default {
   },
   beforeDestroy() {
     clearInterval(this.intervalId);
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>

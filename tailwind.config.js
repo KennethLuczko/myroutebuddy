@@ -9,7 +9,11 @@ export default {
   ],
   darkMode: 'class', // Enables dark mode using a `class` toggle
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '1/3vw': '33.33vw', // Adding custom 1/3 of viewport width
+      },
+    },
   },
   plugins: [
     require('tailwind-scrollbar-hide')
