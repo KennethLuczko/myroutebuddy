@@ -4,14 +4,22 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import json
 
+DEBUG = False
+WIKI_REGION_TO_ROUTE_REGION_MAP = {
+    'general': 'Global',
+    'misthalin': 'Global',
+    'karamja': 'Global',
+}
+
 # Set up Selenium options (optional, if you don't want the browser window to open)
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run headless (without opening a browser window)
 
-# Set up the webdriver (make sure to provide the path to the ChromeDriver executable)
-driver_path = 'C:\\Users\\Aphro\\Desktop\\chromedriver-win32\\chromedriver.exe'
-service = Service(driver_path)
-driver = webdriver.Chrome(service=service, options=chrome_options)
+# Set up the webdriver (make sure to provide the path to the ChromeDriver executable for pre-4.6.0 versions)
+#driver_path = 'C:\\Users\\Aphro\\Desktop\\chromedriver-win32\\chromedriver.exe'
+#service = Service(driver_path)
+#driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 # URL of the page
 url = "https://oldschool.runescape.wiki/w/Raging_Echoes_League/Tasks"
@@ -25,13 +33,20 @@ driver.implicitly_wait(10)  # Waits up to 10 seconds for the page to load
 # Extract the HTML source
 html = driver.page_source
 
+# Save the HTML source to a file if desired
+if DEBUG:
+    with open('scraping/tasks.html', 'w', encoding="utf-8") as html_file:
+        html_file.write(html)
+
 # Parse the HTML with BeautifulSoup
 soup = BeautifulSoup(html, 'html.parser')
 
 # Find the correct table by its class
-task_table = soup.find('table', {'class': 'wikitable lighttable sortable sticky-header tbrl-tasks align-center-1 align-center-5 align-center-6 jquery-tablesorter'})
+select = soup.select("table.wikitable.lighttable")
 
-if task_table:
+if select:
+    task_table = select[0]
+
     # Initialize an empty list to store the tasks
     tasks = []
     
@@ -44,7 +59,8 @@ if task_table:
 
         # Ensure the row has the required number of columns (at least 2)
         if len(columns) >= 3:
-            task_region = columns[0].text.strip()
+            wiki_region = row.attrs['data-tbz-area-for-filtering'] if 'data-tbz-area-for-filtering' in row.attrs else ''
+            task_region = WIKI_REGION_TO_ROUTE_REGION_MAP[wiki_region] if wiki_region else ''
             task_name = columns[2].text.strip() 
             task_points = columns[4].text.strip()
 
@@ -66,7 +82,7 @@ if task_table:
                 print(f"Skipping task with invalid points: {task_name} | Invalid points value: {task_points}")
     
     # Save the tasks to a JSON file
-    with open('tasks.json', 'w') as json_file:
+    with open('public/tasks.json', 'w') as json_file:
         json.dump(tasks, json_file, indent=2)
 
     print("Tasks have been scraped and saved to tasks.json.")
