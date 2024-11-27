@@ -28,20 +28,22 @@
      
     <div class="flex flex-row">
       <h3 class="text-l font-bold mb-4 text-gray-800 dark:text-gray-200">Filter by points:</h3>
-      <div v-for="points in uniqueTaskPointValues">
         <div class="mx-2">
-        <label for="10" class="mr-1 dark:text-gray-200">{{ points }}</label>
-        <input 
-          type="checkbox" 
-          :value="points" 
-          :id="`${points}`"
-          :name="points"
-          v-model="taskListPointsFilters"
-        >
+          <label for="select-all" class="mr-1 dark:text-gray-200">Select All</label>  
+          <input name="select-all" id="select-all" type="checkbox" @change="selectAllPointsFilters">
         </div>
-      </div>
+        <div v-for="points in uniqueTaskPointValues" class="mx-2">
+          <label :for="points" class="mr-1 dark:text-gray-200">{{ points }}</label>
+          <input 
+            type="checkbox" 
+            :value="points" 
+            :id="`${points}`"
+            :name="points"
+            @change="filterTasksByPoints"
+            class="boxes"
+          >
+        </div>
     </div>
-    <!-- can just hardcode the rest when we know point values, maybe replace point labels with difficulty like "easy, medium" etc. -->
 
     <input
       type="text"
@@ -91,7 +93,7 @@ export default {
   computed: {
     filteredTasks() {
       const query = this.searchQuery.toLowerCase();
-
+      
       const filteredTasksByPoints = this.tasks.filter((task) => this.taskListPointsFilters.includes(task.points));
 
       return filteredTasksByPoints.filter((task) =>
@@ -148,6 +150,40 @@ export default {
     selectTask(task) {
       this.$emit("add-task", task);
     },
+    filterTasksByPoints(event) {
+      const points = parseInt(event.target.value);
+
+      if (this.taskListPointsFilters.includes(points)) {
+        this.taskListPointsFilters = this.taskListPointsFilters.filter(
+          (pointsValue) => pointsValue !== points
+        );
+      } else {
+        this.taskListPointsFilters.push(points);
+      }
+    },
+    selectAllPointsFilters() {
+      const boxes = document.querySelectorAll('.boxes');
+      const selectAllBox = document.getElementById('select-all');
+      const allChecked = Array.from(boxes).every((box) => box.checked);
+
+      if (allChecked & selectAllBox.checked === true) {
+        this.taskListPointsFilters = this.uniqueTaskPointValues;
+        boxes.forEach((box) => box.checked = true);
+        selectAllBox.checked = true;
+      } else if (allChecked & selectAllBox.checked === false ) {
+        this.taskListPointsFilters = [];
+        boxes.forEach((box) => box.checked = false);
+        selectAllBox.checked = false;
+      } else if (!allChecked & selectAllBox.checked === true) {
+        this.taskListPointsFilters = this.uniqueTaskPointValues;
+        boxes.forEach((box) => box.checked = true);
+        selectAllBox.checked = true;
+      } else {
+        this.taskListPointsFilters = [];
+        boxes.forEach((box) => box.checked = false);
+        selectAllBox.checked = false;
+      }
+    }
   },
   components: {
     Container,
