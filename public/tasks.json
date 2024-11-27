@@ -595,85 +595,85 @@
   },
   {
     "id": 100,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Catch a Cerulean twitch",
     "points": 10
   },
   {
     "id": 101,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Catch a Polar Kebbit",
     "points": 10
   },
   {
     "id": 102,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Chop down an arctic pine tree",
     "points": 10
   },
   {
     "id": 103,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Cut the Swaying Tree",
     "points": 10
   },
   {
     "id": 104,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Cockatrice in the Fremennik Province",
     "points": 10
   },
   {
     "id": 105,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Pyrefiend in the Fremennik Province",
     "points": 10
   },
   {
     "id": 106,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Rock Crab in the Fremennik Province",
     "points": 10
   },
   {
     "id": 107,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Rooster in the Fremennik Province",
     "points": 10
   },
   {
     "id": 108,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Yak",
     "points": 10
   },
   {
     "id": 109,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Pick up Snapegrass from Lunar Isle",
     "points": 10
   },
   {
     "id": 110,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Switch to the Lunar Spellbook",
     "points": 10
   },
   {
     "id": 111,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use the Bank on Jatizso",
     "points": 10
   },
   {
     "id": 112,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use the Bank on Lunar Isle",
     "points": 10
   },
   {
     "id": 113,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use the Bank on Neitiznot",
     "points": 10
   },
@@ -2528,7 +2528,7 @@
   {
     "id": 422,
     "region": "Asgarnia",
-    "task": "Hang a Painting of Lumbidge Watermill in your [Player-owned house",
+    "task": "Hang a Painting of Lumbridge Watermill in your PoH",
     "points": 30
   },
   {
@@ -2833,193 +2833,193 @@
   },
   {
     "id": 473,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Catch a Sabre-toothed Kebbit",
     "points": 30
   },
   {
     "id": 474,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Catch a Sapphire Glacialis",
     "points": 30
   },
   {
     "id": 475,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Catch a Snowy Knight",
     "points": 30
   },
   {
     "id": 476,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete the   Royal Trouble quest",
     "points": 30
   },
   {
     "id": 477,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the easy tasks in the   Fremennik Achievement Diary",
     "points": 30
   },
   {
     "id": 478,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the medium tasks in the   Fremennik Achievement Diary",
     "points": 30
   },
   {
     "id": 479,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete a lap of the Penguin Agility Course",
     "points": 30
   },
   {
     "id": 480,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete the   Throne of Miscellania quest",
     "points": 30
   },
   {
     "id": 481,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Craft 50 Astral Runes from Essence at the Astral Altar",
     "points": 30
   },
   {
     "id": 482,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Dagannoth in the Fremennik Province",
     "points": 30
   },
   {
     "id": 483,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Jelly in the Fremennik Province",
     "points": 30
   },
   {
     "id": 484,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Kurask in the Fremennik Province",
     "points": 30
   },
   {
     "id": 485,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Troll in the Fremennik Province",
     "points": 30
   },
   {
     "id": 486,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Turoth in the Fremennik Province",
     "points": 30
   },
   {
     "id": 487,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Deposit an item into your Bank using Peer the Seer",
     "points": 30
   },
   {
     "id": 488,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Damaged God book",
     "points": 30
   },
   {
     "id": 489,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a full set of Yakhide Armour",
     "points": 30
   },
   {
     "id": 490,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Helm of Neitiznot",
     "points": 30
   },
   {
     "id": 491,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Fill up 20 buckets of sand in Rellekka",
     "points": 30
   },
   {
     "id": 492,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill 8 penguins within 5 seconds",
     "points": 30
   },
   {
     "id": 493,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Brine Rat",
     "points": 30
   },
   {
     "id": 494,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Suqah",
     "points": 30
   },
   {
     "id": 495,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Wallasalki",
     "points": 30
   },
   {
     "id": 496,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill someone and obtain their Lyre",
     "points": 30
   },
   {
     "id": 497,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Open a Frozen cache",
     "points": 30
   },
   {
     "id": 498,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Steal a Chisel from a crafting stall in Keldagrim",
     "points": 30
   },
   {
     "id": 499,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Steal a Cow bell in Rellekka",
     "points": 30
   },
   {
     "id": 500,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Steal some fish from a Fish stall",
     "points": 30
   },
   {
     "id": 501,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Steal a Wooden Stock from a Crossbow Stall",
     "points": 30
   },
   {
     "id": 502,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Unlock free use of the Keldagrim Blast Furnace by speaking with the Foreman",
     "points": 30
   },
   {
     "id": 503,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use some Icy Basalt to teleport to Weiss",
     "points": 30
   },
   {
     "id": 504,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use the special attack of a Dragon Axe",
     "points": 30
   },
@@ -4682,7 +4682,7 @@
   {
     "id": 781,
     "region": "Global",
-    "task": "Chop 75 Magic Logs from Magic Trees",
+    "task": "Chop 75 Magic logs from Magic Trees",
     "points": 80
   },
   {
@@ -5551,247 +5551,247 @@
   },
   {
     "id": 926,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Smelt 100 Mithril bars at the Blast Furnace",
     "points": 80
   },
   {
     "id": 927,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Cast the Moonclan Teleport spell",
     "points": 80
   },
   {
     "id": 928,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Cast the Spellbook Swap spell",
     "points": 80
   },
   {
     "id": 929,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Collect some resources on Miscellania with an approval rating of 100%",
     "points": 80
   },
   {
     "id": 930,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete 25 laps of the Rellekka Agility Course",
     "points": 80
   },
   {
     "id": 931,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the hard tasks in the   Fremennik Achievement Diary",
     "points": 80
   },
   {
     "id": 932,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete a lap of the Rellekka Rooftop Agility Course",
     "points": 80
   },
   {
     "id": 933,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Create a Catherby Teleport Tablet",
     "points": 80
   },
   {
     "id": 934,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Basilisk Knight in the Jormungand's Prison",
     "points": 80
   },
   {
     "id": 935,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat a Rune Dragon in the Lithkren Vault",
     "points": 80
   },
   {
     "id": 936,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Duke Sucellus",
     "points": 80
   },
   {
     "id": 937,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Duke Sucellus 150 times",
     "points": 80
   },
   {
     "id": 938,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Duke Sucellus 50 times",
     "points": 80
   },
   {
     "id": 939,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 150 times",
     "points": 80
   },
   {
     "id": 940,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 50 times",
     "points": 80
   },
   {
     "id": 941,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Phantom Muspah",
     "points": 80
   },
   {
     "id": 942,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Phantom Muspah 150 times",
     "points": 80
   },
   {
     "id": 943,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Phantom Muspah 50 times",
     "points": 80
   },
   {
     "id": 944,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon without leaving their area",
     "points": 80
   },
   {
     "id": 945,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael",
     "points": 80
   },
   {
     "id": 946,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael 150 times",
     "points": 80
   },
   {
     "id": 947,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael 50 times",
     "points": 80
   },
   {
     "id": 948,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Berserker Ring",
     "points": 80
   },
   {
     "id": 949,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Brine Sabre",
     "points": 80
   },
   {
     "id": 950,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a full set of Rockshell armour",
     "points": 80
   },
   {
     "id": 951,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a full set of Skeletal armour",
     "points": 80
   },
   {
     "id": 952,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a full set of Spined armour",
     "points": 80
   },
   {
     "id": 953,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Leaf-Bladed Battleaxe in The Fremennik Provinces",
     "points": 80
   },
   {
     "id": 954,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Mud Battlestaff",
     "points": 80
   },
   {
     "id": 955,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Seer's Ring",
     "points": 80
   },
   {
     "id": 956,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Seercull",
     "points": 80
   },
   {
     "id": 957,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Warrior Ring",
     "points": 80
   },
   {
     "id": 958,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip an Archer's Ring",
     "points": 80
   },
   {
     "id": 959,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip an Ava's Assembler",
     "points": 80
   },
   {
     "id": 960,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Obtain and Equip the Ancient Sceptre",
     "points": 80
   },
   {
     "id": 961,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Harvest a Snapdragon you've grown in Weiss",
     "points": 80
   },
   {
     "id": 962,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Kill a Rock lobster",
     "points": 80
   },
   {
     "id": 963,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Obtain a Frozen cache from another Frozen cache",
     "points": 80
   },
   {
     "id": 964,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Trade with Bardur, in Waterbirth island dungeon",
     "points": 80
   },
   {
     "id": 965,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Trap a Sabre-toothed Kyatt",
     "points": 80
   },
   {
     "id": 966,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Use a Portal Nexus in your Player Owned House to teleport to Weiss",
     "points": 80
   },
@@ -6578,7 +6578,7 @@
   {
     "id": 1097,
     "region": "Tirannwn",
-    "task": "Chop 50 Magic Logs in Tirannwn",
+    "task": "Chop 50 Magic logs in Tirannwn",
     "points": 80
   },
   {
@@ -6806,7 +6806,7 @@
   {
     "id": 1135,
     "region": "Varlamore",
-    "task": "Chop 20 Magic Logs in Varlamore",
+    "task": "Chop 20 Magic logs in Varlamore",
     "points": 80
   },
   {
@@ -8191,139 +8191,139 @@
   },
   {
     "id": 1366,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Smelt 100 Runite Bars at the Blast Furnace",
     "points": 200
   },
   {
     "id": 1367,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the elite tasks in the   Fremennik Achievement Diary",
     "points": 200
   },
   {
     "id": 1368,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the Combat Achievements for all three Dagannoth Kings",
     "points": 200
   },
   {
     "id": 1369,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Awakened Duke Sucellus",
     "points": 200
   },
   {
     "id": 1370,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Duke Sucellus 300 times",
     "points": 200
   },
   {
     "id": 1371,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 300 times",
     "points": 200
   },
   {
     "id": 1372,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Phantom Muspah 300 times",
     "points": 200
   },
   {
     "id": 1373,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael 15 times without leaving his area",
     "points": 200
   },
   {
     "id": 1374,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael 300 times",
     "points": 200
   },
   {
     "id": 1375,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Defeat Vorkath on Ungael 5 times in a row without taking any damage from his special attacks and without leaving his area. Failing this task requires you to leave the instance to try again",
     "points": 200
   },
   {
     "id": 1376,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the Combat Achievements for Duke Sucellus",
     "points": 200
   },
   {
     "id": 1377,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a completed God Book",
     "points": 200
   },
   {
     "id": 1378,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Dragon Crossbow",
     "points": 200
   },
   {
     "id": 1379,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip either a Dragon Platebody or a Dragon Kiteshield",
     "points": 200
   },
   {
     "id": 1380,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Dragonbone Necklace",
     "points": 200
   },
   {
     "id": 1381,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Dragonfire Ward",
     "points": 200
   },
   {
     "id": 1382,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip a Neitiznot Faceguard",
     "points": 200
   },
   {
     "id": 1383,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip an Archer's Ring, a Berserker Ring, a Seer's Ring and a Warrior Ring",
     "points": 200
   },
   {
     "id": 1384,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Obtain and Equip the Magus Ring",
     "points": 200
   },
   {
     "id": 1385,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Obtain and Equip the Venator Bow",
     "points": 200
   },
   {
     "id": 1386,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Make 50 Forgotten Brews",
     "points": 200
   },
   {
     "id": 1387,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the Combat Achievements for Phantom Muspah",
     "points": 200
   },
   {
     "id": 1388,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Complete all of the Combat Achievements for Vorkath",
     "points": 200
   },
@@ -9343,13 +9343,13 @@
   },
   {
     "id": 1558,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Create the Saturated Heart",
     "points": 400
   },
   {
     "id": 1559,
-    "region": "Fremmenik",
+    "region": "Fremennik",
     "task": "Equip every completed God Book",
     "points": 400
   },

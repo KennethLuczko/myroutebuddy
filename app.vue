@@ -314,7 +314,7 @@ export default {
         { id: 6, name: 'Morytania', api: 'Morytania' },
         { id: 7, name: 'Tirannwn', api: 'Tirannwn' },
         { id: 8, name: 'Wilderness', api: 'Wilderness' },
-        { id: 9, name: 'Zeah', api: 'Kebos_and_Kourend' },
+        { id: 9, name: 'Kourend', api: 'Kebos_and_Kourend' },
         { id: 10, name: 'Varlamore', api: 'Varlamore' },
       ],
       selectedRegions: [],
@@ -350,11 +350,15 @@ export default {
     };
   },
   computed: {
-    filteredTasks() {
-      return this.tasks.filter(
-        (task) => !this.route.some((r) => r.id === task.id)
-      );
-    },
+  filteredTasks() {
+    return this.tasks.filter((task) => {
+      const isRegionMatch = this.selectedRegions.includes(task.region);
+
+      const isNotInRoute = !this.route.some((r) => r.id === task.id);
+
+      return isRegionMatch && isNotInRoute;
+    });
+  },
     totalPoints() {
       return this.route.reduce((sum, task) => sum + task.points, 0);
     },
