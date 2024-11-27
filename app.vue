@@ -351,11 +351,8 @@ export default {
   },
   computed: {
     filteredTasks() {
-      const allowedRegions = ['Global', ...this.selectedRegions];
       return this.tasks.filter(
-        (task) =>
-          allowedRegions.includes(task.region) &&
-          !this.route.some((r) => r.id === task.id)
+        (task) => !this.route.some((r) => r.id === task.id)
       );
     },
     totalPoints() {
@@ -410,12 +407,13 @@ export default {
       localStorage.setItem('route', JSON.stringify(this.route));
     },
     saveRoute() {
-    const routeName = prompt('Enter a name for this route:');
-    if (routeName) {
-      this.savedRoutes[routeName] = JSON.stringify(this.route);
-      localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
-      this.addNotification(`Route "${routeName}" has been saved.`, 'success');
-    }
+      const routeName = prompt('Enter a name for this route:');
+      if (routeName) {
+        const routeData = this.route.map(({ region, ...task }) => task);
+        this.savedRoutes[routeName] = JSON.stringify(routeData);
+        localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
+        this.addNotification(`Route "${routeName}" has been saved.`, 'success');
+      }
     },
     loadRoute() {
       if (this.selectedRoute && this.savedRoutes[this.selectedRoute]) {
@@ -424,50 +422,34 @@ export default {
       }
     },
     shareRoute() {
-      // Serialize route and regions into JSON
-      const routeString = JSON.stringify(this.route, null, 2);
-      const regionsString = JSON.stringify(this.selectedRegions, null, 2);
+      const routeData = this.route.map(({ region, ...task }) => task);
+      const routeString = JSON.stringify(routeData, null, 2);
 
-      // Compress data for URL sharing
-      const compressedRoute = LZString.compressToEncodedURIComponent(routeString);
-      const compressedRegions = LZString.compressToEncodedURIComponent(regionsString);
+      // const compressedRoute = LZString.compressToEncodedURIComponent(routeString);
 
-      // Generate shareable URL
-      const shareableURL = `${window.location.origin}${window.location.pathname}?route=${compressedRoute}&regions=${compressedRegions}`;
+      // const shareableURL = `${window.location.origin}${window.location.pathname}?route=${compressedRoute}`;
 
-      // Copy the URL to the clipboard
-      navigator.clipboard.writeText(shareableURL).then(() => {
-        this.addNotification('Shareable URL copied to clipboard! Share it with others.', 'success');
-      });
+      // navigator.clipboard.writeText(shareableURL).then(() => {
+      //   this.addNotification('Shareable URL copied to clipboard! Share it with others.', 'success');
+      // });
 
-      // Create JSON object for download
-      const routeData = {
-        route: this.route,
-        regions: this.selectedRegions,
-      };
-
-      // Convert the data to a Blob
       const blob = new Blob([JSON.stringify(routeData, null, 2)], { type: 'application/json' });
-
-      // Create a temporary link element
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
-      link.download = 'route.json'; // File name for the download
+      link.download = 'route.json';
       document.body.appendChild(link);
       link.click();
-
-      // Clean up the temporary link element
       document.body.removeChild(link);
 
-      console.log('Shareable Link:', shareableURL);
-      console.log('Route JSON:', routeData);
+      // console.log('Shareable Link:', shareableURL);
     },
     importRoute() {
       try {
         const imported = JSON.parse(this.importedRoute);
         const routeName = prompt('Enter a name for the imported route:');
         if (routeName) {
-          this.savedRoutes[routeName] = JSON.stringify(imported);
+          const cleanedRoute = imported.map(({ region, ...task }) => task);
+          this.savedRoutes[routeName] = JSON.stringify(cleanedRoute);
           localStorage.setItem('savedRoutes', JSON.stringify(this.savedRoutes));
           this.addNotification(`Route "${routeName}" has been imported and saved.`, 'success');
           this.importedRoute = '';
@@ -718,7 +700,6 @@ export default {
   mounted() {
     const urlParams = new URLSearchParams(window.location.search);
     const routeParam = urlParams.get('route');
-    let routeLoadedFromURL = false;
 
     if (routeParam) {
       try {
@@ -726,23 +707,11 @@ export default {
         const importedRoute = JSON.parse(decompressed);
         this.route = importedRoute;
         this.addNotification('Route imported from URL.', 'success');
-        routeLoadedFromURL = true;
       } catch (error) {
         console.error('Error importing route from URL:', error);
       }
     }
 
-    const regionsParam = urlParams.get('regions');
-    if (regionsParam) {
-      try {
-        const decompressedRegions = LZString.decompressFromEncodedURIComponent(regionsParam);
-        const importedRegions = JSON.parse(decompressedRegions);
-        this.selectedRegions = importedRegions;
-      } catch (error) {
-        console.error('Error importing regions from URL:', error);
-      }
-    }
-    
     this.updateTimeUntilLaunch();
     this.intervalId = setInterval(this.updateTimeUntilLaunch, 1000);
 
@@ -757,16 +726,16 @@ export default {
     }
 
     const savedRoute = localStorage.getItem('route');
-    if (!routeLoadedFromURL && savedRoute) {
-      this.route = JSON.parse(savedRoute);
-    }
+      if (savedRoute) {
+        this.route = JSON.parse(savedRoute);
+      }
 
     const savedRoutes = localStorage.getItem('savedRoutes');
-    if (savedRoutes) {
-      this.savedRoutes = JSON.parse(savedRoutes);
-    } else {
-      this.savedRoutes = {};
-    }
+      if (savedRoutes) {
+        this.savedRoutes = JSON.parse(savedRoutes);
+      } else {
+        this.savedRoutes = {};
+      }
     window.addEventListener("scroll", this.handleScroll);
     // Define the default routes
     const defaultRoutes = [
@@ -807,23 +776,6 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   watch: {
-    selectedRegions(newRegions) {
-      this.combinedRegionInfo = {
-        settlements: [],
-        restrictedTravel: [],
-        combatActivities: [],
-        nonCombatActivities: [],
-        shops: [],
-        unlocks: {
-          quests: [],
-          achievementDiaryTasks: [],
-        },
-        drops: [],
-      };
-      newRegions.forEach(region => {
-        this.fetchRegionInfo(region);
-      });
-    },
     route: {
       handler(newRoute) {
         const routeString = JSON.stringify(newRoute);
@@ -834,7 +786,7 @@ export default {
       },
       deep: true,
     },
-  },
+  }
 };
 </script>
 
