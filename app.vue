@@ -350,15 +350,21 @@ export default {
     };
   },
   computed: {
-  filteredTasks() {
-    return this.tasks.filter((task) => {
-      const isRegionMatch = this.selectedRegions.includes(task.region);
+    filteredTasks() {
+      return this.tasks.filter((task) => {
+        // Always include tasks from the Global region
+        const isGlobalTask = task.region === 'Global';
 
-      const isNotInRoute = !this.route.some((r) => r.id === task.id);
+        // Check if the task's region matches one of the selected regions
+        const isRegionMatch = this.selectedRegions.includes(task.region);
 
-      return isRegionMatch && isNotInRoute;
-    });
-  },
+        // Ensure the task is not already in the route
+        const isNotInRoute = !this.route.some((r) => r.id === task.id);
+
+        // Include tasks that are either global or match selected regions, and are not in the route
+        return (isGlobalTask || isRegionMatch) && isNotInRoute;
+      });
+    },
     totalPoints() {
       return this.route.reduce((sum, task) => sum + task.points, 0);
     },
