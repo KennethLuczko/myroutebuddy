@@ -1,0 +1,870 @@
+[
+  {
+    "id": 1732714519212,
+    "task": "JERGZ'S AWESOME LEET TASK LIST ORDER LEAGUES 5 (the only way to play leagues) (I'm taking Animal Wrangler)",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "isEditing": false,
+    "color": "purple"
+  },
+  {
+    "id": 1732714535494,
+    "task": "Red background = potential bottleneck, skip if necessary",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "isEditing": false,
+    "color": "red"
+  },
+  {
+    "id": 1732714551494,
+    "task": "DO ALL RANDOM EVENTS THERE'S A TASK FOR EACH ONE\n\nDONT FORGET THERE ARE FREE TPS TO EACH REGION",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "isEditing": false,
+    "color": "purple"
+  },
+  {
+    "id": 1732714815039,
+    "task": "Lumbridge",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "color": "green"
+  },
+  {
+    "id": 21,
+    "task": "Complete the Leagues Tutorial and begin your adventure",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 52,
+    "task": "Open the Leagues Menu found within the Journal Panel",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 54,
+    "task": "Pickpocket a Man or a Woman",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 1732714585061,
+    "task": "Pickpocket 28 times for 15 Thieving",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 376,
+    "task": "Open 28 Coin Pouches at once",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 188,
+    "task": "Use the Northern Staircase in Lumbridge Castle to go upstairs from the bottom floor",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 184,
+    "task": "Talk to Hans and have him tell you how old you are",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 171,
+    "task": "Kill a Rat",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 147,
+    "task": "Talk to Bob in Lumbridge axe shop and ask for a Quest",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 179,
+    "task": "Pray at an Altar in Lumbridge",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 28,
+    "task": "Dance in a graveyard",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 75,
+    "task": "Visit Death's Domain",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 167,
+    "task": "Kill a Frog",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 13,
+    "task": "Catch Raw Shrimp while Fishing",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 22,
+    "task": "Cook Raw Shrimp",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 14,
+    "task": "Catch a Raw Anchovy whilst Fishing",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 46,
+    "task": "Mine 5 Tin Ore",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 47,
+    "task": "Mine some Copper Ore",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 155,
+    "task": "Enter the lost city of Zanaris",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 187,
+    "task": "Use any Fairy Ring",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 10,
+    "task": "Cast the Home Teleport spell",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 63,
+    "task": "Use a Furnace to smelt a Bronze Bar",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 16,
+    "task": "Chop any kind of logs",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 1732714719043,
+    "task": "(Get 2 logs)",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 6,
+    "task": "Burn some Normal Logs",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 29,
+    "task": "Defeat a Goblin",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 8,
+    "task": "Bury any kind of Bones",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 164,
+    "task": "Kill a Chicken with your fists",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 174,
+    "task": "Milk a cow in Lumbridge",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 58,
+    "task": "Rake any Farming patch",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 608,
+    "task": "Complete the   Sheep Shearer quest",
+    "points": 30,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 26,
+    "task": "Cry in a wheat field",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 367,
+    "task": "Make some Flour in a windmill",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 170,
+    "task": "Kill a Ram",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 172,
+    "task": "Kill a Spider in Lumbridge by kicking it",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 154,
+    "task": "Eat an Onion, raw",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 148,
+    "task": "Chop a log from a tree that is curiously in a potato field",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 1732714784993,
+    "task": "(Finish cooks assistant, try to get knife around this time in cooks kitchen)",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 41,
+    "task": "Fletch some Arrow Shafts",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 642,
+    "task": "Use the Range in Lumbridge Castle to cook some food",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 638,
+    "task": "Pickpocket any H.A.M. member at their hideout",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 1732714834826,
+    "task": "Draynor time",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "color": "green"
+  },
+  {
+    "id": 161,
+    "task": "Have Ned make you some rope using a ball of wool in Draynor Village",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 162,
+    "task": "Insult Aggie the Witch in Draynor Village",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 378,
+    "task": "Successfully pickpocket from a Master farmer",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 1732714878833,
+    "task": "Get 40 thieving",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 1732714887024,
+    "task": "START Vampyre Slayer, grab garlic (not a task but need to go to varrock later)",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 149,
+    "task": "Complete a lap of the Draynor Rooftop Agility Course",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 12,
+    "task": "Catch a Raw Herring whilst Fishing",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 258,
+    "task": "Catch 25 Sardines",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 290,
+    "task": "Cook 10 Raw Sardines",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 157,
+    "task": "Get a chair to follow you",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 341,
+    "task": "Dig in a hay stack for a needle",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 153,
+    "task": "Drink a beer in the Longhall in Barbarian Village",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 630,
+    "task": "Equip either a pair of Fancy Boots or a pair of Fighting Boots",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 256,
+    "task": "Catch 10 Pike",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 292,
+    "task": "Cook 20 Raw Pike",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 1732714935215,
+    "task": "Varrock",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "color": "green"
+  },
+  {
+    "id": 1732714950208,
+    "task": "(buy air staff/mind runes. Grab some water runes for lesser demon kill u want, earth runes for imp kill, fire runes for duck kill)(dont use all money)",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 639,
+    "task": "Pickpocket any Varrock Guard",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 30,
+    "task": "Defeat a Guard",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 39,
+    "task": "Equip a basic elemental staff",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 176,
+    "task": "Pet a Stray Dog in Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 181,
+    "task": "Steal from the Tea Stall in Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 76,
+    "task": "Visit the Rune Essence Mine",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 48,
+    "task": "Mine some essence",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 150,
+    "task": "Complete the Natural History Quiz in the Varrock Museum",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 158,
+    "task": "Go and get a haircut",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 160,
+    "task": "Have Elsie tell you a story in Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 151,
+    "task": "Complete a lap of the Varrock Rooftop Agility Course",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 156,
+    "task": "Equip an Iron dagger",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 186,
+    "task": "Anger the Tramp, in south east Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 169,
+    "task": "Kill a Mugger",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 178,
+    "task": "Pick a Cabbage in Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 1732715052145,
+    "task": "(Do daddy's home)",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 74,
+    "task": "Put a hat on a hat stand, or try at least",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 73,
+    "task": "Use a Sawmill to turn Logs into a Plank",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 185,
+    "task": "Take the Museum Barge to Fossil Island",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 177,
+    "task": "Pet the dog in the Museum Camp on Fossil Island",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 36,
+    "task": "Enter your Player Owned House",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 246,
+    "task": "Build a room in your Player Owned House",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 1732715104905,
+    "task": "Leave house cause its in Brimhaven",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 1732715110113,
+    "task": "Karamja",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "color": "green"
+  },
+  {
+    "id": 31,
+    "task": "Defeat a Moss Giant",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 9,
+    "task": "Buy something from the Trader Crewmembers",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 131,
+    "task": "Receive an Agility Arena Ticket from the Brimhaven Agility Arena",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 1732715142230,
+    "task": "(Get 16 agility arena tickets)",
+    "points": 0,
+    "custom": true,
+    "completed": false
+  },
+  {
+    "id": 542,
+    "task": "Buy a Snapdragon From Pirate Jackie the Fruit in Brimhaven",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 129,
+    "task": "Kill a Snake in Karamja",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 34,
+    "task": "Eat a Banana",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 128,
+    "task": "Fill a crate with Bananas for Luthas at Musa Point",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 550,
+    "task": "Defeat any TzHaar in Mor Ul Rek",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 551,
+    "task": "Enter the Brimhaven Dungeon",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 548,
+    "task": "Defeat a Greater Demon on Karamja",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 130,
+    "task": "Pick a Pineapple on Karamja",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 43,
+    "task": "Light a Torch",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 127,
+    "task": "Catch a Karambwanji on Karamja",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 557,
+    "task": "Pay the barkeep to sleep in Paramaya Inn, in Shilo Village",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 558,
+    "task": "Use the Stepping Stones Agility Shortcut in Shilo Village",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 15,
+    "task": "Use an Enchanted Gem to check your Slayer Task",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 37,
+    "task": "Equip a Spiny Helmet",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 1732715242493,
+    "task": "AFK STUFF AHEAD GO TOUCH GRASS",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "isEditing": false,
+    "color": "green"
+  },
+  {
+    "id": 544,
+    "task": "Catch a Salmon on Karamja",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 259,
+    "task": "Catch 50 Raw Salmon whilst Fishing",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 257,
+    "task": "Catch 100 Raw Lobsters whilst Fishing",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 260,
+    "task": "Catch 50 Raw Swordfish whilst Fishing",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 291,
+    "task": "Cook 100 Raw Lobsters",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 1732715316770,
+    "task": "OTHER RANDOM TASKS TO DO THAT I DIDNT KNOW WHERE TO FIT IN",
+    "points": 0,
+    "custom": true,
+    "completed": false,
+    "pinned": true,
+    "color": "green"
+  },
+  {
+    "id": 7,
+    "task": "Burn some Oak Logs",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 17,
+    "task": "Chop any kind of logs using a Steel Axe",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 49,
+    "task": "Mine any ore using a Steel Pickaxe",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 64,
+    "task": "Use a Furnace to smelt an Iron Bar",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 65,
+    "task": "Use an Anvil to smith a Bronze full helm",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 66,
+    "task": "Use an Anvil to smith a Bronze plateskirt",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 369,
+    "task": "Mine 50 Iron Ore",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 368,
+    "task": "Mine 15 coal",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 393,
+    "task": "Use a Furnace to smelt a Steel Bar",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 152,
+    "task": "Defeat the Lesser Demon at the top of the Wizards' Tower",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 301,
+    "task": "Defeat a Lesser Demon",
+    "points": 30,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 159,
+    "task": "Get your revenge against a Dark Wizard, south of Varrock",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 163,
+    "task": "Kill a Barbarian in Barbarian Village",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 166,
+    "task": "Kill a Duck with a fire spell",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 173,
+    "task": "Kill an Imp with an earth spell",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 175,
+    "task": "Pan for an Uncut Jade",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 180,
+    "task": "Slash a web in Varrock sewers",
+    "points": 10,
+    "completed": false,
+    "color": "red"
+  },
+  {
+    "id": 182,
+    "task": "Get a cat and stroke it!",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 183,
+    "task": "Take a Canoe from Lumbridge to the Champions Guild",
+    "points": 10,
+    "completed": false
+  },
+  {
+    "id": 247,
+    "task": "Build a Waka Canoe",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 253,
+    "task": "Buy a candle in Lumbridge",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 635,
+    "task": "Mine 25 Pure Essence",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 636,
+    "task": "Open the Dark Chest",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 637,
+    "task": "Pickpocket a Bullseye Lantern from a Cave Goblin",
+    "points": 30,
+    "completed": false
+  },
+  {
+    "id": 362,
+    "task": "Light a Bullseye Lantern",
+    "points": 30,
+    "completed": false
+  }
+]
