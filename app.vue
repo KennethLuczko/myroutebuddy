@@ -774,6 +774,7 @@ export default {
       { name: 'Wizzy (Updated 11/26 3:55 PM)', file: './wizzy.json' },
       { name: 'Mazhar (Updated 11/26 4:04 PM)', file: './mazhar.json' },
       { name: 'Doubleshine (Updated 11/25 10:04 PM)', file: './doubleshine.json' },
+      { name: 'Doubleshine Extended Route (150 Tasks, 2500 Points + Overheads, Relic Agnostic)', file: './doubleshine-longer.json' },
       { name: 'Lilratbag (Updated 11/26 8:54 AM)', file: './lilratbag.json' },
     ];
 

@@ -1,0 +1,2466 @@
+
+[
+    {
+      "id": 1732684766367,
+      "task": "Lumbridge 1 (GAME START + Stronghold)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732685192827,
+      "task": "Purple - SKIP if too crowded",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 51,
+      "region": "Global",
+      "task": "Open the Leagues Menu found within the Journal Panel",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 20,
+      "region": "Global",
+      "task": "Complete the Leagues Tutorial and begin your adventure",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732684791595,
+      "task": "Claim Runes, Get beer first (sell whatever)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": null
+    },
+    {
+      "id": 27,
+      "region": "Global",
+      "task": "Dance in a graveyard",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 74,
+      "region": "Global",
+      "task": "Visit Death's Domain",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732684838719,
+      "task": "Count Check to Stronghold\nGet food if scared or joining late",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": null
+    },
+    {
+      "id": 105,
+      "region": "Global",
+      "task": "Kill a Rat",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 1732684918264,
+      "task": "(In stronghold)\nOtherwise More Behind Lumby\nDramen Staff on Defensive - Goal lvl 5 Defense, can autocast magic later on defensive too",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": null
+    },
+    {
+      "id": 28,
+      "region": "Global",
+      "task": "Defeat a Goblin",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 102,
+      "region": "Global",
+      "task": "Kill a Goblin holding a spear",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 8,
+      "region": "Global",
+      "task": "Bury any kind of Bones",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732684985639,
+      "task": "Save 1 Bones",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": null
+    },
+    {
+      "id": 4,
+      "region": "Global",
+      "task": "Level up any of your skills for the first time",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 348,
+      "region": "Global",
+      "task": "Equip either a pair of Fancy Boots or a pair of Fighting Boots",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732685031596,
+      "task": "Reverse Varrock West",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": true,
+      "color": "yellow"
+    },
+    {
+      "id": 87,
+      "region": "Global",
+      "task": "Drink a beer in the Longhall in Barbarian Village",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685079053,
+      "task": "Buy Steel Full Helm",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 116,
+      "region": "Global",
+      "task": "Get a cat and stroke it!",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685087925,
+      "task": "PLS LET IT WORK OR ILL CRY (might only register for cat not kitten)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 110,
+      "region": "Global",
+      "task": "Pet a Stray Dog in Varrock",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685125349,
+      "task": "Give Stray Dog Bones for Diary",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 38,
+      "region": "Global",
+      "task": "Equip a basic elemental staff",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685145232,
+      "task": "Buy Staff of Air  \nBuy Shears  \nBuy Cape from Fancy Clothes Store",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": false,
+      "isEditing": false
+    },
+    {
+      "id": 90,
+      "region": "Global",
+      "task": "Equip an Iron dagger",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 112,
+      "region": "Global",
+      "task": "Pick a Cabbage in Varrock",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 1732685249540,
+      "task": "Look for this whenever you’re in Varrock",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 120,
+      "region": "Global",
+      "task": "Anger the Tramp, in south east Varrock",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685265253,
+      "task": "Charlie the Tramp or Tramp in South East Varrock, not 100% sure",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 73,
+      "region": "Global",
+      "task": "Put a hat on a hat stand, or try at least",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685275199,
+      "task": "Pick up Possibly?",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 75,
+      "region": "Global",
+      "task": "Visit the Rune Essence Mine",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 47,
+      "region": "Global",
+      "task": "Mine some essence",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685299369,
+      "task": "Buy 200 Mind runes, 30 fire",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732685306704,
+      "task": "Grab 3 Redberries",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 104,
+      "region": "Global",
+      "task": "Kill a Ram",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685315721,
+      "task": "Shear Sheep   \n1 Wool 4 if possible (20 probably not a good idea for now)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732685348076,
+      "task": "Karamja 1 (Bananas, Pineapples, and Shilo Village)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": true,
+      "color": "yellow"
+    },
+    {
+      "id": 79,
+      "region": "Global",
+      "task": "Pick a Pineapple on Karamja",
+      "points": 10,
+      "completed": false,
+      "pinned": false,
+      "color": "purple"
+    },
+    {
+      "id": 78,
+      "region": "Global",
+      "task": "Kill a Snake in Karamja",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 310,
+      "region": "Global",
+      "task": "Enter the Brimhaven Dungeon",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 9,
+      "region": "Global",
+      "task": "Buy something from the Trader Crewmembers",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685401210,
+      "task": "Buy Knife - Buy 11 Bananas",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 33,
+      "region": "Global",
+      "task": "Eat a Banana",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 77,
+      "region": "Global",
+      "task": "Fill a crate with Bananas for Luthas at Musa Point",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685416093,
+      "task": "Karamja Waypoint again\nCart to Shilo Village\nBuy Fishing Rod, 100 Bait",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 42,
+      "region": "Global",
+      "task": "Light a Torch",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 316,
+      "region": "Global",
+      "task": "Pay the barkeep to sleep in Paramaya Inn, in Shilo Village",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 10,
+      "region": "Global",
+      "task": "Cast the Home Teleport spell",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685445760,
+      "task": "Lumbridge 2 (Swamp + Zanaris)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": true,
+      "color": "yellow"
+    },
+    {
+      "id": 1732685459169,
+      "task": "Activate Any prayer",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 118,
+      "region": "Global",
+      "task": "Talk to Hans and have him tell you how old you are",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 122,
+      "region": "Global",
+      "task": "Use the Northern Staircase in Lumbridge Castle to go upstairs from the bottom floor",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 67,
+      "region": "Global",
+      "task": "Use a Spinning Wheel to spin a Ball of Wool",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685476351,
+      "task": "Do all 4 if you have",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 53,
+      "region": "Global",
+      "task": "Pickpocket a Man or a Woman",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 113,
+      "region": "Global",
+      "task": "Pray at an Altar in Lumbridge",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 81,
+      "region": "Global",
+      "task": "Talk to Bob in Lumbridge axe shop and ask for a Quest",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685499443,
+      "task": "Buy Steel Axe",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 13,
+      "region": "Global",
+      "task": "Catch Raw Shrimp while Fishing",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685509668,
+      "task": "5 Fishing",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "region": "Global",
+      "task": "Reach level 5 in any skill (not including Agility, Hitpoints and Runecraft)",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 16,
+      "region": "Global",
+      "task": "Chop any kind of logs",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685528551,
+      "task": "Chop 2",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 40,
+      "region": "Global",
+      "task": "Fletch some Arrow Shafts",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 6,
+      "region": "Global",
+      "task": "Burn some Normal Logs",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 21,
+      "region": "Global",
+      "task": "Cook Raw Shrimp",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 101,
+      "region": "Global",
+      "task": "Kill a Frog",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685552706,
+      "task": "Get food if needed, AVG dmg 5",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 151,
+      "region": "Global",
+      "task": "Buy a candle in Lumbridge",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 89,
+      "region": "Global",
+      "task": "Enter the lost city of Zanaris",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685569629,
+      "task": "Pick up Egg",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 15,
+      "region": "Global",
+      "task": "Use an Enchanted Gem to check your Slayer Task",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685581551,
+      "task": "Buy Gem from Chaeldar\nGet task for Diary\nSpiny Helmet",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 121,
+      "region": "Global",
+      "task": "Use any Fairy Ring",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685604367,
+      "task": "CKR",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 76,
+      "region": "Global",
+      "task": "Catch a Karambwanji on Karamja",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685617281,
+      "task": "Teleport to Lumbridge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732685625651,
+      "task": "Lumbridge 3 (Cook’s Assistant + Draynor)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732685657911,
+      "task": "Buy 2nd Pot of Flour\nCheck you have: (Bucket, 2 Pot of Flour)\nKill Goblins if not already lvl 5 Defense",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 36,
+      "region": "Global",
+      "task": "Equip a Spiny Helmet",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 228,
+      "region": "Global",
+      "task": "Equip either a Steel Platebody, some Steel Platelegs or a Steel Full Helm",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 108,
+      "region": "Global",
+      "task": "Milk a cow in Lumbridge",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 88,
+      "region": "Global",
+      "task": "Eat an Onion, raw",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 1732685713499,
+      "task": "Optional - Might be crowded \nGrab 2 Extra for Yellow Dye ",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 98,
+      "region": "Global",
+      "task": "Kill a Chicken with your fists",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685720316,
+      "task": "More in West Farm  \nPick up Raw Chicken  \nGet Egg from Coop",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 25,
+      "region": "Global",
+      "task": "Cry in a wheat field",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 266,
+      "region": "Global",
+      "task": "Make some Flour in a windmill",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 240,
+      "region": "Global",
+      "task": "Dig in a hay stack for a needle",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732685764549,
+      "task": "Start Vampyre Slayer, Grab Garlic",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 96,
+      "region": "Global",
+      "task": "Insult Aggie the Witch in Draynor Village",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685772072,
+      "task": "Get Forestry Kit, Equip",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 32,
+      "region": "Global",
+      "task": "Dye a cape orange",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 95,
+      "region": "Global",
+      "task": "Have Ned make you some rope using a ball of wool in Draynor Village",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 1732685812511,
+      "task": "Ideally should be at 710 points, however if you’re short:",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 12,
+      "region": "Global",
+      "task": "Catch a Raw Herring whilst Fishing",
+      "points": 10,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 83,
+      "region": "Global",
+      "task": "Complete a lap of the Draynor Rooftop Agility Course",
+      "points": 10,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 274,
+      "region": "Global",
+      "task": "Obtain a Mark of Grace from any Rooftop Agility Course",
+      "points": 30,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 17,
+      "region": "Global",
+      "task": "Chop any kind of logs using a Steel Axe",
+      "points": 10,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 7,
+      "region": "Global",
+      "task": "Burn some Oak Logs",
+      "points": 10,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 1732685841684,
+      "task": "In general Break Glass in Case of Emergency Tasks are:  Chopping/firemaking in Draynor -   Chop 100 willow logs and do forestry  or just do whatever it’s no big deal",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 1732685899127,
+      "task": "Purchase Chronicle + 3 Pages\nPurchase 4 Barley Seeds\nTeleport to Lumbridge, complete Cook’s Assistant",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": false,
+      "isEditing": false
+    },
+    {
+      "id": 1,
+      "region": "Global",
+      "task": "Reach level 10 in any skill (not including Agility and Hitpoints)",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 360,
+      "region": "Global",
+      "task": "Use the Range in Lumbridge Castle to cook some food",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732685939042,
+      "task": "Bake Bread for Diary",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732685943361,
+      "task": "Cook Chicken + Burn it if you haven’t done so already",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "region": "Global",
+      "task": "Burn any kind of food while trying to cook it",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732685957026,
+      "task": "Varrock East (Farming, Construction)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732685978220,
+      "task": "Pickpocket 28",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 275,
+      "region": "Global",
+      "task": "Open 28 Coin Pouches at once",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732685986673,
+      "task": "Chronicle TP to Champ’s Guild",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732685991121,
+      "task": "Buy Rake + 3 Compost + Seed Dibber from Master Farmer",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 57,
+      "region": "Global",
+      "task": "Rake any Farming patch",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686001823,
+      "task": "Rake 3 times at Champion’s Guild\nRun to Hops Patch - Rake 3 times\nPlant Barley",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 55,
+      "region": "Global",
+      "task": "Pay a farmer to protect any of your crops",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686063144,
+      "task": "(uses 3 compost)  \nChronicle back  \nRun to Varrock",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 115,
+      "region": "Global",
+      "task": "Steal from the Tea Stall in Varrock",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686084141,
+      "task": "Bank everything but Coins, Axe, Steel Axe, tea, tinderbox, Relic Items",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 94,
+      "region": "Global",
+      "task": "Have Elsie tell you a story in Varrock",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686092294,
+      "task": "Start Daddy’s Home",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 92,
+      "region": "Global",
+      "task": "Go and get a haircut",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 84,
+      "region": "Global",
+      "task": "Complete the Natural History Quiz in the Varrock Museum",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 285,
+      "region": "Global",
+      "task": "Reach a Total Level of 100",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 2,
+      "region": "Global",
+      "task": "Reach level 20 in any skill",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686113235,
+      "task": "Yarlo’s House, Get waxwood before sawmill",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686143384,
+      "task": "Chop Some Logs With a Steel Axe ",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686164713,
+      "task": "10 Logs for 10 planks  \nBuy 5 Cloth, 50 steel nails, hammer, saw",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 72,
+      "region": "Global",
+      "task": "Use a Sawmill to turn Logs into a Plank",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686227659,
+      "task": "Burn Some Oak Logs",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686231043,
+      "task": "Chop/FM if you don’t have 15 firemaking",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 56,
+      "region": "Global",
+      "task": "Purchase a Player Owned House",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686245922,
+      "task": "25 Planks, 50 Mithril Nails (can sell), 5 Steel Bars, 10 Oak Planks, 8 Bolts of Cloth (Can sell), 5 house teleports, 1 falador teleport",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 174,
+      "region": "Global",
+      "task": "Complete a   Mahogany Homes beginner contract",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 175,
+      "region": "Global",
+      "task": "Complete a   Mahogany Homes novice contract",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686267558,
+      "task": "45 minutes - Definitely less than 1 hour",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686275751,
+      "task": "40 Mining without Mining (aka Shield of Arrav + Demon Slayer)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": true,
+      "isEditing": false,
+      "color": "yellow"
+    },
+    {
+      "id": 1732686321280,
+      "task": "40 mining for Karamja Easy Diary - easiest solve for 20 prayer \n\nWe want to claim the XP lamps from Shield of Arrav and Defender of Varrock for 40 mining\nIf XP Lamps do not work just do mining, should be enough iron rocks across fossil island or do other things for a bit instead and get mining up in 1st region unlock\nGo do Shield of Arrav (If you hate your life and can’t do it, then you will do mining instead)\nIf you’re not doing it, 50 iron ore is a task, have fun doing that now \nOtherwise make friends :)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686383307,
+      "task": "5 Finds - 50 Kudos + 28 kudos from NHQ, 15 from auto completed, have to do 2 quests",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686390182,
+      "task": "Claim 1,000 from the information clerk  \n8,000 mining xp - 25 mining",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686418841,
+      "task": "Do Shield of Arrav",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686427517,
+      "task": "Claim 1000 xp lamp from Guy upstairs  \n16k mining xp - 31 mining",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686435753,
+      "task": "Claim 5000 xp lamp just in case of region  \nSave it in inventory until lvl 30 prayer",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 139,
+      "region": "Global",
+      "task": "Reach level 30 in any skill",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 353,
+      "region": "Global",
+      "task": "Mine 25 Pure Essence",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686483468,
+      "task": "Clear Inventory except weapon, bucket, relic items, dramen staff, coins",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686486541,
+      "task": "Start Demon Slayer",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 114,
+      "region": "Global",
+      "task": "Slash a web in Varrock sewers",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686494154,
+      "task": "Kill a Rat if you have not",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 30,
+      "region": "Global",
+      "task": "Defeat a Moss Giant",
+      "points": 10,
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 1732686521464,
+      "task": "Multi combat, bad idea, don’t do it  \nSuper Optional - 1st combat Mastery",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "red",
+      "isEditing": false
+    },
+    {
+      "id": 1732686559405,
+      "task": "Teleport to Lumbridge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686568560,
+      "task": "At this point you should have roughly 81 tasks and 1100 Points  \nGoals are: 1500 Points for Tier 3, 90 for 1st region, get some cash for later",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686575153,
+      "task": "get axe  \nHead North of East Cow Field",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 82,
+      "region": "Global",
+      "task": "Chop a log from a tree that is curiously in a potato field",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686624516,
+      "task": "Complete the Draynor Agility Course",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686627808,
+      "task": "Obtain a Mark of Grace",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 322,
+      "region": "Global",
+      "task": "Complete 10 laps of the Draynor Rooftop Agility Course",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686639059,
+      "task": "Do 14 for 30 Agility",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 156,
+      "region": "Global",
+      "task": "Catch 25 Sardines",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686649664,
+      "task": "Catch a Herring",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 14,
+      "region": "Global",
+      "task": "Catch a Raw Anchovy whilst Fishing",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 189,
+      "region": "Global",
+      "task": "Cook 10 Raw Sardines",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686662001,
+      "task": "Use fire or go to lumby",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 297,
+      "region": "Global",
+      "task": "Cook 5 pieces of food in a row without burning them",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686669777,
+      "task": "Grab some wine for Pickpocketing",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686676722,
+      "task": "In case of Emergency Point deficiency, cut some willows and do forestry :)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "red"
+    },
+    {
+      "id": 1732686699653,
+      "task": "90 tasks, 1280 Points - Should have access to 1st Region (doesn’t matter)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 106,
+      "region": "Global",
+      "task": "Kill a Spider in Lumbridge by kicking it",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686731397,
+      "task": "Kick in lumbridge basement later if it doesnt work",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 356,
+      "region": "Global",
+      "task": "Pickpocket any H.A.M. member at their hideout",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686741704,
+      "task": "Get Steel Pickaxe (probably skip if not Dodgy Deals)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686745782,
+      "task": "Possibly Grimy Guam",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686754489,
+      "task": "Get 36 for Cave goblins - 127 thiefs, has to be done anyways so might as well",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686759295,
+      "task": "Head to Downstairs Lumbridge Cellar  \nPickaxe, light source, coins, relic items, dramen staff, Lamp  \nFast travel to caves",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 48,
+      "region": "Global",
+      "task": "Mine any ore using a Steel Pickaxe",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686828955,
+      "task": "9 Iron Rocks - Get a couple (4-6) shouldn’t be super crowded",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686831909,
+      "task": "If you are Agility or Thieving, you should have minimum 4k before you leave",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686840917,
+      "task": "Buy a Dorgeshuun Crossbow  \nBuy 50 Bolts or whatever, just using for spec later",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732686852019,
+      "task": "Note for Foragers (might be poor, can do storerooms for cash or more willows) or do these tasks: \n\nClean a Grimy Guam\nClean 15 Grimy Tarromin\nClean 25 Grimy Guam Leafs",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 355,
+      "region": "Global",
+      "task": "Pickpocket a Bullseye Lantern from a Cave Goblin",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686893998,
+      "task": "Get 40 Thieving",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686899206,
+      "task": "Cave Goblins are surprisingly decent cash, I would pickpocket until 5k coins or move on to guards with Dodgy Deals",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 140,
+      "region": "Global",
+      "task": "Reach level 40 in any skill",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686907322,
+      "task": "Bank in Dorgeshuun",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686911161,
+      "task": "Rod, Bait, Axe, tinderbox, Dramen Staff (equipped), Relic Items, DOV lamp\nTeleport Lumbridge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 154,
+      "region": "Global",
+      "task": "Catch 10 Pike",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732686945390,
+      "task": "30 fishing",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 191,
+      "region": "Global",
+      "task": "Cook 20 Raw Pike",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 117,
+      "region": "Global",
+      "task": "Take a Canoe from Lumbridge to the Champions Guild",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 85,
+      "region": "Global",
+      "task": "Complete a lap of the Varrock Rooftop Agility Course",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732686968205,
+      "task": "Get 32 Agility",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732686985775,
+      "task": "10 laps if you want or short on points",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 323,
+      "region": "Global",
+      "task": "Complete 10 laps of the Varrock Rooftop Agility Course",
+      "points": 30,
+      "completed": false,
+      "color": "orange"
+    },
+    {
+      "id": 357,
+      "region": "Global",
+      "task": "Pickpocket any Varrock Guard",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687039867,
+      "task": "100 Tasks - 1520 Points - Tier 3 (probably) - 2x Combat and Prayer  \nTier 3 Relic - TP should be a LOT easier",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732687064348,
+      "task": "Shilo Village bank tp or take cart",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 317,
+      "region": "Global",
+      "task": "Use the Stepping Stones Agility Shortcut in Shilo Village",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 303,
+      "region": "Global",
+      "task": "Catch a Salmon on Karamja",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687098725,
+      "task": "Can catch 50 if you want (Buy feathers here)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 157,
+      "region": "Global",
+      "task": "Catch 50 Raw Salmon whilst Fishing",
+      "points": 30,
+      "completed": false,
+      "color": "orange"
+    },
+    {
+      "id": 1732687103458,
+      "task": "Buy 31 Bronze Bars from shilo village general  \nGrab Stake, Hammer, Garlic, Staff of Air, Mind runes, Food, Dramen staff, Relic Items",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687108763,
+      "task": "TP Draynor Manor  \nGood TPs there - fairy patch, stash",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 91,
+      "region": "Global",
+      "task": "Get a chair to follow you",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 331,
+      "region": "Global",
+      "task": "Complete the   Vampyre Slayer quest",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687225841,
+      "task": "**77200 attack xp**  \n47 attack - now you train strength or defense basically  \nYou do want 20 defense eventually",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687255333,
+      "task": "25 Bones - Goblins in Lumby for Chef’s Hat\nBring 25, teleport item (Fairy ring, Wizard Tower Stash, Tzhaar bank to fairy ring)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687261574,
+      "task": "Wizard Tower\nGet final key - back to varrock (chronicle, relic, etc….)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687274910,
+      "task": "3 Keys, complete Demon Slayer",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 325,
+      "region": "Global",
+      "task": "Complete the   Demon Slayer quest",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 93,
+      "region": "Global",
+      "task": "Get your revenge against a Dark Wizard, south of Varrock",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687295867,
+      "task": "Varrock West Bank",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687298726,
+      "task": "Smith 7 Bronze Daggers",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 64,
+      "region": "Global",
+      "task": "Use an Anvil to smith a Bronze full helm",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687307048,
+      "task": "Smith 19x Bronze Knife",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 65,
+      "region": "Global",
+      "task": "Use an Anvil to smith a Bronze plateskirt",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687316268,
+      "task": "Run to edgeville or TP",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 63,
+      "region": "Global",
+      "task": "Use a Furnace to smelt an Iron Bar",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687324637,
+      "task": "Claim Kudos at Natural History Museum",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 286,
+      "region": "Global",
+      "task": "Reach a Total Level of 250",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687352356,
+      "task": "20k Crafting 20k Mining  \n33 Crafting, 40 Mining",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687372696,
+      "task": "110 Tasks - 1700 Points ETA 2 hour\nIf something happened, get 40 mining off copper/tin/iron literally anything go do rune essence",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": "yellow"
+    },
+    {
+      "id": 1732687396355,
+      "task": "Overheads (remember that lamp?)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732687420067,
+      "task": "Get Trowel and Brush if you forgot",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687423449,
+      "task": "Go to bank - Coins, Pickaxe, Relic Items, Lamp, Dramen staff and Trowel and Brush",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687427512,
+      "task": "2 Oak planks (or axe), 1 iron bar, 5 nails \nRake + Axe + Some food",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687438549,
+      "task": "SE of varrock",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 45,
+      "region": "Global",
+      "task": "Mine 5 Tin Ore",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 46,
+      "region": "Global",
+      "task": "Mine some Copper Ore",
+      "points": 10,
+      "completed": false,
+      "color": "purple"
+    },
+    {
+      "id": 1732687463303,
+      "task": "Skip if still crowded  \nMine Iron for Diary",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687488947,
+      "task": "Get 2 oak planks if you need, Head to Digsite\n\nSearch Sacks for Speciman Jar\nTP to digsite stash?",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 358,
+      "region": "Global",
+      "task": "Show Terry Balando in the Digsite a Belt Buckle",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687513433,
+      "task": "Lvl 3 Digs near Barge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 109,
+      "region": "Global",
+      "task": "Pan for an Uncut Jade",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 119,
+      "region": "Global",
+      "task": "Take the Museum Barge to Fossil Island",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 111,
+      "region": "Global",
+      "task": "Pet the dog in the Museum Camp on Fossil Island",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 318,
+      "region": "Global",
+      "task": "Build a Bank at the Museum Camp on Fossil Island",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 267,
+      "region": "Global",
+      "task": "Mine 15 coal",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687541908,
+      "task": "And bank, can do 50 iron instead or do both depending on activity",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 350,
+      "region": "Global",
+      "task": "Unlock every destination for the Mycelium Transportation System on Fossil Island",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687551260,
+      "task": "Get food just in case",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687555146,
+      "task": "Karamja Easy Diary",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732687593801,
+      "task": "TP to Brimhaven",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 35,
+      "region": "Global",
+      "task": "Enter your Player Owned House",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 144,
+      "region": "Global",
+      "task": "Build a room in your Player Owned House",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687615400,
+      "task": "Leave House  \nMine some gold from the rocks on the north-west peninsula of Karamja  \nUse Rope Swing to travel to Moss Giant Island",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687637196,
+      "task": "Combat Mastery - Can kill here or in brimhaven dungeon, or just find any giant anywhere, it’s 2 hours in should be less crowded.",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687648154,
+      "task": "Run over to Pothole Dungeon\n\nPick up 5 Seaweed on the beach (can pick up the same one over and over)\nKill a Jogre in Pothole Dungeon\n\nTP to CKR Fairy Ring\nExplore Cairn Isle",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687685400,
+      "task": "TP to Tzhaar city (fairy ring BLP)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 309,
+      "region": "Global",
+      "task": "Defeat any TzHaar in Mor Ul Rek",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687709032,
+      "task": "Combat Mastery - Can Stay for 10 kills, or wait until Scurrius kills later.",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687713152,
+      "task": "Attempt Fight Caves",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687716888,
+      "task": "Leave City, bring net,",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687724320,
+      "task": "5 Bananas \nFishing Spot  \nBrimhaven Teleport",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 304,
+      "region": "Global",
+      "task": "Complete all of the easy tasks in the   Karamja Achievement Diary",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687773717,
+      "task": "Use Lamp - 47 Prayer unlocked!",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 58,
+      "region": "Global",
+      "task": "Reach Combat Level 10",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 59,
+      "region": "Global",
+      "task": "Reach Combat Level 25",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687784995,
+      "task": "125 Tasks - 1990 Points - Overheads unlocked  ## Scurrius",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "pinned": true,
+      "color": "yellow"
+    },
+    {
+      "id": 1732687812670,
+      "task": "Teleport to Lumbridge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 300,
+      "region": "Global",
+      "task": "Use the Protect from Melee Prayer",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 71,
+      "region": "Global",
+      "task": "Use both the Superhuman Strength prayer and the Improved Reflexes prayer at the same time",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 60,
+      "region": "Global",
+      "task": "Restore 5 or more Prayer Points at any altar",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 287,
+      "region": "Global",
+      "task": "Reach a Total Level of 500",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687831186,
+      "task": "Should be 500 by now, if not it will be soon, just grind melee or slayer or whatever",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687835895,
+      "task": "Buy Black Platelegs from Champion Guild",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 227,
+      "region": "Global",
+      "task": "Equip either a Black Platebody, some Black Platelegs or a Black Full Helm",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687844558,
+      "task": "Buy Mithril and Addy Dagger from Varrock Sword Shop (can get better if you have cash)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732687847865,
+      "task": "Rune Mace from champion’s guild is a great option for Scurrius",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 213,
+      "region": "Global",
+      "task": "Equip any Mithril weapon",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 224,
+      "region": "Global",
+      "task": "Equip any Adamant weapon",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687864157,
+      "task": "Head to Brimhaven Dungeon  \n\nDefeat a Moss Giant  \nShould have been done by now otherwise do it now",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 307,
+      "region": "Global",
+      "task": "Defeat a Greater Demon on Karamja",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 61,
+      "region": "Global",
+      "task": "Scatter some Ashes",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732687893524,
+      "task": "Teleport to Tzhaar city",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 200,
+      "region": "Global",
+      "task": "Defeat a Lesser Demon",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687903702,
+      "task": "Outside of Tzhaar City  \nWater Strike or just pray melee, you have overheads now",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 1732687939012,
+      "task": "135 Tasks - 2250 \nTeleport to Varrock",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 29,
+      "region": "Global",
+      "task": "Defeat a Guard",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 271,
+      "region": "Global",
+      "task": "Open a stack of Coin Pouches and obtain at least 800 Coins",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687955677,
+      "task": "Buy like 15 Fire Runes  \nTeleport to Lumbridge",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 100,
+      "region": "Global",
+      "task": "Kill a Duck with a fire spell",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 259,
+      "region": "Global",
+      "task": "Kill three chickens in 6 seconds",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 277,
+      "region": "Global",
+      "task": "Successfully pickpocket from a Master farmer",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732687998432,
+      "task": "141 Tasks, 2370, 130 to go",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "yellow",
+      "pinned": true
+    },
+    {
+      "id": 1732688019288,
+      "task": "Final Goal: 20k+ Cash - \n\nIf you’re struggling with money, just find other tasks to do. You can probably just use an adamant sword to get Scurrius to 80%, you’re just looking for the small rats really.",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 219,
+      "region": "Global",
+      "task": "Equip any Rune weapon",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732688033495,
+      "task": "Rune Mace from Champion Guild",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 339,
+      "region": "Global",
+      "task": "Defeat Scurrius",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732688046432,
+      "task": "(probably too difficult with current stats), really just there for small rats",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "orange"
+    },
+    {
+      "id": 1732688053920,
+      "task": "3rd Combat Mastery  \nCan farm for 10 to get 10 Kills when ready  \nUse bronze knives to 1 shot rats  \n30+ Ranged after a few sets",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "isEditing": false
+    },
+    {
+      "id": 346,
+      "region": "Global",
+      "task": "Equip a Dorgeshuun Crossbow",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 52,
+      "region": "Global",
+      "task": "Perform any special attack",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 212,
+      "region": "Global",
+      "task": "Equip a Maple Shortbow",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732688099500,
+      "task": "Buy from Varrock Ranged shop",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 37,
+      "region": "Global",
+      "task": "Equip a Studded Body along with some Studded Chaps",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732688106131,
+      "task": "Buy from Horvik armor shop in Varrock",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732688121220,
+      "task": "You probably got a lot of other tasks such as the random events and whatnot, if you’re missing any tasks at this point you can basically do whatever or just go to your first region. Here’s a few more you can do to fill the gaps:",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false,
+      "color": "orange"
+    },
+    {
+      "id": 97,
+      "region": "Global",
+      "task": "Kill a Barbarian in Barbarian Village",
+      "points": 10,
+      "completed": false
+    },
+    {
+      "id": 1732688150178,
+      "task": "10 Laps of Varrock Course",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 241,
+      "region": "Global",
+      "task": "Fletch 1000 arrow shafts",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 242,
+      "region": "Global",
+      "task": "Fletch 150 Iron Arrows",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 141,
+      "region": "Global",
+      "task": "Reach level 50 in any skill",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 343,
+      "region": "Global",
+      "task": "Drink from the Tears of Guthix in the Lumbridge Swamp Caves",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 326,
+      "region": "Global",
+      "task": "Complete the   Sheep Shearer quest",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 258,
+      "region": "Global",
+      "task": "Kill 5 Bunnies",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732688175424,
+      "task": "Enchanted Valley (BKQ)",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 169,
+      "region": "Global",
+      "task": "Complete 1 Slayer Task",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 146,
+      "region": "Global",
+      "task": "Build an Oak Larder in a Kitchen in your Player Owned House",
+      "points": 30,
+      "completed": false
+    },
+    {
+      "id": 1732688184238,
+      "task": "requires Kitchen (5k coins) + 8 oak planks",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732688191930,
+      "task": "ANY RANDOM EVENT",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    },
+    {
+      "id": 1732688194848,
+      "task": "150+ Tasks - 2500+ Points",
+      "points": 0,
+      "custom": true,
+      "region": "Global",
+      "completed": false
+    }
+  ]
