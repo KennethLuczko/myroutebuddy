@@ -13,7 +13,7 @@ WIKI_REGION_TO_ROUTE_REGION_MAP = {
     'karamja': 'Global',
     'asgarnia': 'Asgarnia',
     'desert': 'Desert',
-    'fremennik': 'Fremmenik',
+    'fremennik': 'Fremennik',
     'kandarin': 'Kandarin',
     'kourend': 'Kourend',
     'morytania': 'Morytania',
