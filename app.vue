@@ -745,6 +745,7 @@ export default {
       { name: 'Doubleshine (Updated 11/25 10:04 PM)', file: './doubleshine.json' },
       { name: 'Doubleshine Extended Route (150 Tasks, 2500 Points + Overheads, Relic Agnostic)', file: './doubleshine-longer.json' },
       { name: 'Lilratbag (Updated 11/26 8:54 AM)', file: './lilratbag.json' },
+      { name: 'Felkrane (Updated 11/27 4:05 AM)', file: './felkrane.json' },
     ];
 
     // Load each default route if not already present
