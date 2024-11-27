@@ -3,12 +3,23 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import json
+import os
+
 
 DEBUG = False
 WIKI_REGION_TO_ROUTE_REGION_MAP = {
     'general': 'Global',
     'misthalin': 'Global',
     'karamja': 'Global',
+    'asgarnia': 'Asgarnia',
+    'desert': 'Desert',
+    'fremennik': 'Fremmenik',
+    'kandarin': 'Kandarin',
+    'kourend': 'Kourend',
+    'morytania': 'Morytania',
+    'tirannwn': 'Tirannwn',
+    'varlamore': 'Varlamore',
+    'wilderness': 'Wilderness',
 }
 
 # Set up Selenium options (optional, if you don't want the browser window to open)
@@ -81,11 +92,15 @@ if select:
                 # If points are not a valid integer, print the task and its points
                 print(f"Skipping task with invalid points: {task_name} | Invalid points value: {task_points}")
     
+    # GOES TO A TEMP DIRECTORY, MOVE TO public/tasks.json IF VERIFIED THAT ALL LOOKS CORRECT
+    output_dir = './temp'
+    os.makedirs(output_dir, exist_ok=True)
+
     # Save the tasks to a JSON file
-    with open('public/tasks.json', 'w') as json_file:
+    with open(os.path.join(output_dir, 'tasks.json'), 'w') as json_file:
         json.dump(tasks, json_file, indent=2)
 
-    print("Tasks have been scraped and saved to tasks.json.")
+    print("Tasks have been scraped and saved to temp/tasks.json.")
 else:
     print("Table not found. Please check the page structure or class name.")
 

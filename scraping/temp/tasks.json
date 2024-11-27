@@ -1,0 +1,2168 @@
+[
+  {
+    "id": 1,
+    "region": "Global",
+    "task": "Reach level 10 in any skill (not including Agility and Hitpoints)",
+    "points": 10
+  },
+  {
+    "id": 2,
+    "region": "Global",
+    "task": "Reach level 20 in any skill",
+    "points": 10
+  },
+  {
+    "id": 3,
+    "region": "Global",
+    "task": "Reach level 5 in any skill (not including Agility, Hitpoints and Runecraft)",
+    "points": 10
+  },
+  {
+    "id": 4,
+    "region": "Global",
+    "task": "Level up any of your skills for the first time",
+    "points": 10
+  },
+  {
+    "id": 5,
+    "region": "Global",
+    "task": "Burn any kind of food while trying to cook it",
+    "points": 10
+  },
+  {
+    "id": 6,
+    "region": "Global",
+    "task": "Burn some Normal Logs",
+    "points": 10
+  },
+  {
+    "id": 7,
+    "region": "Global",
+    "task": "Burn some Oak Logs",
+    "points": 10
+  },
+  {
+    "id": 8,
+    "region": "Global",
+    "task": "Bury any kind of Bones",
+    "points": 10
+  },
+  {
+    "id": 9,
+    "region": "Global",
+    "task": "Buy something from the Trader Crewmembers",
+    "points": 10
+  },
+  {
+    "id": 10,
+    "region": "Global",
+    "task": "Cast the Home Teleport spell",
+    "points": 10
+  },
+  {
+    "id": 11,
+    "region": "Global",
+    "task": "Catch a Baby Impling",
+    "points": 10
+  },
+  {
+    "id": 12,
+    "region": "Global",
+    "task": "Catch a Raw Herring whilst Fishing",
+    "points": 10
+  },
+  {
+    "id": 13,
+    "region": "Global",
+    "task": "Catch Raw Shrimp while Fishing",
+    "points": 10
+  },
+  {
+    "id": 14,
+    "region": "Global",
+    "task": "Catch a Raw Anchovy whilst Fishing",
+    "points": 10
+  },
+  {
+    "id": 15,
+    "region": "Global",
+    "task": "Use an Enchanted Gem to check your Slayer Task",
+    "points": 10
+  },
+  {
+    "id": 16,
+    "region": "Global",
+    "task": "Chop any kind of logs",
+    "points": 10
+  },
+  {
+    "id": 17,
+    "region": "Global",
+    "task": "Chop any kind of logs using a Steel Axe",
+    "points": 10
+  },
+  {
+    "id": 18,
+    "region": "Global",
+    "task": "Clean 15 Grimy Tarromin",
+    "points": 10
+  },
+  {
+    "id": 19,
+    "region": "Global",
+    "task": "Clean 25 Grimy Guam Leafs",
+    "points": 10
+  },
+  {
+    "id": 20,
+    "region": "Global",
+    "task": "Clean a Grimy Guam",
+    "points": 10
+  },
+  {
+    "id": 21,
+    "region": "Global",
+    "task": "Complete the Leagues Tutorial and begin your adventure",
+    "points": 10
+  },
+  {
+    "id": 22,
+    "region": "Global",
+    "task": "Cook Raw Shrimp",
+    "points": 10
+  },
+  {
+    "id": 23,
+    "region": "Global",
+    "task": "Craft a Leather Body",
+    "points": 10
+  },
+  {
+    "id": 24,
+    "region": "Global",
+    "task": "Create a Compost Potion",
+    "points": 10
+  },
+  {
+    "id": 25,
+    "region": "Global",
+    "task": "Create an Antipoison",
+    "points": 10
+  },
+  {
+    "id": 26,
+    "region": "Global",
+    "task": "Cry in a wheat field",
+    "points": 10
+  },
+  {
+    "id": 27,
+    "region": "Global",
+    "task": "Cut a Sapphire",
+    "points": 10
+  },
+  {
+    "id": 28,
+    "region": "Global",
+    "task": "Dance in a graveyard",
+    "points": 10
+  },
+  {
+    "id": 29,
+    "region": "Global",
+    "task": "Defeat a Goblin",
+    "points": 10
+  },
+  {
+    "id": 30,
+    "region": "Global",
+    "task": "Defeat a Guard",
+    "points": 10
+  },
+  {
+    "id": 31,
+    "region": "Global",
+    "task": "Defeat a Moss Giant",
+    "points": 10
+  },
+  {
+    "id": 32,
+    "region": "Global",
+    "task": "Drink a Strength Potion",
+    "points": 10
+  },
+  {
+    "id": 33,
+    "region": "Global",
+    "task": "Dye a cape orange",
+    "points": 10
+  },
+  {
+    "id": 34,
+    "region": "Global",
+    "task": "Eat a Banana",
+    "points": 10
+  },
+  {
+    "id": 35,
+    "region": "Global",
+    "task": "Enter Puro Puro from a crop circle in mainland Gielinor",
+    "points": 10
+  },
+  {
+    "id": 36,
+    "region": "Global",
+    "task": "Enter your Player Owned House",
+    "points": 10
+  },
+  {
+    "id": 37,
+    "region": "Global",
+    "task": "Equip a Spiny Helmet",
+    "points": 10
+  },
+  {
+    "id": 38,
+    "region": "Global",
+    "task": "Equip a Studded Body along with some Studded Chaps",
+    "points": 10
+  },
+  {
+    "id": 39,
+    "region": "Global",
+    "task": "Equip a basic elemental staff",
+    "points": 10
+  },
+  {
+    "id": 40,
+    "region": "Global",
+    "task": "Fletch an Oak Shortbow",
+    "points": 10
+  },
+  {
+    "id": 41,
+    "region": "Global",
+    "task": "Fletch some Arrow Shafts",
+    "points": 10
+  },
+  {
+    "id": 42,
+    "region": "Global",
+    "task": "Kill a Necromancer",
+    "points": 10
+  },
+  {
+    "id": 43,
+    "region": "Global",
+    "task": "Light a Torch",
+    "points": 10
+  },
+  {
+    "id": 44,
+    "region": "Global",
+    "task": "Use any talisman to check the location of a Runecrafting Altar",
+    "points": 10
+  },
+  {
+    "id": 45,
+    "region": "Global",
+    "task": "Make an Attack Potion",
+    "points": 10
+  },
+  {
+    "id": 46,
+    "region": "Global",
+    "task": "Mine 5 Tin Ore",
+    "points": 10
+  },
+  {
+    "id": 47,
+    "region": "Global",
+    "task": "Mine some Copper Ore",
+    "points": 10
+  },
+  {
+    "id": 48,
+    "region": "Global",
+    "task": "Mine some essence",
+    "points": 10
+  },
+  {
+    "id": 49,
+    "region": "Global",
+    "task": "Mine any ore using a Steel Pickaxe",
+    "points": 10
+  },
+  {
+    "id": 50,
+    "region": "Global",
+    "task": "Obtain a Bird Nest whilst cutting down trees",
+    "points": 10
+  },
+  {
+    "id": 51,
+    "region": "Global",
+    "task": "Obtain a Casket from Fishing",
+    "points": 10
+  },
+  {
+    "id": 52,
+    "region": "Global",
+    "task": "Open the Leagues Menu found within the Journal Panel",
+    "points": 10
+  },
+  {
+    "id": 53,
+    "region": "Global",
+    "task": "Perform any special attack",
+    "points": 10
+  },
+  {
+    "id": 54,
+    "region": "Global",
+    "task": "Pickpocket a Man or a Woman",
+    "points": 10
+  },
+  {
+    "id": 55,
+    "region": "Global",
+    "task": "Plant some seeds in an Allotment patch",
+    "points": 10
+  },
+  {
+    "id": 56,
+    "region": "Global",
+    "task": "Pay a farmer to protect any of your crops",
+    "points": 10
+  },
+  {
+    "id": 57,
+    "region": "Global",
+    "task": "Purchase a Player Owned House",
+    "points": 10
+  },
+  {
+    "id": 58,
+    "region": "Global",
+    "task": "Rake any Farming patch",
+    "points": 10
+  },
+  {
+    "id": 59,
+    "region": "Global",
+    "task": "Reach Combat Level 10",
+    "points": 10
+  },
+  {
+    "id": 60,
+    "region": "Global",
+    "task": "Reach Combat Level 25",
+    "points": 10
+  },
+  {
+    "id": 61,
+    "region": "Global",
+    "task": "Restore 5 or more Prayer Points at any altar",
+    "points": 10
+  },
+  {
+    "id": 62,
+    "region": "Global",
+    "task": "Scatter some Ashes",
+    "points": 10
+  },
+  {
+    "id": 63,
+    "region": "Global",
+    "task": "Use a Furnace to smelt a Bronze Bar",
+    "points": 10
+  },
+  {
+    "id": 64,
+    "region": "Global",
+    "task": "Use a Furnace to smelt an Iron Bar",
+    "points": 10
+  },
+  {
+    "id": 65,
+    "region": "Global",
+    "task": "Use an Anvil to smith a Bronze full helm",
+    "points": 10
+  },
+  {
+    "id": 66,
+    "region": "Global",
+    "task": "Use an Anvil to smith a Bronze plateskirt",
+    "points": 10
+  },
+  {
+    "id": 67,
+    "region": "Global",
+    "task": "Catch any bird with a Bird Snare",
+    "points": 10
+  },
+  {
+    "id": 68,
+    "region": "Global",
+    "task": "Use a Spinning Wheel to spin a Ball of Wool",
+    "points": 10
+  },
+  {
+    "id": 69,
+    "region": "Global",
+    "task": "Steal a Chocolate Slice from a Bakery Stall",
+    "points": 10
+  },
+  {
+    "id": 70,
+    "region": "Global",
+    "task": "Steal some silk from a silk stall",
+    "points": 10
+  },
+  {
+    "id": 71,
+    "region": "Global",
+    "task": "Successfully Cut a Red Topaz",
+    "points": 10
+  },
+  {
+    "id": 72,
+    "region": "Global",
+    "task": "Use both the Superhuman Strength prayer and the Improved Reflexes prayer at the same time",
+    "points": 10
+  },
+  {
+    "id": 73,
+    "region": "Global",
+    "task": "Use a Sawmill to turn Logs into a Plank",
+    "points": 10
+  },
+  {
+    "id": 74,
+    "region": "Global",
+    "task": "Put a hat on a hat stand, or try at least",
+    "points": 10
+  },
+  {
+    "id": 75,
+    "region": "Global",
+    "task": "Visit Death's Domain",
+    "points": 10
+  },
+  {
+    "id": 76,
+    "region": "Global",
+    "task": "Visit the Rune Essence Mine",
+    "points": 10
+  },
+  {
+    "id": 77,
+    "region": "Global",
+    "task": "Catch a Karambwanji on Karamja",
+    "points": 10
+  },
+  {
+    "id": 78,
+    "region": "Global",
+    "task": "Fill a crate with Bananas for Luthas at Musa Point",
+    "points": 10
+  },
+  {
+    "id": 79,
+    "region": "Global",
+    "task": "Kill a Snake in Karamja",
+    "points": 10
+  },
+  {
+    "id": 80,
+    "region": "Global",
+    "task": "Pick a Pineapple on Karamja",
+    "points": 10
+  },
+  {
+    "id": 81,
+    "region": "Global",
+    "task": "Receive an Agility Arena Ticket from the Brimhaven Agility Arena",
+    "points": 10
+  },
+  {
+    "id": 82,
+    "region": "Global",
+    "task": "Talk to Bob in Lumbridge axe shop and ask for a Quest",
+    "points": 10
+  },
+  {
+    "id": 83,
+    "region": "Global",
+    "task": "Chop a log from a tree that is curiously in a potato field",
+    "points": 10
+  },
+  {
+    "id": 84,
+    "region": "Global",
+    "task": "Complete a lap of the Draynor Rooftop Agility Course",
+    "points": 10
+  },
+  {
+    "id": 85,
+    "region": "Global",
+    "task": "Complete the Natural History Quiz in the Varrock Museum",
+    "points": 10
+  },
+  {
+    "id": 86,
+    "region": "Global",
+    "task": "Complete a lap of the Varrock Rooftop Agility Course",
+    "points": 10
+  },
+  {
+    "id": 87,
+    "region": "Global",
+    "task": "Defeat the Lesser Demon at the top of the Wizards' Tower",
+    "points": 10
+  },
+  {
+    "id": 88,
+    "region": "Global",
+    "task": "Drink a beer in the Longhall in Barbarian Village",
+    "points": 10
+  },
+  {
+    "id": 89,
+    "region": "Global",
+    "task": "Eat an Onion, raw",
+    "points": 10
+  },
+  {
+    "id": 90,
+    "region": "Global",
+    "task": "Enter the lost city of Zanaris",
+    "points": 10
+  },
+  {
+    "id": 91,
+    "region": "Global",
+    "task": "Equip an Iron dagger",
+    "points": 10
+  },
+  {
+    "id": 92,
+    "region": "Global",
+    "task": "Get a chair to follow you",
+    "points": 10
+  },
+  {
+    "id": 93,
+    "region": "Global",
+    "task": "Go and get a haircut",
+    "points": 10
+  },
+  {
+    "id": 94,
+    "region": "Global",
+    "task": "Get your revenge against a Dark Wizard, south of Varrock",
+    "points": 10
+  },
+  {
+    "id": 95,
+    "region": "Global",
+    "task": "Have Elsie tell you a story in Varrock",
+    "points": 10
+  },
+  {
+    "id": 96,
+    "region": "Global",
+    "task": "Have Ned make you some rope using a ball of wool in Draynor Village",
+    "points": 10
+  },
+  {
+    "id": 97,
+    "region": "Global",
+    "task": "Insult Aggie the Witch in Draynor Village",
+    "points": 10
+  },
+  {
+    "id": 98,
+    "region": "Global",
+    "task": "Kill a Barbarian in Barbarian Village",
+    "points": 10
+  },
+  {
+    "id": 99,
+    "region": "Global",
+    "task": "Kill a Chicken with your fists",
+    "points": 10
+  },
+  {
+    "id": 100,
+    "region": "Global",
+    "task": "Kill a Cow in one hit",
+    "points": 10
+  },
+  {
+    "id": 101,
+    "region": "Global",
+    "task": "Kill a Duck with a fire spell",
+    "points": 10
+  },
+  {
+    "id": 102,
+    "region": "Global",
+    "task": "Kill a Frog",
+    "points": 10
+  },
+  {
+    "id": 103,
+    "region": "Global",
+    "task": "Kill a Goblin holding a spear",
+    "points": 10
+  },
+  {
+    "id": 104,
+    "region": "Global",
+    "task": "Kill a Mugger",
+    "points": 10
+  },
+  {
+    "id": 105,
+    "region": "Global",
+    "task": "Kill a Ram",
+    "points": 10
+  },
+  {
+    "id": 106,
+    "region": "Global",
+    "task": "Kill a Rat",
+    "points": 10
+  },
+  {
+    "id": 107,
+    "region": "Global",
+    "task": "Kill a Spider in Lumbridge by kicking it",
+    "points": 10
+  },
+  {
+    "id": 108,
+    "region": "Global",
+    "task": "Kill an Imp with an earth spell",
+    "points": 10
+  },
+  {
+    "id": 109,
+    "region": "Global",
+    "task": "Milk a cow in Lumbridge",
+    "points": 10
+  },
+  {
+    "id": 110,
+    "region": "Global",
+    "task": "Pan for an Uncut Jade",
+    "points": 10
+  },
+  {
+    "id": 111,
+    "region": "Global",
+    "task": "Pet a Stray Dog in Varrock",
+    "points": 10
+  },
+  {
+    "id": 112,
+    "region": "Global",
+    "task": "Pet the dog in the Museum Camp on Fossil Island",
+    "points": 10
+  },
+  {
+    "id": 113,
+    "region": "Global",
+    "task": "Pick a Cabbage in Varrock",
+    "points": 10
+  },
+  {
+    "id": 114,
+    "region": "Global",
+    "task": "Pray at an Altar in Lumbridge",
+    "points": 10
+  },
+  {
+    "id": 115,
+    "region": "Global",
+    "task": "Slash a web in Varrock sewers",
+    "points": 10
+  },
+  {
+    "id": 116,
+    "region": "Global",
+    "task": "Steal from the Tea Stall in Varrock",
+    "points": 10
+  },
+  {
+    "id": 117,
+    "region": "Global",
+    "task": "Get a cat and stroke it!",
+    "points": 10
+  },
+  {
+    "id": 118,
+    "region": "Global",
+    "task": "Take a Canoe from Lumbridge to the Champions Guild",
+    "points": 10
+  },
+  {
+    "id": 119,
+    "region": "Global",
+    "task": "Talk to Hans and have him tell you how old you are",
+    "points": 10
+  },
+  {
+    "id": 120,
+    "region": "Global",
+    "task": "Take the Museum Barge to Fossil Island",
+    "points": 10
+  },
+  {
+    "id": 121,
+    "region": "Global",
+    "task": "Anger the Tramp, in south east Varrock",
+    "points": 10
+  },
+  {
+    "id": 122,
+    "region": "Global",
+    "task": "Use any Fairy Ring",
+    "points": 10
+  },
+  {
+    "id": 123,
+    "region": "Global",
+    "task": "Use the Northern Staircase in Lumbridge Castle to go upstairs from the bottom floor",
+    "points": 10
+  },
+  {
+    "id": 124,
+    "region": "Global",
+    "task": "Open a Reward casket for completing an easy clue scroll",
+    "points": 30
+  },
+  {
+    "id": 125,
+    "region": "Global",
+    "task": "Open a Reward casket for completing an elite clue scroll",
+    "points": 30
+  },
+  {
+    "id": 126,
+    "region": "Global",
+    "task": "Open a Reward casket for completing a hard clue scroll",
+    "points": 30
+  },
+  {
+    "id": 127,
+    "region": "Global",
+    "task": "Open a Reward casket for completing a medium clue scroll",
+    "points": 30
+  },
+  {
+    "id": 128,
+    "region": "Global",
+    "task": "Obtain 15 unique Collection Log slots",
+    "points": 30
+  },
+  {
+    "id": 129,
+    "region": "Global",
+    "task": "Open 25 Reward caskets for completing easy clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 130,
+    "region": "Global",
+    "task": "Open 25 Reward caskets for completing elite clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 131,
+    "region": "Global",
+    "task": "Open 25 Reward caskets for completing hard clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 132,
+    "region": "Global",
+    "task": "Open 25 Reward caskets for completing medium clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 133,
+    "region": "Global",
+    "task": "Defeat 25 superior foes while on a Slayer Task",
+    "points": 30
+  },
+  {
+    "id": 134,
+    "region": "Global",
+    "task": "Obtain 30 unique Collection Log slots",
+    "points": 30
+  },
+  {
+    "id": 135,
+    "region": "Global",
+    "task": "Obtain 5 unique Collection Log slots",
+    "points": 30
+  },
+  {
+    "id": 136,
+    "region": "Global",
+    "task": "Obtain 50 unique Collection Log slots",
+    "points": 30
+  },
+  {
+    "id": 137,
+    "region": "Global",
+    "task": "Open 75 Reward caskets for completing easy clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 138,
+    "region": "Global",
+    "task": "Open 75 Reward caskets for completing medium clue scrolls",
+    "points": 30
+  },
+  {
+    "id": 139,
+    "region": "Global",
+    "task": "Defeat 75 superior foes while on a Slayer Task",
+    "points": 30
+  },
+  {
+    "id": 140,
+    "region": "Global",
+    "task": "Reach level 30 in any skill",
+    "points": 30
+  },
+  {
+    "id": 141,
+    "region": "Global",
+    "task": "Reach level 40 in any skill",
+    "points": 30
+  },
+  {
+    "id": 142,
+    "region": "Global",
+    "task": "Reach level 50 in any skill",
+    "points": 30
+  },
+  {
+    "id": 143,
+    "region": "Global",
+    "task": "Reach level 60 in any skill",
+    "points": 30
+  },
+  {
+    "id": 144,
+    "region": "Global",
+    "task": "Build a Mahogany Portal in a Portal Chamber in your Player Owned House",
+    "points": 30
+  },
+  {
+    "id": 145,
+    "region": "Global",
+    "task": "Build a room in your Player Owned House",
+    "points": 30
+  },
+  {
+    "id": 146,
+    "region": "Global",
+    "task": "Build a Waka Canoe",
+    "points": 30
+  },
+  {
+    "id": 147,
+    "region": "Global",
+    "task": "Build an Oak Larder in a Kitchen in your Player Owned House",
+    "points": 30
+  },
+  {
+    "id": 148,
+    "region": "Global",
+    "task": "Burn 100 Willow Logs",
+    "points": 30
+  },
+  {
+    "id": 149,
+    "region": "Global",
+    "task": "Burn 25 Maple Logs",
+    "points": 30
+  },
+  {
+    "id": 150,
+    "region": "Global",
+    "task": "Burn some logs that have been coloured with a firelighter",
+    "points": 30
+  },
+  {
+    "id": 151,
+    "region": "Global",
+    "task": "Bury either some Wyvern Bones or some Dragon Bones",
+    "points": 30
+  },
+  {
+    "id": 152,
+    "region": "Global",
+    "task": "Buy a candle in Lumbridge",
+    "points": 30
+  },
+  {
+    "id": 153,
+    "region": "Global",
+    "task": "Cast any blast spell",
+    "points": 30
+  },
+  {
+    "id": 154,
+    "region": "Global",
+    "task": "Cast the High Level Alchemy spell",
+    "points": 30
+  },
+  {
+    "id": 155,
+    "region": "Global",
+    "task": "Catch 10 Pike",
+    "points": 30
+  },
+  {
+    "id": 156,
+    "region": "Global",
+    "task": "Catch 100 Raw Lobsters whilst Fishing",
+    "points": 30
+  },
+  {
+    "id": 157,
+    "region": "Global",
+    "task": "Catch 25 Sardines",
+    "points": 30
+  },
+  {
+    "id": 158,
+    "region": "Global",
+    "task": "Catch 50 Raw Salmon whilst Fishing",
+    "points": 30
+  },
+  {
+    "id": 159,
+    "region": "Global",
+    "task": "Catch 50 Raw Swordfish whilst Fishing",
+    "points": 30
+  },
+  {
+    "id": 160,
+    "region": "Global",
+    "task": "Catch a Grey Chinchompa",
+    "points": 30
+  },
+  {
+    "id": 161,
+    "region": "Global",
+    "task": "Catch either a Swamp Lizard or any kind of Salamander",
+    "points": 30
+  },
+  {
+    "id": 162,
+    "region": "Global",
+    "task": "Check the health of any Fruit Tree you've grown",
+    "points": 30
+  },
+  {
+    "id": 163,
+    "region": "Global",
+    "task": "Chop 100 Willow Logs from Willow Trees",
+    "points": 30
+  },
+  {
+    "id": 164,
+    "region": "Global",
+    "task": "Chop any kind of logs using a Rune Axe",
+    "points": 30
+  },
+  {
+    "id": 165,
+    "region": "Global",
+    "task": "Chop some Rising Roots spawned via Forestry",
+    "points": 30
+  },
+  {
+    "id": 166,
+    "region": "Global",
+    "task": "Clean 50 Grimy Cadantine",
+    "points": 30
+  },
+  {
+    "id": 167,
+    "region": "Global",
+    "task": "Clean 50 Grimy Ranarr Weed",
+    "points": 30
+  },
+  {
+    "id": 168,
+    "region": "Global",
+    "task": "Clean a Grimy Avantoe",
+    "points": 30
+  },
+  {
+    "id": 169,
+    "region": "Global",
+    "task": "Complete 1 Slayer Task",
+    "points": 30
+  },
+  {
+    "id": 170,
+    "region": "Global",
+    "task": "Complete 10 Mahogany homes contracts",
+    "points": 30
+  },
+  {
+    "id": 171,
+    "region": "Global",
+    "task": "Complete 25 Mahogany homes contracts",
+    "points": 30
+  },
+  {
+    "id": 172,
+    "region": "Global",
+    "task": "Complete 50 laps of any Rooftop Agility Course",
+    "points": 30
+  },
+  {
+    "id": 173,
+    "region": "Global",
+    "task": "Complete a   Mahogany Homes adept contract",
+    "points": 30
+  },
+  {
+    "id": 174,
+    "region": "Global",
+    "task": "Complete a   Mahogany Homes beginner contract",
+    "points": 30
+  },
+  {
+    "id": 175,
+    "region": "Global",
+    "task": "Complete a   Mahogany Homes novice contract",
+    "points": 30
+  },
+  {
+    "id": 176,
+    "region": "Global",
+    "task": "Complete all of the easy tasks in the   Western Provinces Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 177,
+    "region": "Global",
+    "task": "Complete the Evil Bob random event",
+    "points": 30
+  },
+  {
+    "id": 178,
+    "region": "Global",
+    "task": "Complete the Flowering Bush event spawned via Forestry",
+    "points": 30
+  },
+  {
+    "id": 179,
+    "region": "Global",
+    "task": "Complete the Maze random event",
+    "points": 30
+  },
+  {
+    "id": 180,
+    "region": "Global",
+    "task": "Complete all of the medium tasks in the   Western Provinces Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 181,
+    "region": "Global",
+    "task": "Complete the Pheasant event spawned via Forestry",
+    "points": 30
+  },
+  {
+    "id": 182,
+    "region": "Global",
+    "task": "Complete the Pillory random event",
+    "points": 30
+  },
+  {
+    "id": 183,
+    "region": "Global",
+    "task": "Complete the Pinball random event",
+    "points": 30
+  },
+  {
+    "id": 184,
+    "region": "Global",
+    "task": "Complete the Postie Pete random event",
+    "points": 30
+  },
+  {
+    "id": 185,
+    "region": "Global",
+    "task": "Complete the Prison Pete random event",
+    "points": 30
+  },
+  {
+    "id": 186,
+    "region": "Global",
+    "task": "Complete the Ritual event spawned via Forestry",
+    "points": 30
+  },
+  {
+    "id": 187,
+    "region": "Global",
+    "task": "Complete the Struggling Sapling event spawned via Forestry",
+    "points": 30
+  },
+  {
+    "id": 188,
+    "region": "Global",
+    "task": "Complete the Surprise Exam random event",
+    "points": 30
+  },
+  {
+    "id": 189,
+    "region": "Global",
+    "task": "Cook 10 Raw Sardines",
+    "points": 30
+  },
+  {
+    "id": 190,
+    "region": "Global",
+    "task": "Cook 100 Raw Lobsters",
+    "points": 30
+  },
+  {
+    "id": 191,
+    "region": "Global",
+    "task": "Cook 20 Raw Pike",
+    "points": 30
+  },
+  {
+    "id": 192,
+    "region": "Global",
+    "task": "Use Runecrafting Altars to craft 200 essence into runes of any type",
+    "points": 30
+  },
+  {
+    "id": 193,
+    "region": "Global",
+    "task": "Use a Runecrafting Altar to craft 4 of any type of rune using a single essence",
+    "points": 30
+  },
+  {
+    "id": 194,
+    "region": "Global",
+    "task": "Craft a Ruby Amulet",
+    "points": 30
+  },
+  {
+    "id": 195,
+    "region": "Global",
+    "task": "Craft an Emerald Ring",
+    "points": 30
+  },
+  {
+    "id": 196,
+    "region": "Global",
+    "task": "Use a Runecrafting Altar to craft any type of combination rune",
+    "points": 30
+  },
+  {
+    "id": 197,
+    "region": "Global",
+    "task": "Create a green d'hide shield",
+    "points": 30
+  },
+  {
+    "id": 198,
+    "region": "Global",
+    "task": "Create a Guthix Rest Tea",
+    "points": 30
+  },
+  {
+    "id": 199,
+    "region": "Global",
+    "task": "Cut 50 Maple Logs",
+    "points": 30
+  },
+  {
+    "id": 200,
+    "region": "Global",
+    "task": "Defeat a Lesser Demon",
+    "points": 30
+  },
+  {
+    "id": 201,
+    "region": "Global",
+    "task": "Defeat any Superior Slayer Creature",
+    "points": 30
+  },
+  {
+    "id": 202,
+    "region": "Global",
+    "task": "Eat some Purple Sweets",
+    "points": 30
+  },
+  {
+    "id": 203,
+    "region": "Global",
+    "task": "Equip a frog mask",
+    "points": 30
+  },
+  {
+    "id": 204,
+    "region": "Global",
+    "task": "Equip an Adamant Platebody, a Adamant Full Helm and either some Adamant Platelegs or an Adamant Plateskirt",
+    "points": 30
+  },
+  {
+    "id": 205,
+    "region": "Global",
+    "task": "Equip a Blue Dragonhide Body, some Blue Dragonhide Chaps and some Blue Dragonhide Vambraces",
+    "points": 30
+  },
+  {
+    "id": 206,
+    "region": "Global",
+    "task": "Equip a Green Dragonhide Body, some Green Dragonhide Chaps and some Green Dragonhide Vambraces",
+    "points": 30
+  },
+  {
+    "id": 207,
+    "region": "Global",
+    "task": "Equip a Mithril Platebody, a Mithril Full Helm and either some Mithril Platelegs or a Mithril Plateskirt",
+    "points": 30
+  },
+  {
+    "id": 208,
+    "region": "Global",
+    "task": "Equip a Red Dragonhide Body, some Red Dragonhide Chaps and some Red Dragonhide Vambraces",
+    "points": 30
+  },
+  {
+    "id": 209,
+    "region": "Global",
+    "task": "Equip a Granite Shield",
+    "points": 30
+  },
+  {
+    "id": 210,
+    "region": "Global",
+    "task": "Equip a Lava Battlestaff",
+    "points": 30
+  },
+  {
+    "id": 211,
+    "region": "Global",
+    "task": "Equip a Leaf-Bladed Sword",
+    "points": 30
+  },
+  {
+    "id": 212,
+    "region": "Global",
+    "task": "Equip a Maple Shortbow",
+    "points": 30
+  },
+  {
+    "id": 213,
+    "region": "Global",
+    "task": "Equip any Mithril weapon",
+    "points": 30
+  },
+  {
+    "id": 214,
+    "region": "Global",
+    "task": "Equip any piece of any Mystic robe set",
+    "points": 30
+  },
+  {
+    "id": 215,
+    "region": "Global",
+    "task": "Equip a piece of Beekeeper's Outfit",
+    "points": 30
+  },
+  {
+    "id": 216,
+    "region": "Global",
+    "task": "Equip a piece of Camouflage outfit",
+    "points": 30
+  },
+  {
+    "id": 217,
+    "region": "Global",
+    "task": "Equip a piece of Mime Outfit",
+    "points": 30
+  },
+  {
+    "id": 218,
+    "region": "Global",
+    "task": "Equip a piece of Zombie Outfit",
+    "points": 30
+  },
+  {
+    "id": 219,
+    "region": "Global",
+    "task": "Equip any Rune weapon",
+    "points": 30
+  },
+  {
+    "id": 220,
+    "region": "Global",
+    "task": "Equip a Trimmed Amulet",
+    "points": 30
+  },
+  {
+    "id": 221,
+    "region": "Global",
+    "task": "Equip a Willow Shield",
+    "points": 30
+  },
+  {
+    "id": 222,
+    "region": "Global",
+    "task": "Equip any wizard robe along with any wizard hat",
+    "points": 30
+  },
+  {
+    "id": 223,
+    "region": "Global",
+    "task": "Equip a Yew Shortbow",
+    "points": 30
+  },
+  {
+    "id": 224,
+    "region": "Global",
+    "task": "Equip any Adamant weapon",
+    "points": 30
+  },
+  {
+    "id": 225,
+    "region": "Global",
+    "task": "Equip either an elemental battlestaff or an elemental mystic staff",
+    "points": 30
+  },
+  {
+    "id": 226,
+    "region": "Global",
+    "task": "Equip a full set of Graahk, Larupia or Kyatt attire",
+    "points": 30
+  },
+  {
+    "id": 227,
+    "region": "Global",
+    "task": "Equip either a Black Platebody, some Black Platelegs or a Black Full Helm",
+    "points": 30
+  },
+  {
+    "id": 228,
+    "region": "Global",
+    "task": "Equip either a Steel Platebody, some Steel Platelegs or a Steel Full Helm",
+    "points": 30
+  },
+  {
+    "id": 229,
+    "region": "Global",
+    "task": "Fill 15 slots in the Hard Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 230,
+    "region": "Global",
+    "task": "Fill 20 slots in the Easy Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 231,
+    "region": "Global",
+    "task": "Fill 20 slots in the Medium Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 232,
+    "region": "Global",
+    "task": "Fill 3 slots in the Elite Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 233,
+    "region": "Global",
+    "task": "Fill 3 slots in the Hard Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 234,
+    "region": "Global",
+    "task": "Fill 5 slots in the Beginner Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 235,
+    "region": "Global",
+    "task": "Fill 5 slots in the Easy Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 236,
+    "region": "Global",
+    "task": "Fill 5 slots in the Medium Clue section of the Collection Log",
+    "points": 30
+  },
+  {
+    "id": 237,
+    "region": "Global",
+    "task": "Fill a Bucket with Supercompost from a Compost Bin",
+    "points": 30
+  },
+  {
+    "id": 238,
+    "region": "Global",
+    "task": "Fill a Large Pouch with Essence",
+    "points": 30
+  },
+  {
+    "id": 239,
+    "region": "Global",
+    "task": "Build a Medium S.T.A.S.H. unit and fill it with the relevant items",
+    "points": 30
+  },
+  {
+    "id": 240,
+    "region": "Global",
+    "task": "Dig in a hay stack for a needle",
+    "points": 30
+  },
+  {
+    "id": 241,
+    "region": "Global",
+    "task": "Fletch 1000 arrow shafts",
+    "points": 30
+  },
+  {
+    "id": 242,
+    "region": "Global",
+    "task": "Fletch 150 Iron Arrows",
+    "points": 30
+  },
+  {
+    "id": 243,
+    "region": "Global",
+    "task": "Fletch 25 Oak Stocks",
+    "points": 30
+  },
+  {
+    "id": 244,
+    "region": "Global",
+    "task": "Fletch a Willow Shortbow (u)",
+    "points": 30
+  },
+  {
+    "id": 245,
+    "region": "Global",
+    "task": "Fletch either some Broad Arrows or some Broad Bolts",
+    "points": 30
+  },
+  {
+    "id": 246,
+    "region": "Global",
+    "task": "Gain 10 unique items from Beginner Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 247,
+    "region": "Global",
+    "task": "Gain 10 unique items from Easy Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 248,
+    "region": "Global",
+    "task": "Gain 10 unique items from Medium Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 249,
+    "region": "Global",
+    "task": "Gain 20 unique items from Hard Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 250,
+    "region": "Global",
+    "task": "Gain 35 unique items from Easy Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 251,
+    "region": "Global",
+    "task": "Gain 5 unique items from Hard Clue Scroll Reward Caskets",
+    "points": 30
+  },
+  {
+    "id": 252,
+    "region": "Global",
+    "task": "Gain a unique item from a Beginner Clue Scroll Reward Casket",
+    "points": 30
+  },
+  {
+    "id": 253,
+    "region": "Global",
+    "task": "Gain a unique item from a Hard Clue Scroll Reward Casket",
+    "points": 30
+  },
+  {
+    "id": 254,
+    "region": "Global",
+    "task": "Gain a unique item from a Master Clue Scroll Reward Casket",
+    "points": 30
+  },
+  {
+    "id": 255,
+    "region": "Global",
+    "task": "Gain a unique item from a Medium Clue Scroll Reward Casket",
+    "points": 30
+  },
+  {
+    "id": 256,
+    "region": "Global",
+    "task": "Gain a unique item from an Easy Clue Scroll Reward Casket",
+    "points": 30
+  },
+  {
+    "id": 257,
+    "region": "Global",
+    "task": "Harvest an Irit Leaf from any Herb patch",
+    "points": 30
+  },
+  {
+    "id": 258,
+    "region": "Global",
+    "task": "Kill 5 Bunnies",
+    "points": 30
+  },
+  {
+    "id": 259,
+    "region": "Global",
+    "task": "Kill three chickens in 6 seconds",
+    "points": 30
+  },
+  {
+    "id": 260,
+    "region": "Global",
+    "task": "Successfully land a hoop on a stick in the PoH minigame",
+    "points": 30
+  },
+  {
+    "id": 261,
+    "region": "Global",
+    "task": "Light a Bullseye Lantern",
+    "points": 30
+  },
+  {
+    "id": 262,
+    "region": "Global",
+    "task": "Make 20 Stamina Potions",
+    "points": 30
+  },
+  {
+    "id": 263,
+    "region": "Global",
+    "task": "Make 30 Prayer Potions",
+    "points": 30
+  },
+  {
+    "id": 264,
+    "region": "Global",
+    "task": "Make any 4 dose potion using an Amulet of Chemistry",
+    "points": 30
+  },
+  {
+    "id": 265,
+    "region": "Global",
+    "task": "Make a Pineapple Pizza",
+    "points": 30
+  },
+  {
+    "id": 266,
+    "region": "Global",
+    "task": "Make some Flour in a windmill",
+    "points": 30
+  },
+  {
+    "id": 267,
+    "region": "Global",
+    "task": "Mine 15 coal",
+    "points": 30
+  },
+  {
+    "id": 268,
+    "region": "Global",
+    "task": "Mine 50 Iron Ore",
+    "points": 30
+  },
+  {
+    "id": 269,
+    "region": "Global",
+    "task": "Mine 50 Mithril Ore",
+    "points": 30
+  },
+  {
+    "id": 270,
+    "region": "Global",
+    "task": "Mine any ore using a Rune Pickaxe",
+    "points": 30
+  },
+  {
+    "id": 271,
+    "region": "Global",
+    "task": "Open a stack of Coin Pouches and obtain at least 800 Coins",
+    "points": 30
+  },
+  {
+    "id": 272,
+    "region": "Global",
+    "task": "Obtain any kind of clue geode whilst Mining a rock",
+    "points": 30
+  },
+  {
+    "id": 273,
+    "region": "Global",
+    "task": "Obtain any kind of gem whilst Mining a rock",
+    "points": 30
+  },
+  {
+    "id": 274,
+    "region": "Global",
+    "task": "Obtain a Mark of Grace from any Rooftop Agility Course",
+    "points": 30
+  },
+  {
+    "id": 275,
+    "region": "Global",
+    "task": "Open 28 Coin Pouches at once",
+    "points": 30
+  },
+  {
+    "id": 276,
+    "region": "Global",
+    "task": "A boat is a boat, but the mystery box could be anything, even a boat!",
+    "points": 30
+  },
+  {
+    "id": 277,
+    "region": "Global",
+    "task": "Successfully pickpocket from a Master farmer",
+    "points": 30
+  },
+  {
+    "id": 278,
+    "region": "Global",
+    "task": "Equip enough item to reach a Prayer bonus of 15 or more",
+    "points": 30
+  },
+  {
+    "id": 279,
+    "region": "Global",
+    "task": "Reach level 10 in every skill",
+    "points": 30
+  },
+  {
+    "id": 280,
+    "region": "Global",
+    "task": "Reach level 20 in every skill",
+    "points": 30
+  },
+  {
+    "id": 281,
+    "region": "Global",
+    "task": "Reach level 30 in every skill",
+    "points": 30
+  },
+  {
+    "id": 282,
+    "region": "Global",
+    "task": "Reach level 5 in every skill",
+    "points": 30
+  },
+  {
+    "id": 283,
+    "region": "Global",
+    "task": "Reach Combat Level 50",
+    "points": 30
+  },
+  {
+    "id": 284,
+    "region": "Global",
+    "task": "Reach Combat Level 75",
+    "points": 30
+  },
+  {
+    "id": 285,
+    "region": "Global",
+    "task": "Reach a Total Level of 100",
+    "points": 30
+  },
+  {
+    "id": 286,
+    "region": "Global",
+    "task": "Reach a Total Level of 250",
+    "points": 30
+  },
+  {
+    "id": 287,
+    "region": "Global",
+    "task": "Reach a Total Level of 500",
+    "points": 30
+  },
+  {
+    "id": 288,
+    "region": "Global",
+    "task": "Reach a Total Level of 750",
+    "points": 30
+  },
+  {
+    "id": 289,
+    "region": "Global",
+    "task": "Read a Prayer book near a lectern",
+    "points": 30
+  },
+  {
+    "id": 290,
+    "region": "Global",
+    "task": "Scrape some blue dragonhide",
+    "points": 30
+  },
+  {
+    "id": 291,
+    "region": "Global",
+    "task": "Slay 250 creatures whilst on a Slayer Task",
+    "points": 30
+  },
+  {
+    "id": 292,
+    "region": "Global",
+    "task": "Use a Furnace to smelt a Steel Bar",
+    "points": 30
+  },
+  {
+    "id": 293,
+    "region": "Global",
+    "task": "Use an Anvil to smith 10 Steel bolts (unf)",
+    "points": 30
+  },
+  {
+    "id": 294,
+    "region": "Global",
+    "task": "Use an Anvil to smith 150 Iron Arrowtips",
+    "points": 30
+  },
+  {
+    "id": 295,
+    "region": "Global",
+    "task": "Use an Anvil to smith 250 Mithril bolts (unf)",
+    "points": 30
+  },
+  {
+    "id": 296,
+    "region": "Global",
+    "task": "Use an Anvil to smith a Steel Platebody",
+    "points": 30
+  },
+  {
+    "id": 297,
+    "region": "Global",
+    "task": "Cook 5 pieces of food in a row without burning them",
+    "points": 30
+  },
+  {
+    "id": 298,
+    "region": "Global",
+    "task": "Cast any teleport spell that uses Law Runes",
+    "points": 30
+  },
+  {
+    "id": 299,
+    "region": "Global",
+    "task": "Trade a herb with Jekyll for a potion",
+    "points": 30
+  },
+  {
+    "id": 300,
+    "region": "Global",
+    "task": "Use the Protect from Melee Prayer",
+    "points": 30
+  },
+  {
+    "id": 301,
+    "region": "Global",
+    "task": "Buy a Snapdragon From Pirate Jackie the Fruit in Brimhaven",
+    "points": 30
+  },
+  {
+    "id": 302,
+    "region": "Global",
+    "task": "Catch 50 Karambwan on Karamja",
+    "points": 30
+  },
+  {
+    "id": 303,
+    "region": "Global",
+    "task": "Catch a Salmon on Karamja",
+    "points": 30
+  },
+  {
+    "id": 304,
+    "region": "Global",
+    "task": "Complete all of the easy tasks in the   Karamja Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 305,
+    "region": "Global",
+    "task": "Complete all of the medium tasks in the   Karamja Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 306,
+    "region": "Global",
+    "task": "Craft 50 Nature Runes from Essence at the Nature Altar",
+    "points": 30
+  },
+  {
+    "id": 307,
+    "region": "Global",
+    "task": "Defeat a Greater Demon on Karamja",
+    "points": 30
+  },
+  {
+    "id": 308,
+    "region": "Global",
+    "task": "Defeat a Steel Dragon on Karamja",
+    "points": 30
+  },
+  {
+    "id": 309,
+    "region": "Global",
+    "task": "Defeat any TzHaar in Mor Ul Rek",
+    "points": 30
+  },
+  {
+    "id": 310,
+    "region": "Global",
+    "task": "Enter the Brimhaven Dungeon",
+    "points": 30
+  },
+  {
+    "id": 311,
+    "region": "Global",
+    "task": "Enter the Hardwood Grove in Tai Bwo Wannai",
+    "points": 30
+  },
+  {
+    "id": 312,
+    "region": "Global",
+    "task": "Equip a Toktz-Ket-Xil",
+    "points": 30
+  },
+  {
+    "id": 313,
+    "region": "Global",
+    "task": "Equip a Toktz-Xil-Ak",
+    "points": 30
+  },
+  {
+    "id": 314,
+    "region": "Global",
+    "task": "Equip a Toktz-Xil-Ek",
+    "points": 30
+  },
+  {
+    "id": 315,
+    "region": "Global",
+    "task": "Equip an Obsidian Cape",
+    "points": 30
+  },
+  {
+    "id": 316,
+    "region": "Global",
+    "task": "Pay the barkeep to sleep in Paramaya Inn, in Shilo Village",
+    "points": 30
+  },
+  {
+    "id": 317,
+    "region": "Global",
+    "task": "Use the Stepping Stones Agility Shortcut in Shilo Village",
+    "points": 30
+  },
+  {
+    "id": 318,
+    "region": "Global",
+    "task": "Build a Bank at the Museum Camp on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 319,
+    "region": "Global",
+    "task": "Catch 50 Implings in Puro-Puro",
+    "points": 30
+  },
+  {
+    "id": 320,
+    "region": "Global",
+    "task": "Chop a Sulliuscep Cap on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 321,
+    "region": "Global",
+    "task": "Use a churn to make some butter",
+    "points": 30
+  },
+  {
+    "id": 322,
+    "region": "Global",
+    "task": "Complete 10 laps of the Draynor Rooftop Agility Course",
+    "points": 30
+  },
+  {
+    "id": 323,
+    "region": "Global",
+    "task": "Complete 10 laps of the Varrock Rooftop Agility Course",
+    "points": 30
+  },
+  {
+    "id": 324,
+    "region": "Global",
+    "task": "Complete a Volcanic Mine game on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 325,
+    "region": "Global",
+    "task": "Complete the   Demon Slayer quest",
+    "points": 30
+  },
+  {
+    "id": 326,
+    "region": "Global",
+    "task": "Complete the   Sheep Shearer quest",
+    "points": 30
+  },
+  {
+    "id": 327,
+    "region": "Global",
+    "task": "Complete all of the easy tasks in the   Lumbridge & Draynor Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 328,
+    "region": "Global",
+    "task": "Complete all of the easy tasks in the   Varrock Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 329,
+    "region": "Global",
+    "task": "Complete all of the medium tasks in the   Lumbridge & Draynor Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 330,
+    "region": "Global",
+    "task": "Complete all of the medium tasks in the   Varrock Achievement Diary",
+    "points": 30
+  },
+  {
+    "id": 331,
+    "region": "Global",
+    "task": "Complete the   Vampyre Slayer quest",
+    "points": 30
+  },
+  {
+    "id": 332,
+    "region": "Global",
+    "task": "Craft 50 Cosmic Runes from Essence at the Cosmic Altar from Essence",
+    "points": 30
+  },
+  {
+    "id": 333,
+    "region": "Global",
+    "task": "Craft 50 Water Runes from Essence at the Water Altar",
+    "points": 30
+  },
+  {
+    "id": 334,
+    "region": "Global",
+    "task": "Defeat 50 Tormented Demons",
+    "points": 30
+  },
+  {
+    "id": 335,
+    "region": "Global",
+    "task": "Defeat any type of Wyvern on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 336,
+    "region": "Global",
+    "task": "Defeat a Tormented Demon",
+    "points": 30
+  },
+  {
+    "id": 337,
+    "region": "Global",
+    "task": "Defeat Bryophyta in Varrock Sewers",
+    "points": 30
+  },
+  {
+    "id": 338,
+    "region": "Global",
+    "task": "Defeat Obor in Edgeville Dungeon",
+    "points": 30
+  },
+  {
+    "id": 339,
+    "region": "Global",
+    "task": "Defeat Scurrius",
+    "points": 30
+  },
+  {
+    "id": 340,
+    "region": "Global",
+    "task": "Defeat Scurrius 10 times",
+    "points": 30
+  },
+  {
+    "id": 341,
+    "region": "Global",
+    "task": "Defeat Scurrius 25 times",
+    "points": 30
+  },
+  {
+    "id": 342,
+    "region": "Global",
+    "task": "Dismantle 20 filled Bird Houses on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 343,
+    "region": "Global",
+    "task": "Drink from the Tears of Guthix in the Lumbridge Swamp Caves",
+    "points": 30
+  },
+  {
+    "id": 344,
+    "region": "Global",
+    "task": "Eat the Dorgeshuun delicacy, Eel sushi",
+    "points": 30
+  },
+  {
+    "id": 345,
+    "region": "Global",
+    "task": "Enter the Cooks' Guild west of Varrock",
+    "points": 30
+  },
+  {
+    "id": 346,
+    "region": "Global",
+    "task": "Equip a Dorgeshuun Crossbow",
+    "points": 30
+  },
+  {
+    "id": 347,
+    "region": "Global",
+    "task": "Obtain and equip any Rat Bone weaponry",
+    "points": 30
+  },
+  {
+    "id": 348,
+    "region": "Global",
+    "task": "Equip either a pair of Fancy Boots or a pair of Fighting Boots",
+    "points": 30
+  },
+  {
+    "id": 349,
+    "region": "Global",
+    "task": "Obtain and Equip the Forestry Basket",
+    "points": 30
+  },
+  {
+    "id": 350,
+    "region": "Global",
+    "task": "Unlock every destination for the Mycelium Transportation System on Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 351,
+    "region": "Global",
+    "task": "Obtain a gem drop from a Gorak",
+    "points": 30
+  },
+  {
+    "id": 352,
+    "region": "Global",
+    "task": "Make a pie for Romily, north west of Varrock",
+    "points": 30
+  },
+  {
+    "id": 353,
+    "region": "Global",
+    "task": "Mine 25 Pure Essence",
+    "points": 30
+  },
+  {
+    "id": 354,
+    "region": "Global",
+    "task": "Open the Dark Chest",
+    "points": 30
+  },
+  {
+    "id": 355,
+    "region": "Global",
+    "task": "Pickpocket a Bullseye Lantern from a Cave Goblin",
+    "points": 30
+  },
+  {
+    "id": 356,
+    "region": "Global",
+    "task": "Pickpocket any H.A.M. member at their hideout",
+    "points": 30
+  },
+  {
+    "id": 357,
+    "region": "Global",
+    "task": "Pickpocket any Varrock Guard",
+    "points": 30
+  },
+  {
+    "id": 358,
+    "region": "Global",
+    "task": "Show Terry Balando in the Digsite a Belt Buckle",
+    "points": 30
+  },
+  {
+    "id": 359,
+    "region": "Global",
+    "task": "Use a Digsite Pendant to teleport to Fossil Island",
+    "points": 30
+  },
+  {
+    "id": 360,
+    "region": "Global",
+    "task": "Use the Range in Lumbridge Castle to cook some food",
+    "points": 30
+  },
+  {
+    "id": 361,
+    "region": "Global",
+    "task": "Win a game of Soul Wars",
+    "points": 30
+  }
+]
