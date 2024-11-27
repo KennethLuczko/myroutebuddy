@@ -40,7 +40,7 @@
           />
         </div>
 
-          <!-- New Section for Displaying Combined Region Information -->
+          <!-- New Section for Displaying Combined Region Information
           <div v-if="selectedRegions.length > 0" class="mt-4 text-white">
           <h3 class="text-lg font-semibold">Combined Region Information</h3>
           <div class="mt-2 text-gray-700 dark:text-gray-200">
@@ -79,7 +79,7 @@
           </div>
           <div v-if="loading" class="mt-2">Loading...</div>
           <div v-if="error" class="mt-2 text-red-500">{{ error }}</div>
-        </div>
+        </div> -->
 
         <!-- Manage Routes Section -->
         <nav class="flex flex-1 flex-col mt-8">
