@@ -212,6 +212,71 @@
               </li>
             </ul>
           </div>
+
+          <!-- Credits Section -->
+          <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Credits</h3>
+            <p class="text-md text-gray-700 dark:text-gray-200 mt-2">
+              A big thank you to all contributors who have supported the development of this project. Your time, effort, and expertise have been invaluable in making this app a success. We hit ~70,000 users in the first 7 days of release. Looking forward to updating this project for the inevitable Leagues 6 coming in 2025!
+            </p>
+            <ul class="mt-4">
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/KennethLuczko" class="font-semibold text-blue-500">Kenneth Luczko</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/SilasCundiff" class="font-semibold text-blue-500">Silas Cundiff</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/CagoThaPlug" class="font-semibold text-blue-500">Cago</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/Joeytje50" class="font-semibold text-blue-500">Joeytje50</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/robert-w-gries" class="font-semibold text-blue-500">Rob Gries</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/ElusiveEllie" class="font-semibold text-blue-500">ElusiveEllie</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/hawkins" class="font-semibold text-blue-500">Josh Hawkins</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/Skylord-Guthix" class="font-semibold text-blue-500">Joseph Gardiner</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/bennettj12" class="font-semibold text-blue-500">Bennett Johnson</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://github.com/luke-h42" class="font-semibold text-blue-500">Luke Hancock</a>
+                </p>
+              </li>
+              <li class="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg mb-2 shadow border dark:border-gray-700">
+                <p class="text-sm text-gray-800 dark:text-gray-200">
+                  <a href="https://cherryhillwebdesign.com/" class="font-semibold text-blue-500">Cherry Hill Web Design (donated domain)</a>
+                </p>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
