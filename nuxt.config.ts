@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         // OpenGraph Meta Tags
         { property: 'og:title', content: 'My Route Buddy - Task Route Planner' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://yourwebsite.com' },
+        { property: 'og:url', content: 'https://myroutebuddy.com/' },
         {
           property: 'og:description',
           content:
