@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css'],
 
@@ -36,8 +35,19 @@ export default defineNuxtConfig({
             'My Route Buddy is a web application designed to help players plan and optimize their tasks efficiently. Whether you’re tackling hundreds of pre-made tasks or adding your own custom tasks, this app is built to streamline your experience.',
         },
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script: [
+        // Google Tag script
+        { src: 'https://www.googletagmanager.com/gtag/js?id=G-VS584GXVDJ', async: true },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VS584GXVDJ');
+          `,
+          type: 'text/javascript',
+        },
       ],
     },
   },
